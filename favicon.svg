@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="t d">
+  <title id="t">Escribal</title>
+  <desc id="d">El lienzo de Escribal: tres pasos, cada uno con su punto de estado y su tarjeta, sobre el suelo punteado del area de trabajo.</desc>
+
+  <!-- Los cuatro colores son tokens del tema oscuro (src/window_main/index.css), citados aqui sin
+       su prefijo porque un comentario XML no admite dos guiones seguidos: color3 el suelo del
+       lienzo, color0 los puntos de su rejilla, color1 la tarjeta de una instruccion, color6 el
+       punto de estado, que es el verde de lo elegido y de lo que corre. -->
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse" patternTransform="translate(16 16)">
+      <circle cx="0" cy="0" r="1.6" fill="#4F5963" opacity=".55"/>
+      <circle cx="32" cy="0" r="1.6" fill="#4F5963" opacity=".55"/>
+      <circle cx="0" cy="32" r="1.6" fill="#4F5963" opacity=".55"/>
+      <circle cx="32" cy="32" r="1.6" fill="#4F5963" opacity=".55"/>
+    </pattern>
+
+    <clipPath id="card">
+      <rect x="34" y="18" width="156" height="220" rx="14"/>
+    </clipPath>
+
+    <filter id="sink" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity=".55"/>
+    </filter>
+
+    <filter id="lift" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity=".5"/>
+    </filter>
+  </defs>
+
+  <!-- El lienzo: el suelo y su rejilla de puntos, que es la del area de trabajo de verdad. -->
+  <g filter="url(#sink)">
+    <rect x="34" y="18" width="156" height="220" rx="14" fill="#272B30"/>
+    <rect x="34" y="18" width="156" height="220" rx="14" fill="url(#grid)" clip-path="url(#card)"/>
+  </g>
+
+  <!-- Tres pasos. La tarjeta se sale por la derecha: lo que se lee del lienzo es el orden, y una
+       instruccion es mas ancha que el sitio desde el que se la mira. -->
+  <g filter="url(#lift)">
+    <circle cx="52" cy="64" r="9" fill="#7CFC00"/>
+    <rect x="75" y="51" width="146" height="26" rx="13" fill="#3D454C"/>
+
+    <circle cx="52" cy="128" r="9" fill="#7CFC00"/>
+    <rect x="75" y="115" width="146" height="26" rx="13" fill="#3D454C"/>
+
+    <circle cx="52" cy="192" r="9" fill="#7CFC00"/>
+    <rect x="75" y="179" width="146" height="26" rx="13" fill="#3D454C"/>
+  </g>
+</svg>

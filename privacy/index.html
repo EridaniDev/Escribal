@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escribal Privacy Policy</title>
+<meta name="description" content="Escribal collects no data about you. How the program uses the network, where your files stay, and what happens with a Microsoft Store purchase.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbf9;
+    --text: #1d2125;
+    --muted: #5b636b;
+    --line: #dcdfe2;
+    --accent: #1f7a4d;
+    --code: #eef0ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16191c;
+      --text: #e3e6e8;
+      --muted: #9aa3ab;
+      --line: #2e343a;
+      --accent: #5fc491;
+      --code: #23282d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  .brand { display: flex; align-items: center; gap: .6rem; font-weight: 600; color: var(--muted); }
+  .brand img { width: 28px; height: 28px; border-radius: 6px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 1rem 0 .5rem; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+  .summary { font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 1rem; margin: 0 0 2rem; }
+  h2 { font-size: 1.25rem; margin: 2.25rem 0 .5rem; }
+  ul, ol { padding-left: 1.4rem; }
+  li { margin: .35rem 0; }
+  code { background: var(--code); padding: .1em .35em; border-radius: 4px; font-size: .92em; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand"><img src="../favicon.svg" alt="">Escribal</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">© 2026 Erik Monrreal (“the author”), publishing as <strong>EridaniDev</strong>. Last updated: 22 September 2026.</p>
+</header>
+
+<p class="summary"><strong>In one line: the author collects no data about you.</strong> Escribal runs on your computer, your files never leave it, and the program only uses the network when your workflow asks it to or to ask the Microsoft Store whether your subscription is still active.</p>
+
+<h2>1. What the author does not collect</h2>
+<p>The program carries <strong>no telemetry, no usage statistics, no automatic crash reports and no account with the author</strong>. There is no server of the author’s for the program to connect to, because none exists. The author does not receive your workflows, your data, your documents, your file paths, or anything about how you use the program.</p>
+
+<h2>2. Where your files are</h2>
+<p>Everything stays on your computer: the <code>.scriba</code> files with your workflows, the data they read and the documents they generate. The program writes them into the folders you choose inside each workflow.</p>
+<p>When a <code>.scriba</code> is saved, the program <strong>replaces your user folder with a generic marker</strong>, so sharing a workflow with someone else does not reveal your Windows user name or the layout of your computer.</p>
+<p>What does travel with the file is <strong>whatever you typed into the fields of each instruction</strong>, and that includes the passwords a document needs: the one that opens a protected PDF and the ones that protect a Word or an Excel file. They are there because they have to be — the program writes them into the document every time you run the workflow — so <strong>whoever receives the <code>.scriba</code>, or the AI assistant you hand it to, can see them</strong>. Before sharing a workflow like that, take them out or change the password. Your database password is the one exception, and that is why it has a section of its own: that one is never saved (section 4).</p>
+
+<h2>3. When the program uses the network</h2>
+<p>There are <strong>three cases and no others</strong>:</p>
+<ol>
+  <li><strong>When your workflow asks for it.</strong> If an instruction downloads a file or an image from an internet address, the program connects to that address. You choose it when you build the workflow; without those instructions there is no download at all.</li>
+  <li><strong>When your workflow queries a database.</strong> If you use the PostgreSQL instructions, the program connects to the server you name, with the credentials you supply. See section 4.</li>
+  <li><strong>To check your subscription.</strong> The program asks the Microsoft Store whether your subscription is active, <strong>once per working session</strong>. It is a query from the operating system to Microsoft: the author takes no part in it and does not receive its result. If the store cannot answer, the program does not start; it does not retry on its own and it stores nothing about that query.</li>
+</ol>
+<p>The program’s window uses the WebView2 component that already comes with Windows, and it <strong>loads no internet page at all</strong>: its security settings only let it open files belonging to the program itself. The internal communication between the window and the engine does not leave your computer.</p>
+
+<h2>4. Your database credentials</h2>
+<ul>
+  <li><strong>They are not saved in the <code>.scriba</code> file</strong> — unlike the document passwords in section 2. The workflow carries only a connection name; the server, the database and the password are asked for by the window when you run it.</li>
+  <li><strong>They travel only with that run and are erased when it ends</strong>, whether the workflow succeeds or fails.</li>
+  <li><strong>No instruction can read them</strong>, so they cannot end up written inside a document, exported to a file or shown on screen.</li>
+  <li><strong>The query is made in read-only mode</strong>, and that restriction is imposed by the PostgreSQL server itself, not by the program.</li>
+  <li><strong>A workflow with a database cannot be run from an AI assistant</strong>, precisely so that the credentials never pass through the assistant.</li>
+</ul>
+
+<h2>5. If you connect an AI assistant</h2>
+<p>Escribal can connect to an AI assistant through a server that <strong>runs inside your computer</strong>: the assistant and the program talk to each other directly, without going through the internet or through any service of the author’s.</p>
+<p>That said, <strong>the assistant you choose sees what you ask it to do</strong>: the instructions in your workflows, the documents it opens and what the program answers when they are run. That travels to that assistant’s provider under its own terms, not under these. <strong>Choosing the assistant, and with it its provider, is your decision.</strong> If you connect none, this section does not apply to you.</p>
+<p>Database credentials are outside all of this, as section 4 says.</p>
+
+<h2>6. Cookies and websites</h2>
+<p>This policy is published as a static page. <strong>It uses no cookies, no analytics and no trackers.</strong></p>
+
+<h2>7. Buying in the Microsoft Store</h2>
+<p>The subscription is bought and charged for <strong>in the Microsoft Store</strong>. Your name, your email address, your address and your payment details are handled by <strong>Microsoft</strong> as controller, under its own privacy policy, and the author does not receive them. What the author sees are the aggregated sales reports Microsoft shows him as a developer.</p>
+<p>If you write to the contact address in section 9, the author will see your address and what you tell him, and will use it only to answer you.</p>
+
+<h2>8. Children</h2>
+<p>Escribal is a work tool and is not directed at children under 13. The author collects no data from anyone, and so none from them.</p>
+
+<h2>9. Changes and contact</h2>
+<p>If this policy changes, the new version is published at this same address with its update date. A change affecting what the program does with your data will also arrive with an update of the program.</p>
+<p>Questions about this policy: <a href="mailto:support@escribal.com"><strong>support@escribal.com</strong></a>.</p>
+
+<footer>Escribal · EridaniDev</footer>
+</main>
+</body>
+</html>
