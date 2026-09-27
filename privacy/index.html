@@ -53,7 +53,7 @@
 <header>
   <div class="brand"><img src="../favicon.svg" alt="">Escribal</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">© 2026 Erik Monrreal (“the author”), publishing as <strong>EridaniDev</strong>. Last updated: 22 September 2026.</p>
+  <p class="meta">© 2026 Erik Monrreal (“the author”), publishing as <strong>EridaniDev</strong>. Last updated: 27 September 2026.</p>
 </header>
 
 <p class="summary"><strong>In one line: the author collects no data about you.</strong> Escribal runs on your computer, your files never leave it, and the program only uses the network when your workflow asks it to or to ask the Microsoft Store whether your subscription is still active.</p>
@@ -71,7 +71,7 @@
 <ol>
   <li><strong>When your workflow asks for it.</strong> If an instruction downloads a file or an image from an internet address, the program connects to that address. You choose it when you build the workflow; without those instructions there is no download at all.</li>
   <li><strong>When your workflow queries a database.</strong> If you use the PostgreSQL instructions, the program connects to the server you name, with the credentials you supply. See section 4.</li>
-  <li><strong>To check your subscription.</strong> The program asks the Microsoft Store whether your subscription is active, <strong>once per working session</strong>. It is a query from the operating system to Microsoft: the author takes no part in it and does not receive its result. If the store cannot answer, the program does not start; it does not retry on its own and it stores nothing about that query.</li>
+  <li><strong>To check your subscription.</strong> The program asks the Microsoft Store whether your subscription is active, <strong>once per working session</strong>. It is a query from the operating system to Microsoft: the author takes no part in it and does not receive its result. If the store cannot answer, the program does not work and says so; it asks again only when you press <em>Try again</em>, and it stores nothing about that query. When you subscribe, the purchase is made by the Microsoft Store in its own window: your payment details go to Microsoft, never to the program or the author.</li>
 </ol>
 <p>The program’s window uses the WebView2 component that already comes with Windows, and it <strong>loads no internet page at all</strong>: its security settings only let it open files belonging to the program itself. The internal communication between the window and the engine does not leave your computer.</p>
 
