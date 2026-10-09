@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escribal — Your documents write themselves</title>
+<meta name="description" content="Escribal builds your documents from instructions you set up once and run forever. No programming, on your own computer, with your AI assistant. For Windows, from the Microsoft Store.">
+<link rel="canonical" href="https://escribal.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbf9;
+    --text: #1d2125;
+    --muted: #5b636b;
+    --line: #dcdfe2;
+    --accent: #1f7a4d;
+    --accentText: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16191c;
+      --text: #e3e6e8;
+      --muted: #9aa3ab;
+      --line: #2e343a;
+      --accent: #5fc491;
+      --accentText: #10261b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  .brand { display: flex; align-items: center; gap: .6rem; font-weight: 600; color: var(--muted); }
+  .brand img { width: 28px; height: 28px; border-radius: 6px; }
+  h1 { font-size: 2.4rem; line-height: 1.15; margin: 2.5rem 0 1rem; }
+  .lead { font-size: 1.15rem; margin: 0 0 2rem; }
+  .get {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accentText);
+    font-weight: 600;
+    text-decoration: none;
+    padding: .7rem 1.4rem;
+    border-radius: 8px;
+  }
+  .get:hover, .get:focus-visible { filter: brightness(1.1); }
+  .terms { color: var(--muted); font-size: .95rem; margin: .9rem 0 0; }
+  ul { padding-left: 1.4rem; margin: 2.5rem 0 0; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<div class="brand"><img src="favicon.svg" alt="">Escribal</div>
+
+<h1>Your documents write themselves.</h1>
+<p class="lead">Escribal builds them from instructions you set up once and run forever: it reads your data from Excel, CSV, JSON or PostgreSQL, does the maths, and writes Word, Excel, PowerPoint or PDF. No programming, on your own computer, with your AI assistant.</p>
+
+<a class="get" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF">Get it from the Microsoft Store</a>
+<p class="terms">For Windows 10 and 11 · USD 19.99 per year</p>
+
+<ul>
+  <li>More than 700 instructions across eight formats: Word, Excel, PowerPoint, PDF, Markdown, JSON, CSV and plain text.</li>
+  <li>Loops, conditions and exact calculations, so the same workflow works with next month's data.</li>
+  <li>Your files never leave your computer.</li>
+</ul>
+
+<footer>
+  <a href="/privacy/">Privacy Policy</a> · <a href="mailto:support@escribal.com">support@escribal.com</a><br>
+  © 2026 Erik Monrreal, publishing as EridaniDev
+</footer>
+</main>
+</body>
+</html>
