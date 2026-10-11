@@ -1,0 +1,402 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Aggregation (CSV / TSV) — Escribal</title><meta name="description" content="The 6 CSV / TSV instructions of the Aggregation group in Escribal, each with its fields and its behaviour."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/csv-tsv-aggregation/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" aria-current="page" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>CSV / TSV</p><h1 data-astro-cid-ju4pidww>Aggregation</h1></header><div class="prose" data-astro-cid-ju4pidww><p>This group <strong>summarizes the numbers in a loaded CSV/TSV table</strong>: add up a column, average
+it, find its smallest and largest values, work out a percentile, count how often each value
+appears, or group the rows and aggregate a value per group. Four of these instructions simply
+<strong>save a number</strong> you can reuse later; the other two <strong>build a small summary table</strong> and
+register it as a new document.</p>
+<p><strong>Prerequisite:</strong> a CSV/TSV document must already be <strong>loaded</strong> — created with <em>Create
+CSV/TSV file</em> or opened with one of the <em>Reading</em> instructions. These instructions read an existing
+document; they do not open files themselves.</p>
+<p>These concepts recur across the instructions in this group; they are explained here once.</p>
+<ul>
+<li>
+<p><strong>Document:</strong> the <em>Document key</em> points to the loaded CSV/TSV these instructions read from. If
+you leave it empty, the <strong>current document</strong> is used (the one instructions work on by default).</p>
+</li>
+<li>
+<p><strong>Columns are found by name, ignoring upper/lower case.</strong> These instructions work on a table
+that was <strong>loaded with headers</strong>, so its rows have <strong>named columns</strong>. If the column you
+name isn’t in the table — or the table was loaded <strong>without headers</strong> (each row is just a
+list of values, with no column names) — the instruction finds nothing and does nothing.</p>
+</li>
+<li>
+<p><strong>Only numbers count.</strong> For the numeric instructions (<em>Sum</em>, <em>Average</em>, <em>Min/Max</em>,
+<em>Percentile</em>), cells that aren’t numbers are simply skipped. If a column has no numeric
+values at all, the result is <code>0</code>.</p>
+</li>
+<li>
+<p><strong>Saving a result (<code>Save …</code> fields):</strong> this group mostly <strong>reads</strong> — it doesn’t change the
+document. The way you keep an answer is the <em>Save …</em> field: type a name and the result is
+stored under it for later instructions to use with <code>@name</code>. Leave it empty and the result is
+simply not saved.</p>
+</li>
+<li>
+<p><strong>Dynamic values <code>@name</code>:</strong> the <strong>text</strong> fields (<em>Column name</em>, <em>Group by columns</em>,
+<em>Value column</em>, <em>Name</em>, <em>Path</em>, <em>Document key</em>, etc.) accept a saved value — type <code>@</code>
+followed by its name and the engine substitutes it at run time.</p>
+</li>
+<li>
+<p><strong>“From variable” fields:</strong> the numeric <em>Percentile</em> has a companion <em>Percentile key</em>
+field — a number field can’t take <code>@name</code>, so this is its equivalent:</p>
+<ul>
+<li>If you leave it <strong>empty</strong>, the number typed in the normal field is used.</li>
+<li>If you <strong>fill it in</strong> with the name of a saved value, the engine <strong>ignores the normal
+field</strong> and reads the number from that variable.</li>
+</ul>
+<p>This is mainly for <strong>chaining instructions</strong>. If you only work with fixed values, you can
+ignore it.</p>
+</li>
+<li>
+<p><strong>Producing a summary document (<em>Count By Value</em>, <em>Group And Aggregate</em>):</strong> these two build
+a <strong>new table</strong> and register it as a separate document, using the same <em>Name</em> / <em>Path</em> /
+<em>Output document key</em> / <em>Delimiter</em> fields as the <em>Reading</em> instructions. <em>Name</em> is the file the
+summary will be saved under, <em>Output document key</em> names it so later instructions can target it,
+and the <em>Delimiter</em> also decides the extension (a <strong>tab</strong> saves it as <code>.tsv</code>, anything else
+as <code>.csv</code>). The summary is only registered when <strong>at least one of <em>Name</em> or <em>Output
+document key</em> is filled in</strong>.</p>
+</li>
+</ul>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#average-column-csv-tsv" data-astro-cid-le6ebfyn>Average Column .csv</a></li><li data-astro-cid-le6ebfyn><a href="#calculate-percentile-csv-tsv" data-astro-cid-le6ebfyn>Calculate Percentile .csv</a></li><li data-astro-cid-le6ebfyn><a href="#count-by-value-csv-tsv" data-astro-cid-le6ebfyn>Count By Value .csv</a></li><li data-astro-cid-le6ebfyn><a href="#group-and-aggregate-csv-tsv" data-astro-cid-le6ebfyn>Group And Aggregate .csv</a></li><li data-astro-cid-le6ebfyn><a href="#min-max-column-csv-tsv" data-astro-cid-le6ebfyn>Min Max Column .csv</a></li><li data-astro-cid-le6ebfyn><a href="#sum-column-csv-tsv" data-astro-cid-le6ebfyn>Sum Column .csv</a></li></ul><section class="card" id="average-column-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#average-column-csv-tsv" data-astro-cid-le6ebfyn>Average Column .csv</a></h2><p>Works out the <strong>average of the numbers in a column</strong> and saves it.</p>
+<p><strong>When to use it:</strong> for a mean value — average price, score, age — over a loaded table.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Column name</td>
+<td>The column whose numbers are averaged (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to read. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save result</td>
+<td>Saves the average under this name for later instructions</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the average is taken over the <strong>numeric</strong> cells only. If <em>Column
+name</em> is empty or the column isn’t found, nothing happens. If the column has no numbers, the
+result is <code>0</code>.</p>
+<hr>
+</section><section class="card" id="calculate-percentile-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#calculate-percentile-csv-tsv" data-astro-cid-le6ebfyn>Calculate Percentile .csv</a></h2><p>Works out the value at a given <strong>percentile</strong> (0–100) of a numeric column and saves it.</p>
+<p><strong>When to use it:</strong> for a median (percentile <code>50</code>), a quartile (<code>25</code> or <code>75</code>), or any other
+cut-off point that describes where a value sits within the column.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to read. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The numeric column to analyze (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Percentile</td>
+<td>The percentile to compute, 0–100 (<code>50</code> = median, <code>25</code> = lower quartile, <code>75</code> = upper quartile)</td>
+<td><code>50</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Percentile (from variable)</td>
+<td>Reads the percentile from a saved value instead of the field above</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save result</td>
+<td>Saves the computed value under this name</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the percentile is clamped to the <strong>0–100</strong> range. The value is
+computed by linear interpolation between the two closest numbers (the same method as Excel’s
+<code>PERCENTILE.INC</code>). If <em>Column name</em> is empty, the column isn’t found, or it has no numbers,
+nothing is saved.</p>
+<hr>
+</section><section class="card" id="count-by-value-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#count-by-value-csv-tsv" data-astro-cid-le6ebfyn>Count By Value .csv</a></h2><p>Counts <strong>how many times each distinct value appears</strong> in a column. Optionally builds a
+two-column summary table (the value and its count) and registers it as a new document.</p>
+<p><strong>When to use it:</strong> to see the breakdown of a category column — how many rows per country,
+per status, per product — as a tally.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to read. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The column whose values are tallied (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Sort by count</td>
+<td>Yes = most frequent first; No = alphabetical by value</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Case sensitive</td>
+<td>Yes = treat <code>Apple</code> and <code>apple</code> as different values; No = as the same</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Delimiter</td>
+<td>Delimiter/extension of the produced summary document (accepts <code>@name</code>)</td>
+<td><code>,</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sort by count (from variable)</td>
+<td>Reads the yes/no value from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Case sensitive (from variable)</td>
+<td>Reads the yes/no value from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>File name the summary document will be saved under (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>To save</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>Folder the summary document will be saved to (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>To save</td>
+</tr>
+<tr>
+<td>Output document key</td>
+<td>Names the summary document so later instructions can target it (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save result</td>
+<td>Saves the value→count pairs as a single named result</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count</td>
+<td>Saves the <strong>number of distinct values</strong> found</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if <em>Column name</em> is empty or the column isn’t found, nothing happens.
+The summary table (columns: the tallied column, then <code>Count</code>) is registered as a new document
+<strong>only</strong> when <em>Name</em> or <em>Output document key</em> is filled in; otherwise you can still capture
+the tally through <em>Save result</em> / <em>Save count</em>. A tab <em>Delimiter</em> saves the summary as a
+<code>.tsv</code>.</p>
+<hr>
+</section><section class="card" id="group-and-aggregate-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#group-and-aggregate-csv-tsv" data-astro-cid-le6ebfyn>Group And Aggregate .csv</a></h2><p><strong>Groups the rows</strong> by one or more columns and computes a summary value per group (sum,
+average, min, max, or count), then registers the grouped result as a new document.</p>
+<p><strong>When to use it:</strong> for a pivot-style summary — total sales per region, average score per
+class, number of orders per customer.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to read. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Group by columns</td>
+<td>One or more columns to group by, separated by commas (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Value column</td>
+<td>The numeric column the summary is computed from (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Aggregation</td>
+<td>How to summarize each group: <code>sum</code>, <code>average</code>, <code>min</code>, <code>max</code>, or <code>count</code> (accepts <code>@name</code>)</td>
+<td><code>sum</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Output column name</td>
+<td>Header for the summary column; empty = the aggregation name in capitals (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Delimiter</td>
+<td>Delimiter/extension of the produced summary document (accepts <code>@name</code>)</td>
+<td><code>,</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>File name the summary document will be saved under (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>To save</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>Folder the summary document will be saved to (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>To save</td>
+</tr>
+<tr>
+<td>Output document key</td>
+<td>Names the summary document so later instructions can target it (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save group count</td>
+<td>Saves the <strong>number of groups</strong> written</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if you fill in neither <em>Name</em> nor <em>Output document key</em>, the grouping
+still happens and <em>Save group count key</em> is still saved — only the summary document is not kept.
+The instruction does nothing if <em>Group by columns</em> is empty, if the table is empty, or if none of the named group columns exist.
+Only group columns that actually exist are used. <code>count</code> counts the rows in each group and
+ignores <em>Value column</em>; the other functions work on the numbers in <em>Value column</em> (a group
+with no numbers gives <code>0</code>). A tab <em>Delimiter</em> saves the summary as a <code>.tsv</code>.</p>
+<hr>
+</section><section class="card" id="min-max-column-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#min-max-column-csv-tsv" data-astro-cid-le6ebfyn>Min Max Column .csv</a></h2><p>Finds the <strong>smallest and largest numbers</strong> in a column and saves each one.</p>
+<p><strong>When to use it:</strong> to learn a column’s range — lowest and highest price, oldest and newest
+value, etc.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Column name</td>
+<td>The column to scan for its minimum and maximum (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to read. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save minimum</td>
+<td>Saves the smallest value under this name</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save maximum</td>
+<td>Saves the largest value under this name</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> there are <strong>two</strong> save fields — you can capture the minimum, the
+maximum, or both. If <em>Column name</em> is empty or the column isn’t found, nothing happens. If
+the column has no numbers, both results are <code>0</code>.</p>
+<hr>
+</section><section class="card" id="sum-column-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#sum-column-csv-tsv" data-astro-cid-le6ebfyn>Sum Column .csv</a></h2><p>Adds up <strong>all the numbers in a column</strong> and saves the total.</p>
+<p><strong>When to use it:</strong> to get a column total — sales, quantities, amounts — from a loaded
+table.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Column name</td>
+<td>The column whose numbers are added up (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to read. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save result</td>
+<td>Saves the total under this name for later instructions</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if <em>Column name</em> is empty, or the column isn’t in the table, the
+instruction does nothing (nothing is saved). Non-numeric cells are skipped; a column with no
+numbers totals <code>0</code>.</p>
+<hr>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Editing values (CSV / TSV) — Escribal</title><meta name="description" content="The 10 CSV / TSV instructions of the Editing values group in Escribal, each with its fields and its behaviour."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/csv-tsv-editing-values/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" aria-current="page" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>CSV / TSV</p><h1 data-astro-cid-ju4pidww>Editing values</h1></header><div class="prose" data-astro-cid-ju4pidww><p>This group <strong>cleans and reshapes the values inside a column</strong> of a loaded CSV/TSV table: search
+and replace text, fill in blanks, reformat dates, change letter case, trim stray spaces, convert a
+column to another data type, run a math operation on numbers, or mask sensitive data. It also holds
+the one instruction that makes the table <strong>grow</strong> — <em>Add Row</em> — because every other instruction of the CSV/TSV
+family reshapes rows that are already there. Every instruction here <strong>changes the table in place</strong> and can
+save the number of cells it touched.</p>
+<p><strong>Prerequisite:</strong> a CSV/TSV document must already be <strong>loaded</strong> — created with <em>Create CSV/TSV
+file</em> or opened with one of the <em>Reading</em> instructions. These instructions edit an existing document; they
+do not open files themselves.</p>
+<p>These concepts recur across the instructions in this group; they are explained here once.</p>
+<ul>
+<li>
+<p><strong>Document:</strong> the <em>Document key</em> points to the loaded CSV/TSV these instructions edit. If you leave it
+empty, the <strong>current document</strong> is used (the one instructions work on by default). If the key isn’t
+loaded, the instruction does nothing.</p>
+</li>
+<li>
+<p><strong>These instructions change the document.</strong> Unlike the read-only <em>Inspection</em> group, everything here
+<strong>rewrites cell values in the loaded table</strong>. The change stays with the document and is written
+out when it is saved.</p>
+</li>
+<li>
+<p><strong>They work on named columns.</strong> Every instruction targets a column <strong>by name</strong>, so the table must have
+been loaded <strong>with headers</strong>. On a table loaded <strong>without headers</strong> (rows of plain values with no
+column names) these instructions find no named columns and do nothing.</p>
+</li>
+<li>
+<p><strong>Column not found = nothing changes.</strong> If the <em>Column name</em> you give isn’t in the table, the
+instruction leaves every row untouched (and the saved count is <code>0</code>).</p>
+</li>
+<li>
+<p><strong>Empty <em>Column name</em> = every column.</strong> In the instructions that work on <strong>any kind of text</strong> — <em>Trim
+Whitespace</em>, <em>Normalize Text Case</em>, <em>Replace Text In Column</em>, <em>Mask Sensitive Values</em> and <em>Fill
+Empty Cells</em> — leaving <em>Column name</em> empty applies the instruction to <strong>all the columns</strong> of the table,
+and the saved count adds up every cell changed. The three instructions that depend on the column’s
+<strong>data type</strong> — <em>Apply Math Operation</em> (numbers), <em>Change Date Format</em> (dates) and <em>Convert Column
+Type</em> — still need a column: with <em>Column name</em> empty they do nothing, because the operation only
+makes sense on a column you chose deliberately.</p>
+</li>
+<li>
+<p><strong>Save a result (<code>saveCountKey</code>):</strong> most instructions can save <strong>how many cells they changed</strong> under
+the name you type in <em>Save count key</em>, for later instructions to use with <code>@name</code>. Leave it empty and
+the count is simply not saved.</p>
+</li>
+<li>
+<p><strong>Dynamic values <code>@name</code>:</strong> the <strong>text</strong> fields (<em>Column name</em>, <em>Search text</em>, <em>Fixed value</em>,
+and so on) accept a saved value — type <code>@</code> followed by its name and the engine substitutes it at
+run time.</p>
+</li>
+<li>
+<p><strong>“From variable” fields:</strong> <em>Apply Math Operation</em> has two number fields — <em>Operand</em> and <em>Decimal
+places</em> — each with a companion <em>…key</em> field. A number field can’t take <code>@name</code>, so this is its
+equivalent:</p>
+<ul>
+<li>If you leave the <em>…key</em> field <strong>empty</strong>, the number typed in the normal field is used.</li>
+<li>If you <strong>fill it in</strong> with the name of a saved value, the engine <strong>ignores the normal field</strong>
+and reads the number from that variable.</li>
+</ul>
+<p>This is mainly for <strong>chaining instructions</strong> — e.g. compute a rate earlier and feed it in as the
+operand. If you only work with fixed values, you can ignore it.</p>
+</li>
+</ul>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#add-row-csv-tsv" data-astro-cid-le6ebfyn>Add Row .csv</a></li><li data-astro-cid-le6ebfyn><a href="#apply-math-operation-csv-tsv" data-astro-cid-le6ebfyn>Apply Math Operation .csv</a></li><li data-astro-cid-le6ebfyn><a href="#change-date-format-csv-tsv" data-astro-cid-le6ebfyn>Change Date Format .csv</a></li><li data-astro-cid-le6ebfyn><a href="#convert-column-type-csv-tsv" data-astro-cid-le6ebfyn>Convert Column Type .csv</a></li><li data-astro-cid-le6ebfyn><a href="#fill-empty-cells-csv-tsv" data-astro-cid-le6ebfyn>Fill Empty Cells .csv</a></li><li data-astro-cid-le6ebfyn><a href="#mask-sensitive-values-csv-tsv" data-astro-cid-le6ebfyn>Mask Sensitive Values .csv</a></li><li data-astro-cid-le6ebfyn><a href="#normalize-text-case-csv-tsv" data-astro-cid-le6ebfyn>Normalize Text Case .csv</a></li><li data-astro-cid-le6ebfyn><a href="#replace-text-in-column-csv-tsv" data-astro-cid-le6ebfyn>Replace Text In Column .csv</a></li><li data-astro-cid-le6ebfyn><a href="#trim-whitespace-csv-tsv" data-astro-cid-le6ebfyn>Trim Whitespace .csv</a></li><li data-astro-cid-le6ebfyn><a href="#write-cell-value-csv-tsv" data-astro-cid-le6ebfyn>Write Cell Value .csv</a></li></ul><section class="card" id="add-row-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#add-row-csv-tsv" data-astro-cid-le6ebfyn>Add Row .csv</a></h2><p><strong>Adds a row at the end</strong> of the loaded file, with its values in column order.</p>
+<p><strong>When to use it:</strong> to build a file from the workflow — inside a loop, one row per turn — or to append
+a single line to a file you opened. It is the only instruction that makes a CSV <strong>grow</strong>: every other one
+reshapes the rows the file already has.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV the row is added to. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Values</td>
+<td>The cells of the new row, in column order, separated by <em>Value separator</em>. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Value separator</td>
+<td>What separates one value from the next in the field above</td>
+<td><code>|</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column names</td>
+<td>Comma-separated column names, read <strong>only</strong> when the file has no rows yet. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save row count key</td>
+<td>Saves how many rows the file has afterwards</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the columns come from the <strong>file</strong>, not from this instruction: if it already has
+rows, the new one takes their columns and <em>Column names</em> is ignored. Only on a file with <strong>no rows</strong>
+are they taken from <em>Column names</em> — and failing that from the ones <em>Create CSV/TSV file</em> declared;
+with no columns anywhere the row is not added and the workflow says so. Values you leave out keep
+their column <strong>empty</strong>, and values with no column to go in are <strong>left out and reported</strong>. The
+separator is a field of its own, and not the file’s comma, precisely so a value can contain a comma;
+nothing is trimmed, so a space around the separator is written as part of the value. An empty
+<em>Values</em> adds nothing. On a table loaded <strong>without headers</strong> the values go in by position — this is
+the one instruction of the group that works there.</p>
+<hr>
+</section><section class="card" id="apply-math-operation-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#apply-math-operation-csv-tsv" data-astro-cid-le6ebfyn>Apply Math Operation .csv</a></h2><p>Runs a <strong>math operation on the numeric values</strong> of a column — multiply, add, subtract, divide,
+round, or apply a percentage change — and rewrites each cell with the result.</p>
+<p><strong>When to use it:</strong> to recalculate a numeric column in bulk — convert units, apply a discount or
+markup, scale figures, or round them to a set number of decimals.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The column whose numbers are operated on (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Operation</td>
+<td><code>multiply</code>, <code>add</code>, <code>subtract</code>, <code>divide</code>, <code>round</code>, or <code>percent</code></td>
+<td><code>multiply</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Operand</td>
+<td>The number applied by the operation (ignored by <code>round</code>)</td>
+<td><code>1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimal places</td>
+<td>Decimals the result is rounded to</td>
+<td><code>2</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Operand (from variable)</td>
+<td>(from variable) reads the operand from a saved value instead of the field above</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimal places (from variable)</td>
+<td>(from variable) reads the decimals from a saved value instead of the field above</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many cells were changed</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if <em>Column name</em> is empty (or the document isn’t loaded) nothing happens —
+this instruction always needs a column, because a math operation only makes sense on numbers you chose.
+Cells that aren’t numbers are skipped. <code>percent</code> grows the value by <em>Operand</em> percent (e.g. <code>10</code>
+adds 10%); <code>divide</code> by <code>0</code> leaves the value unchanged; <code>round</code> ignores <em>Operand</em> and just rounds.
+Every result is rounded to <em>Decimal places</em>.</p>
+<hr>
+</section><section class="card" id="change-date-format-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#change-date-format-csv-tsv" data-astro-cid-le6ebfyn>Change Date Format .csv</a></h2><p>Reads the <strong>dates in a column</strong> written in one format and rewrites them in another.</p>
+<p><strong>When to use it:</strong> to standardize a date column — e.g. turn <code>31/12/2026</code> into <code>2026-12-31</code> — so
+the whole table uses one consistent date style.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The column whose dates are reformatted (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Input format</td>
+<td>The format the dates are currently written in (accepts <code>@name</code>)</td>
+<td><code>yyyy-MM-dd</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Output format</td>
+<td>The format to rewrite them in (accepts <code>@name</code>)</td>
+<td><code>yyyy-MM-dd</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many dates were converted</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if <em>Column name</em> is empty (or the document isn’t loaded) nothing happens —
+this instruction always needs a column, since only you know which one holds dates. <strong>Set <em>Input format</em> to
+match how the dates are written in your file:</strong> both formats default to <code>yyyy-MM-dd</code>, so out of the
+box the instruction expects ISO dates (and rewriting ISO as ISO changes nothing). To standardize dates
+written as <code>31/12/2026</code>, type <code>dd/MM/yyyy</code> in <em>Input format</em>.
+Blank cells are skipped, and so is any value that <strong>doesn’t exactly match</strong> <em>Input format</em> — it is
+left as-is and not counted. The format uses the usual letters: <code>dd</code> day, <code>MM</code> month, <code>yyyy</code> year,
+<code>HH</code> hour, <code>mm</code> minute.</p>
+<hr>
+</section><section class="card" id="convert-column-type-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#convert-column-type-csv-tsv" data-astro-cid-le6ebfyn>Convert Column Type .csv</a></h2><p>Converts every value in a column to a chosen <strong>data type</strong> — text, whole number, decimal, or date.</p>
+<p><strong>When to use it:</strong> to clean up a column so its values share one type before filtering, sorting, or
+exporting — e.g. force a column to whole numbers, or normalize mixed date text.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The column whose values are converted (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Target type</td>
+<td><code>text</code>, <code>integer</code>, <code>decimal</code>, or <code>date</code></td>
+<td><code>text</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Date format</td>
+<td>The format used when <em>Target type</em> is <code>date</code> (accepts <code>@name</code>)</td>
+<td><code>yyyy-MM-dd</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many values were converted</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if <em>Column name</em> is empty (or the document isn’t loaded) nothing happens —
+this instruction always needs a column, because the target type is chosen per column.
+Blank cells are skipped. <code>integer</code> rounds a decimal to the nearest whole number; <code>decimal</code> keeps
+the number as-is; <code>date</code> parses the value and rewrites it using <em>Date format</em>; <code>text</code> leaves the
+value unchanged. Any value that can’t be parsed as the chosen type is <strong>kept as-is</strong> and not
+counted.</p>
+<hr>
+</section><section class="card" id="fill-empty-cells-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#fill-empty-cells-csv-tsv" data-astro-cid-le6ebfyn>Fill Empty Cells .csv</a></h2><p>Fills the <strong>empty cells</strong> of a column — with a fixed value, the value from the row above, or the
+column’s average.</p>
+<p><strong>When to use it:</strong> to remove gaps in a column before analysis or export — e.g. put <code>0</code> or
+<code>Unknown</code> where a value is missing, carry the previous value down, or fill blanks with the mean.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The column whose empty cells are filled. <strong>Empty = every column</strong> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill mode</td>
+<td><code>fixed</code>, <code>previous</code> (value above), or <code>mean</code> (column average)</td>
+<td><code>fixed</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fixed value</td>
+<td>The value used when <em>Fill mode</em> is <code>fixed</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many cells were filled</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if the document isn’t loaded nothing happens; if <em>Column name</em> is empty
+<strong>every column</strong> is filled. A cell counts as empty when it is missing or contains only spaces.
+<code>previous</code> uses the last non-empty value seen above (or <em>Fixed value</em> if none has appeared yet);
+<code>mean</code> uses the average of the column’s numeric values (or <code>0</code> if there are none). Both are worked
+out <strong>per column</strong>, so filling every column at once still uses each column’s own previous value and
+its own average.</p>
+<hr>
+</section><section class="card" id="mask-sensitive-values-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#mask-sensitive-values-csv-tsv" data-astro-cid-le6ebfyn>Mask Sensitive Values .csv</a></h2><p><strong>Hides or anonymizes</strong> sensitive data in a column — emails, phone numbers, IDs, or any value —
+while keeping the table’s shape.</p>
+<p><strong>When to use it:</strong> to share or export a table without exposing personal data — e.g. turn
+<code>jane.doe@acme.com</code> into <code>j***@***.com</code> or a phone number into <code>********45</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The column whose values are masked. <strong>Empty = every column</strong> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Data type</td>
+<td><code>email</code>, <code>phone</code>, <code>id</code>, or <code>custom</code> — how the value is masked</td>
+<td><code>email</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Custom mask</td>
+<td>The text that replaces the whole cell when <em>Data type</em> is <code>custom</code> (accepts <code>@name</code>)</td>
+<td><code>***</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many cells were masked</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if the document isn’t loaded nothing happens; if <em>Column name</em> is empty
+<strong>every column</strong> is masked — handy to sweep a whole table for emails or phone numbers. Note that
+<code>custom</code> replaces whole cells, so with an empty <em>Column name</em> it would blank out the entire table.
+Blank cells are skipped. <code>email</code> keeps the first letter and the domain ending (<code>j***@***.com</code>);
+<code>phone</code> keeps only the last two digits; <code>id</code> keeps the first and last character; <code>custom</code> replaces
+the <strong>entire cell</strong> with <em>Custom mask</em>.</p>
+<p><strong>What this instruction is not:</strong> the <code>email</code>, <code>phone</code> and <code>id</code> modes recognize values by their
+<strong>shape</strong> (text patterns), not by knowing what the data means. A value written in an unexpected
+way is <strong>left untouched</strong>, and a value that merely looks like an ID may be masked when it isn’t
+one. Treat it as a convenience for tidying up data you already understand — <strong>not</strong> as a
+guarantee of anonymization. If you must publish data where a leak matters, check the result, or
+use <code>custom</code> (which blanks the whole cell) or <em>Remove Columns</em> to drop the column entirely.</p>
+<hr>
+</section><section class="card" id="normalize-text-case-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#normalize-text-case-csv-tsv" data-astro-cid-le6ebfyn>Normalize Text Case .csv</a></h2><p>Changes the <strong>letter case</strong> of the text in a column — all uppercase, all lowercase, or Title Case.</p>
+<p><strong>When to use it:</strong> to make a text column consistent — e.g. tidy up names into <code>Title Case</code>, or
+force codes to uppercase.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The column whose text is recased. <strong>Empty = every column</strong> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Case mode</td>
+<td><code>upper</code>, <code>lower</code>, or <code>title</code></td>
+<td><code>title</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many cells were changed</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if the document isn’t loaded nothing happens; if <em>Column name</em> is empty
+<strong>every column</strong> is recased. Empty cells are skipped. <code>title</code> capitalizes the first letter of each
+word; only cells whose text actually changes are counted.</p>
+<hr>
+</section><section class="card" id="replace-text-in-column-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#replace-text-in-column-csv-tsv" data-astro-cid-le6ebfyn>Replace Text In Column .csv</a></h2><p>Replaces <strong>every occurrence of a piece of text</strong> with another, inside one column.</p>
+<p><strong>When to use it:</strong> for a targeted find-and-replace in a single column — fix a recurring typo,
+swap a code for a label, or clean up a stray character.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>The column to search and replace in. <strong>Empty = every column</strong> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Search text</td>
+<td>The text to look for (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Replacement text</td>
+<td>The text to put in its place (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Case sensitive</td>
+<td>If yes, <code>Cat</code> and <code>cat</code> are treated as different</td>
+<td><code>no</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Case sensitive (from variable)</td>
+<td>Reads the yes/no value from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many cells were changed</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if <em>Search text</em> is empty (or the document isn’t loaded) nothing happens;
+if <em>Column name</em> is empty the replacement runs on <strong>every column</strong> — a whole-table find and replace.
+Every occurrence within a cell is replaced. Matching ignores case by default; turn
+<em>Case sensitive</em> on to match exactly. Only cells that actually change are counted. Leave
+<em>Replacement text</em> empty to <strong>delete</strong> the matched text.</p>
+<hr>
+</section><section class="card" id="trim-whitespace-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#trim-whitespace-csv-tsv" data-astro-cid-le6ebfyn>Trim Whitespace .csv</a></h2><p>Removes <strong>leading and trailing spaces</strong> from a column’s values — or from every column at once.</p>
+<p><strong>When to use it:</strong> to clean up stray spaces that sneak in around values (e.g. from copy-paste or
+exports) and cause mismatches when comparing, filtering, or joining.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Column name</td>
+<td>The column to trim. <strong>Leave empty to trim every column</strong> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Document key</td>
+<td>The loaded CSV/TSV to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many cells were trimmed</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if the document isn’t loaded, nothing happens. Only spaces at the <strong>start
+and end</strong> of a value are removed — spaces inside the text are kept. Leaving <em>Column name</em> empty
+trims <strong>all</strong> columns. Only cells that actually change are counted.</p>
+<hr>
+</section><section class="card" id="write-cell-value-csv-tsv" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-cell-value-csv-tsv" data-astro-cid-le6ebfyn>Write Cell Value .csv</a></h2><p><strong>Writes one cell</strong>: the row by its position, the column by its name.</p>
+<p><strong>When to use it:</strong> to correct one datum, or to write a result the workflow calculated into a specific row.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Row number</td>
+<td>Row to write, counting from 1. <code>-1</code> = the last row</td>
+<td><code>1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Column name</td>
+<td>Name of the column. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>New value of the cell. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Row number (from variable)</td>
+<td>Reads the row from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> an <strong>empty value empties the cell</strong>, as it does in a spreadsheet. A column the file has not got is <strong>not created</strong> — the other rows would not have it; to add one use <em>Add Fixed Value Column</em>. A row that does not exist does nothing — to make one, use <em>Add Row</em>.</p>
+<hr>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>

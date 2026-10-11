@@ -1,0 +1,733 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Data validation (Spreadsheet) — Escribal</title><meta name="description" content="The 10 Spreadsheet instructions of the Data validation group in Escribal, each with its fields and its behaviour."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/spreadsheet-data-validation/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" aria-current="page" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>Spreadsheet</p><h1 data-astro-cid-ju4pidww>Data validation</h1></header><div class="prose" data-astro-cid-ju4pidww><p>This group <strong>restricts what can be typed into cells</strong> and controls the messages shown
+around those rules. A data validation rule limits a range of cells to, for example, a
+list of allowed options, a whole number in a range, a text length, a date or time
+window, or the result of a custom formula. You can also attach an input tooltip and an
+error alert to a range, or remove validation again.</p>
+<p><strong>Prerequisite:</strong> before using any of these instructions, the workflow must already have an
+XLSX spreadsheet created or opened (with <em>Create spreadsheet</em>). Every instruction works on a
+<strong>sheet</strong> (tab) inside that spreadsheet, identified by name (<code>Sheet1</code> by default), which
+must already exist.</p>
+<p>These concepts recur across several instructions in this group; they are explained here
+once.</p>
+<ul>
+<li>
+<p><strong>Document:</strong> indicates which document in the workflow the instruction applies to. If
+left empty, the current document is used. If the document doesn’t exist, the instruction
+simply does nothing.</p>
+</li>
+<li>
+<p><strong>The sheet must already exist:</strong> the <em>Sheet name</em> field chooses which tab the
+instruction works on, and defaults to <code>Sheet1</code>. If no sheet with that name is found, the
+instruction <strong>simply does nothing</strong> and the rest of the workflow carries on.</p>
+</li>
+<li>
+<p><strong>Range:</strong> the <em>Range</em> field is the block of cells the rule applies to, written in A1
+style as two corners joined by a colon, like <code>A1:A100</code> (the default); a single cell
+like <code>B2</code> also works. <strong>The range identifies the rule:</strong> <em>Set Input Message</em>, <em>Set
+Error Message</em> and <em>Remove Validation</em> find a rule by the range it was created on, so
+<code>A1:A100</code> and <code>A1:A101</code> are different rules. Different <strong>ways of writing the same
+block</strong> do match, though: upper or lower case, dollar signs and the order of the two
+corners are all ignored, so <code>a1:a100</code>, <code>$A$1:$A$100</code> and <code>A100:A1</code> all find the rule
+created on <code>A1:A100</code>, and <code>B2:B2</code> is the same as <code>B2</code>.</p>
+</li>
+<li>
+<p><strong>Re-applying replaces:</strong> running a <em>Validate…</em> instruction on a range that already has a
+rule <strong>replaces</strong> the old rule on that exact range.</p>
+</li>
+<li>
+<p><strong>Comparison (number, length, date and time rules):</strong> the <em>Comparison</em> field chooses
+how the value is checked, from a fixed list: <em>Between</em> (default) · <em>Not between</em> ·
+<em>Equal</em> · <em>Not equal</em> · <em>Greater than</em> · <em>Greater than or equal</em> · <em>Less than</em> ·
+<em>Less than or equal</em>. For <em>Between</em> and <em>Not between</em> <strong>both</strong> the minimum and maximum
+fields matter; for all the others only the <strong>first (minimum)</strong> field is used as the
+value to compare against, and the maximum is ignored.</p>
+</li>
+<li>
+<p><strong>Allow blank:</strong> when <em>Allow blank</em> is Yes (the default), an empty cell is accepted;
+when No, the cell must contain a value that passes the rule.</p>
+</li>
+<li>
+<p><strong>Dynamic values (<code>@name</code>):</strong> in any text field (sheet name, range, allowed values,
+dates, times, formula, message text…) you can type <code>@</code> followed by the name of a value
+saved earlier in the workflow, and it will be replaced by that value.</p>
+</li>
+<li>
+<p><strong>“From variable” fields:</strong> the <code>@name</code> trick only works in text fields. The
+<strong>numeric</strong> fields (<em>Minimum</em>, <em>Maximum</em>, <em>Min length</em>, <em>Max length</em>) and the <strong>yes/no</strong>
+fields (<em>Allow blank</em>, <em>Show message</em>, <em>Entire sheet</em>) each have a companion “from
+variable” field:</p>
+<ul>
+<li>If you leave it <strong>empty</strong>, the value chosen in the normal field is used.</li>
+<li>If you <strong>fill it in</strong> with the name of a saved value, the engine <strong>ignores the
+normal field</strong> and reads the value from that variable.</li>
+</ul>
+<p>This is mainly for <strong>chaining instructions</strong>. If you only work with fixed values, you can
+ignore these fields.</p>
+</li>
+</ul>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#remove-validation-spreadsheet" data-astro-cid-le6ebfyn>Remove Validation .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#set-error-message-spreadsheet" data-astro-cid-le6ebfyn>Set Error Message .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#set-input-message-spreadsheet" data-astro-cid-le6ebfyn>Set Input Message .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#validate-date-in-range-spreadsheet" data-astro-cid-le6ebfyn>Validate Date In Range .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#validate-decimal-number-spreadsheet" data-astro-cid-le6ebfyn>Validate Decimal Number .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#validate-dropdown-list-spreadsheet" data-astro-cid-le6ebfyn>Validate Dropdown List .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#validate-text-length-spreadsheet" data-astro-cid-le6ebfyn>Validate Text Length .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#validate-time-in-range-spreadsheet" data-astro-cid-le6ebfyn>Validate Time In Range .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#validate-whole-number-spreadsheet" data-astro-cid-le6ebfyn>Validate Whole Number .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#validate-with-formula-spreadsheet" data-astro-cid-le6ebfyn>Validate With Formula .xlsx</a></li></ul><section class="card" id="remove-validation-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#remove-validation-spreadsheet" data-astro-cid-le6ebfyn>Remove Validation .xlsx</a></h2><p><strong>Removes data validation</strong> from a range, or clears every validation on the sheet.</p>
+<p><strong>When to use it:</strong> to lift a restriction you set earlier.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to act on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The range whose rule to remove (A1 style). Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Entire sheet</td>
+<td>Yes = remove every validation rule on the sheet</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Entire sheet (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> to remove one rule, give its exact <em>Range</em>. To clear all rules on
+the sheet, turn <em>Entire sheet</em> on. If <em>Range</em> is left empty and <em>Entire sheet</em> is off,
+nothing happens — this protects against wiping every rule by accident when a dynamic
+range comes out empty. If the range doesn’t match any existing rule, nothing happens.</p>
+<hr>
+</section><section class="card" id="set-error-message-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#set-error-message-spreadsheet" data-astro-cid-le6ebfyn>Set Error Message .xlsx</a></h2><p>Sets the <strong>error alert</strong> shown when someone types an invalid value into a validated
+range.</p>
+<p><strong>When to use it:</strong> after creating a rule, to customize the pop-up that appears on a bad
+entry.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The validated range (must match the rule’s range). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Title of the error pop-up. Supports <code>@name</code></td>
+<td><code>Invalid value</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>Body text of the error pop-up. Supports <code>@name</code></td>
+<td><code>The entered value is not valid.</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Severity: <code>stop</code>, <code>warning</code> or <code>information</code></td>
+<td><code>stop</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show message</td>
+<td>Yes = show the error alert on invalid entry</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show message (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <em>Style</em> <code>stop</code> blocks the invalid value; <code>warning</code> and
+<code>information</code> let the user keep it after confirming. Any unknown <em>Style</em> falls back to
+<code>stop</code>. If no rule exists yet on that exact range, an empty placeholder rule is created
+just to hold the message.</p>
+<hr>
+</section><section class="card" id="set-input-message-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#set-input-message-spreadsheet" data-astro-cid-le6ebfyn>Set Input Message .xlsx</a></h2><p>Sets the <strong>tooltip</strong> shown when a validated cell is selected.</p>
+<p><strong>When to use it:</strong> to give the user a hint before they type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The validated range (must match the rule’s range). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Title of the tooltip. Supports <code>@name</code></td>
+<td><code>Input</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>Body text of the tooltip. Supports <code>@name</code></td>
+<td><code>Enter a value.</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show message</td>
+<td>Yes = show the tooltip when the cell is selected</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show message (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if no rule exists yet on that exact range, an empty placeholder
+rule is created just to hold the message.</p>
+<hr>
+</section><section class="card" id="validate-date-in-range-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#validate-date-in-range-spreadsheet" data-astro-cid-le6ebfyn>Validate Date In Range .xlsx</a></h2><p>Restricts a range to <strong>dates</strong> within (or outside) a window.</p>
+<p><strong>When to use it:</strong> to force valid calendar dates — for example only dates in the current
+year.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The cells to restrict (A1 style). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td>How to check the date (see Common concepts)</td>
+<td><code>between</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Min date</td>
+<td>Lower/target date, as <code>YYYY-MM-DD</code>. Supports <code>@name</code></td>
+<td><code>2000-01-01</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Max date</td>
+<td>Upper date (only used for <code>between</code>/<code>notBetween</code>). Supports <code>@name</code></td>
+<td><code>2099-12-31</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank</td>
+<td>Yes = allow empty cells</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> dates are written <code>YYYY-MM-DD</code>. If a required date is empty or not a
+valid date, nothing happens. For <code>between</code>/<code>notBetween</code> both dates apply; every other
+comparison uses only <em>Min date</em>. Re-applying replaces any rule on the same range.</p>
+<hr>
+</section><section class="card" id="validate-decimal-number-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#validate-decimal-number-spreadsheet" data-astro-cid-le6ebfyn>Validate Decimal Number .xlsx</a></h2><p>Restricts a range to <strong>decimal numbers</strong> matching a comparison.</p>
+<p><strong>When to use it:</strong> for values that can have a fractional part, like prices or measurements.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The cells to restrict (A1 style). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td>How to check the number (see Common concepts)</td>
+<td><code>between</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Minimum</td>
+<td>Lower/target number</td>
+<td><code>0</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Maximum</td>
+<td>Upper number (only used for <code>between</code>/<code>notBetween</code>)</td>
+<td><code>100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank</td>
+<td>Yes = allow empty cells</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Minimum (from variable)</td>
+<td>Reads the minimum from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Maximum (from variable)</td>
+<td>Reads the maximum from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> decimals such as <code>3.5</code> are allowed. For <code>between</code>/<code>notBetween</code>
+both fields apply; other comparisons use only <em>Minimum</em>.</p>
+<hr>
+</section><section class="card" id="validate-dropdown-list-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#validate-dropdown-list-spreadsheet" data-astro-cid-le6ebfyn>Validate Dropdown List .xlsx</a></h2><p>Restricts a range to a <strong>fixed list of options</strong>, shown as a dropdown.</p>
+<p><strong>When to use it:</strong> to offer a small set of choices (statuses, categories…) and prevent
+typos.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The cells to restrict (A1 style). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allowed values</td>
+<td>The options, comma-separated. Supports <code>@name</code></td>
+<td><code>Option1,Option2,Option3</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show dropdown</td>
+<td>Yes = show the dropdown arrow in the cell</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank</td>
+<td>Yes = allow empty cells</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show dropdown (from variable)</td>
+<td>Reads the yes/no value from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if <em>Allowed values</em> is empty, nothing happens. The list is stored
+inside the rule, so keep it reasonably short. <em>Show dropdown</em> No still enforces the list
+but hides the arrow. Re-applying replaces any rule on the same range.</p>
+<hr>
+</section><section class="card" id="validate-text-length-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#validate-text-length-spreadsheet" data-astro-cid-le6ebfyn>Validate Text Length .xlsx</a></h2><p>Restricts a range by the <strong>number of characters</strong> typed.</p>
+<p><strong>When to use it:</strong> to cap or require a text length — for example a code that must be
+exactly 5 characters.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The cells to restrict (A1 style). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td>How to check the length (see Common concepts)</td>
+<td><code>between</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Min length</td>
+<td>Lower/target character count</td>
+<td><code>1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Max length</td>
+<td>Upper character count (only for <code>between</code>/<code>notBetween</code>)</td>
+<td><code>255</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank</td>
+<td>Yes = allow empty cells</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Min length (from variable)</td>
+<td>Reads the value from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Max length (from variable)</td>
+<td>Reads the value from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the rule checks the character count, not the value itself. For
+<code>between</code>/<code>notBetween</code> both fields apply; other comparisons use only <em>Min length</em>.</p>
+<hr>
+</section><section class="card" id="validate-time-in-range-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#validate-time-in-range-spreadsheet" data-astro-cid-le6ebfyn>Validate Time In Range .xlsx</a></h2><p>Restricts a range to <strong>times</strong> within (or outside) a window.</p>
+<p><strong>When to use it:</strong> for time-of-day entries, like a shift between 08:00 and 18:00.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The cells to restrict (A1 style). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td>How to check the time (see Common concepts)</td>
+<td><code>between</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Min time</td>
+<td>Lower/target time, 24-hour <code>HH:MM</code>. Supports <code>@name</code></td>
+<td><code>08:00</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Max time</td>
+<td>Upper time (only used for <code>between</code>/<code>notBetween</code>). Supports <code>@name</code></td>
+<td><code>18:00</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank</td>
+<td>Yes = allow empty cells</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> times are written in 24-hour <code>HH:MM</code>. If a required time is empty or
+not a valid time, nothing happens. For <code>between</code>/<code>notBetween</code> both times apply; other
+comparisons use only <em>Min time</em>.</p>
+<hr>
+</section><section class="card" id="validate-whole-number-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#validate-whole-number-spreadsheet" data-astro-cid-le6ebfyn>Validate Whole Number .xlsx</a></h2><p>Restricts a range to <strong>whole numbers</strong> matching a comparison.</p>
+<p><strong>When to use it:</strong> for counts and quantities that can’t have a fractional part.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The cells to restrict (A1 style). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td>How to check the number (see Common concepts)</td>
+<td><code>between</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Minimum</td>
+<td>Lower/target number</td>
+<td><code>0</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Maximum</td>
+<td>Upper number (only used for <code>between</code>/<code>notBetween</code>)</td>
+<td><code>100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank</td>
+<td>Yes = allow empty cells</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Minimum (from variable)</td>
+<td>Reads the minimum from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Maximum (from variable)</td>
+<td>Reads the maximum from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> only whole numbers are accepted (no decimals). For
+<code>between</code>/<code>notBetween</code> both fields apply; other comparisons use only <em>Minimum</em>.</p>
+<hr>
+</section><section class="card" id="validate-with-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#validate-with-formula-spreadsheet" data-astro-cid-le6ebfyn>Validate With Formula .xlsx</a></h2><p>Restricts a range using a <strong>custom formula</strong> that must return TRUE.</p>
+<p><strong>When to use it:</strong> for rules the other instructions can’t express — combined conditions,
+references to other cells, text patterns, and so on.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The cells to restrict (A1 style). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula</td>
+<td>An Excel formula returning TRUE/FALSE, written for the top-left cell. Supports <code>@name</code></td>
+<td><code>AND(A1&gt;0,A1&lt;1000)</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank</td>
+<td>Yes = allow empty cells</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Allow blank (from variable)</td>
+<td>Reads the setting from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> write the formula as if for the range’s <strong>first (top-left) cell</strong>
+— Excel applies it to each cell relative to that one, row by row. If <em>Formula</em> is empty,
+nothing happens. Re-applying replaces any rule on the same range.</p>
+<hr>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>

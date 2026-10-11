@@ -1,0 +1,357 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How the program works — Escribal</title><meta name="description" content="How Escribal works as a whole: the shape of a workflow, the formats, variables, loops and conditions, and what a run says back."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/how-the-program-works/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" aria-current="page" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>Documentation</p><h1 data-astro-cid-ju4pidww>How the program works</h1></header><div class="prose" data-astro-cid-ju4pidww><p>Before the individual instructions, this section explains how the program works as a
+whole. It applies to every format and every instruction, so it is worth reading once.</p>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#what-this-program-is" data-astro-cid-le6ebfyn>What this program is</a></li><li data-astro-cid-le6ebfyn><a href="#a-workflow-always-follows-the-same-shape-create-modify-save" data-astro-cid-le6ebfyn>A workflow always follows the same shape: create → modify → save</a></li><li data-astro-cid-le6ebfyn><a href="#supported-document-formats" data-astro-cid-le6ebfyn>Supported document formats</a></li><li data-astro-cid-le6ebfyn><a href="#working-with-more-than-one-document-at-once" data-astro-cid-le6ebfyn>Working with more than one document at once</a></li><li data-astro-cid-le6ebfyn><a href="#passing-data-between-instructions-variables" data-astro-cid-le6ebfyn>Passing data between instructions (variables)</a></li><li data-astro-cid-le6ebfyn><a href="#filling-in-colour-and-file-fields" data-astro-cid-le6ebfyn>Filling in colour and file fields</a></li><li data-astro-cid-le6ebfyn><a href="#writing-numbers" data-astro-cid-le6ebfyn>Writing numbers</a></li><li data-astro-cid-le6ebfyn><a href="#writing-yes-no-values" data-astro-cid-le6ebfyn>Writing yes/no values</a></li><li data-astro-cid-le6ebfyn><a href="#naming-a-sheet" data-astro-cid-le6ebfyn>Naming a sheet</a></li><li data-astro-cid-le6ebfyn><a href="#where-a-new-instruction-lands" data-astro-cid-le6ebfyn>Where a new instruction lands</a></li><li data-astro-cid-le6ebfyn><a href="#changing-what-is-already-on-the-canvas" data-astro-cid-le6ebfyn>Changing what is already on the canvas</a></li><li data-astro-cid-le6ebfyn><a href="#repeating-instructions-making-decisions-and-leaving-notes" data-astro-cid-le6ebfyn>Repeating instructions, making decisions and leaving notes</a></li><li data-astro-cid-le6ebfyn><a href="#saving-a-workflow-and-opening-it-again" data-astro-cid-le6ebfyn>Saving a workflow, and opening it again</a></li><li data-astro-cid-le6ebfyn><a href="#running-a-workflow-and-what-it-says-back" data-astro-cid-le6ebfyn>Running a workflow, and what it says back</a></li><li data-astro-cid-le6ebfyn><a href="#letting-an-assistant-use-the-program" data-astro-cid-le6ebfyn>Letting an assistant use the program</a></li></ul><section class="card" id="what-this-program-is" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#what-this-program-is" data-astro-cid-le6ebfyn>What this program is</a></h2><p>This is a desktop application that <strong>generates documents by following a
+workflow</strong>: an ordered list of instructions that you assemble in a visual editor,
+without programming. You build the workflow; the program runs it for you,
+executing the instructions <strong>one by one, from top to bottom</strong>. Each instruction does one
+small, well-defined thing (write a paragraph, insert a comment, add a slide,
+create a chart…), and the combined sequence produces the finished document.</p>
+</section><section class="card" id="a-workflow-always-follows-the-same-shape-create-modify-save" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#a-workflow-always-follows-the-same-shape-create-modify-save" data-astro-cid-le6ebfyn>A workflow always follows the same shape: create → modify → save</a></h2><ol>
+<li><strong>Create (or open) a document.</strong> Every workflow begins with an instruction that
+creates a new document (for example <em>Create text doc</em>, <em>Create spreadsheet</em>,
+<em>Create presentation</em>, <em>Create PDF</em>…) or opens an existing one. This is where
+you choose the <strong>file name and folder</strong> where it will be saved.
+Both are <strong>needed to save it</strong>: if either is missing, the workflow stops when it
+reaches the save and says so, instead of writing a file with no name into
+whatever folder the program happened to start in. A scratch document you close
+with <em>Close document</em> never gets written, so it never needs them.
+<strong>Every format except PDF can also be opened</strong> from a file you already have:
+each one has an <em>Opening</em> group (<em>Open text doc</em>, <em>Open spreadsheet</em>, <em>Open
+presentation</em>, <em>Open txt file</em>, <em>Open Markdown</em>, and for JSON and CSV/TSV the
+<em>Opening</em> and <em>Reading</em> instructions). A PDF can only be created, because a
+finished PDF cannot be turned back into an editable document.</li>
+<li><strong>Modify it.</strong> All the other instructions act on that open document: they add,
+change, or remove content. These instructions <strong>do not open or save files</strong> on
+their own; they simply work on the document that is already open.</li>
+<li><strong>Save it.</strong> At the end, a save instruction writes the document to disk. The
+document stays <strong>open in memory during the whole workflow</strong> and is written out
+<strong>only once</strong>, at the end.</li>
+</ol>
+<p><strong>Important:</strong> because nothing is written until the save, if the workflow <strong>fails
+partway through, nothing is saved</strong> — the document is discarded and you will not
+end up with a half-finished file. Either the whole workflow succeeds, or the file
+is not created.</p>
+</section><section class="card" id="supported-document-formats" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#supported-document-formats" data-astro-cid-le6ebfyn>Supported document formats</a></h2><p>Each format has its own set of instructions. The instruction names end with the format they
+belong to so you can tell them apart:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>File</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word document</td>
+<td><code>.docx</code></td>
+<td>Letters, reports, formatted text</td>
+</tr>
+<tr>
+<td>Spreadsheet</td>
+<td><code>.xlsx</code></td>
+<td>Tables, calculations, charts</td>
+</tr>
+<tr>
+<td>Presentation</td>
+<td><code>.pptx</code></td>
+<td>Slides</td>
+</tr>
+<tr>
+<td>PDF</td>
+<td><code>.pdf</code></td>
+<td>Final, fixed-layout documents</td>
+</tr>
+<tr>
+<td>Markdown</td>
+<td><code>.md</code></td>
+<td>Lightweight formatted text</td>
+</tr>
+<tr>
+<td>Plain text</td>
+<td><code>.txt</code></td>
+<td>Text with no formatting</td>
+</tr>
+<tr>
+<td>JSON</td>
+<td><code>.json</code></td>
+<td>Structured data</td>
+</tr>
+<tr>
+<td>CSV / TSV</td>
+<td><code>.csv</code> / <code>.tsv</code></td>
+<td>Data tables in plain text</td>
+</tr>
+</tbody>
+</table>
+</section><section class="card" id="working-with-more-than-one-document-at-once" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#working-with-more-than-one-document-at-once" data-astro-cid-le6ebfyn>Working with more than one document at once</a></h2><p>You are not limited to a single document. Every instruction has a <strong>Document</strong> field
+that says <strong>which open document it acts on</strong>:</p>
+<ul>
+<li>If you leave it <strong>empty</strong>, the instruction uses the <strong>current document</strong> (the last
+one you created, opened, or selected).</li>
+<li>If you fill it in with a <strong>name</strong> (the same name you gave the document when you
+created it), the instruction acts on <strong>that</strong> document specifically.</li>
+</ul>
+<p>This lets you, for example, create a spreadsheet and a Word document in the same
+workflow and add content to each one, or copy information from one into another.</p>
+<p>Four instructions in the <em>Document</em> menu act on the open documents themselves, and the
+first three take just a <strong>Document</strong> name:</p>
+<ul>
+<li><strong>Save document</strong> — writes that document to disk and closes it, before the end of
+the workflow.</li>
+<li><strong>Set current document</strong> — makes that document the current one, so the instructions
+that follow can leave their <em>Document</em> field empty.</li>
+<li><strong>Close document</strong> — discards that document <strong>without saving it</strong>. Use it for a
+scratch document you only needed along the way; anything it contained is lost.</li>
+<li><strong>Set save encoding</strong> — chooses the character set a <strong>text</strong> document (plain text,
+Markdown, JSON or CSV/TSV) is written with, for a program at the other end that
+does not expect UTF-8.</li>
+</ul>
+<p><strong>A name can only be in use by one document at a time.</strong> If an instruction tries to
+create or open a document under a name that is <strong>already in use</strong>, the workflow
+stops and tells you so, instead of quietly throwing away the first document and
+everything you had put into it. <em>Save document</em> and <em>Close document</em> both release
+the name, so reusing one on purpose works: save (or close) the first document, and
+the name is free again. This matters most inside a <strong>repeat</strong>: if you create one
+document per turn, either give each one a different name (using a variable) or
+save it before the next turn begins.</p>
+</section><section class="card" id="passing-data-between-instructions-variables" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#passing-data-between-instructions-variables" data-astro-cid-le6ebfyn>Passing data between instructions (variables)</a></h2><p>Instructions can leave values behind for later instructions to reuse, like a shared
+notepad. There are three related mechanisms:</p>
+<ul>
+<li><strong>Saving a result:</strong> many instructions offer a <em>Save… in</em> field. If you type a name
+there, the instruction stores its result (a count, an identifier, a piece of text…)
+under that name. If left empty, nothing is saved.</li>
+<li><strong>Dynamic values (<code>@name</code>):</strong> in any <strong>text</strong> field you can type <code>@</code> followed
+by the name of a value saved earlier, and it will be replaced by that value.
+For example, <code>@customerName</code> in a text field inserts whatever was saved under
+<code>customerName</code>. To write a text that really <strong>starts with an at sign</strong>, type it
+<strong>doubled</strong>: <code>@@team</code> produces <code>@team</code>. (Only at the beginning of the field: an
+at sign anywhere else is written as it is.)</li>
+<li><strong>“From variable” fields:</strong> the <code>@name</code> trick only works in text fields. So
+that a <strong>numeric</strong> field or a <strong>yes/no</strong> field can also take its value from a
+saved value, those fields have a companion <em>“from variable”</em> field. Leave it
+empty to use the value you typed; fill it in with a saved name to use that
+value instead. This is mainly for <strong>chaining instructions</strong> (one instruction saves a
+value, the next one reads it).</li>
+<li><strong>One field of a saved value (<code>@name.field</code>):</strong> when what was saved is a whole
+record — the usual case inside a <em>For each</em> over a list of rows, lines or
+people — add a dot and the name of the field: <code>@line.price</code> writes the price of
+that line, not the whole line. It goes as deep as you need
+(<code>@invoice.lines.1.price</code>), a number is a <strong>position counting from 1</strong>, and it
+works the same in a <em>“from variable”</em> field and in a <em>If</em> condition. The name on
+its own (<code>@line</code>) means the <strong>whole record</strong>, which in a text field is written
+out as the data it holds.
+<strong>If the field name is not one the record has, the workflow says so</strong> and lists
+the fields it does have. It does not stop: the value is read as empty and the
+run carries on, so the report comes out with holes and the message tells you
+why. This is what catches the usual breakage of a workflow you run every month:
+the file you export renames a column and everything that read it goes blank. A
+field the record <strong>does</strong> have but which comes in empty is a different thing —
+missing data, not a wrong name — and it is not reported.</li>
+</ul>
+<p>A related convention: instructions that act on a specific element by its
+identification number accept <strong><code>-1</code> to mean “all”</strong> of them at once.</p>
+<p><strong>A reading that finds nothing leaves the saved value as it was.</strong> When an instruction
+that reads (a cell, a field, a piece of text) does not find what it was asked
+for, it saves nothing — and it does not empty the name either, so whatever was
+saved under it <strong>stays</strong>. On its own that is harmless; inside a <em>For Each</em> that
+reuses the same names on every turn, it is not: the turn that finds nothing keeps
+the values of the turn before, and the document repeats them instead of leaving a
+gap. A repeated line reads like good data, which is why it is worth knowing. When
+a value may be missing, give the name a known value at the start of each turn —
+<em>Set text variable</em> with an empty text — and read after it.</p>
+</section><section class="card" id="filling-in-colour-and-file-fields" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#filling-in-colour-and-file-fields" data-astro-cid-le6ebfyn>Filling in colour and file fields</a></h2><p>Two kinds of field give you a helper next to the box, so you do not have to type
+the value by hand. <strong>The box itself always stays editable</strong>, so everything
+described above still works in them — including <code>@name</code> and leaving them empty.</p>
+<ul>
+<li><strong>Colour fields</strong> take a six-digit hex code without <code>#</code> (for example <code>FF0000</code>
+for red). Next to the box there is a <strong>colour swatch</strong>: click it to pick a
+colour visually and the code is filled in for you. The swatch is dimmed when
+the box holds something that is not a plain code — because it is empty, or
+because it holds an <code>@name</code>. Remember that in some instructions an <strong>empty colour
+field means “no colour”</strong> (no fill, no border), which is why the box is never
+filled in automatically.</li>
+<li><strong>File fields</strong> (a source image, a presentation to copy a theme from, a CSV to
+read…) have a <strong>browse button</strong> that opens a file chooser filtered to the
+extensions that instruction accepts. Fields that name a file the instruction is going to
+<em>write</em> open a save dialog instead, so you can name a file that does not exist
+yet.</li>
+</ul>
+<p><strong>Long texts have room to be written.</strong> Every text field has an <strong>expand</strong> button at its end that
+opens the field as a <strong>large box</strong> in the middle of the window, for a paragraph that does not fit
+comfortably on one line. What you write there is kept when you accept — with the <em>Accept</em> button,
+with <code>Enter</code>, with <code>Escape</code>, or by clicking outside the box — and only <em>Cancel</em> throws it away. The
+value stays <strong>a single line</strong>: the box is for writing comfortably, not for writing several lines,
+and line breaks pasted into it become spaces.</p>
+</section><section class="card" id="writing-numbers" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#writing-numbers" data-astro-cid-le6ebfyn>Writing numbers</a></h2><p><strong>A decimal number is written with a dot: <code>4.5</code>, not <code>4,5</code>.</strong> Number boxes in the
+program let you type the number directly and take care of this for you, so this
+only matters where a number arrives as <em>text</em>: a value you stored in a variable
+and read back with a “from variable” field, or a number that came out of a
+spreadsheet or a data file.</p>
+<p>A number written with a comma is <strong>not read as a number at all</strong>. The program
+does not guess whether <code>4,5</code> means four and a half or forty-five — it uses the
+field’s default value instead, and a decision (<em>If</em>) that compares sizes runs
+neither of its two branches. So if a measurement comes out wrong or a comparison
+never happens, check whether the value behind it uses a comma. The same applies
+to grouping: write <code>1234</code>, not <code>1,234</code>.</p>
+</section><section class="card" id="writing-yes-no-values" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#writing-yes-no-values" data-astro-cid-le6ebfyn>Writing yes/no values</a></h2><p>A yes/no value stored in a variable reads back as <strong><code>true</code> or <code>false</code>, in lower
+case</strong> — the same words a data file uses. So a decision (<em>If</em>) that checks one is
+written <code>@delayed</code> <code>==</code> <code>true</code>. Capitalised <code>True</code> does <strong>not</strong> match: every
+comparison in the program tells upper from lower case. The same value put into a
+text field writes the word <code>true</code> into the document.</p>
+</section><section class="card" id="naming-a-sheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#naming-a-sheet" data-astro-cid-le6ebfyn>Naming a sheet</a></h2><p>Almost every spreadsheet instruction asks which <strong>sheet</strong> to work on, and they all
+arrive with <code>Sheet1</code> filled in — the name an English Excel gives the first sheet
+of a new file. A Spanish one calls it <code>Hoja1</code>, and a sheet somebody renamed can
+be called anything, so the name in the box is often not one the file has. When
+that happens the instruction <strong>does nothing and says so</strong>, listing the sheets the file
+really has; it used to do nothing without a word, and the workflow carried an
+empty document to the end as if all had gone well. If you do not know the names
+beforehand, <em>List Sheet Names .xlsx</em> saves them into a variable you can read.</p>
+</section><section class="card" id="where-a-new-instruction-lands" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#where-a-new-instruction-lands" data-astro-cid-le6ebfyn>Where a new instruction lands</a></h2><p>The canvas is a list of <strong>lines</strong>. Most of them are instructions; each list also has a
+line for its <strong>start</strong> and one for its <strong>end</strong>, and those two only show themselves
+when the pointer is on them or when they are the marked one.</p>
+<p>Click a line to mark it. Marking does two things at once: the panel on the right
+shows that instruction’s fields, and <strong>the next instruction you add goes in right below it</strong>
+and becomes the marked line in its turn. So instructions keep cascading downwards from
+wherever you are pointing — and to add one at the top of a workflow of three
+hundred, you mark the line at the start and add it there.</p>
+<p>With nothing marked, an instruction goes at the <strong>end of the workflow</strong>, which is what
+happens on an empty canvas.</p>
+<p>Two things follow from the rule, and they are worth knowing:</p>
+<ul>
+<li><strong>A loop or a condition is one line like any other.</strong> Marking its card adds the
+next instruction <strong>after the whole block</strong>, not inside it. To put something <em>inside</em>,
+mark a line of the branch you want — one of its instructions, or the start or end
+line the branch has of its own. An empty branch has a single line, and that is
+the one to mark.</li>
+<li><strong>Deleting the marked line moves the mark up</strong>, to the line above it. So the
+place you just emptied is the place the next instruction goes into: deleting an
+instruction and adding the right one is two steps and no reordering.</li>
+</ul>
+<p><em>Paste</em> follows the same rule as adding. <em>Duplicate</em> is the exception, and on
+purpose: a copy appears immediately below its original, wherever that is.</p>
+</section><section class="card" id="changing-what-is-already-on-the-canvas" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#changing-what-is-already-on-the-canvas" data-astro-cid-le6ebfyn>Changing what is already on the canvas</a></h2><p>Instructions can be undone, moved, copied and deleted, from two places.</p>
+<p><strong>The <em>Edit</em> menu</strong>, on the marked line, with a shortcut for each entry: <strong>Undo</strong>
+(<code>Ctrl+Z</code>) and <strong>Redo</strong> (<code>Ctrl+Y</code>) go back and forth through everything you have
+done to the workflow — adding, deleting, moving, and the values typed into the
+panel; <strong>Copy</strong> (<code>Ctrl+C</code>) takes the marked instruction, and a whole block with
+everything inside it; <strong>Paste</strong> (<code>Ctrl+V</code>) puts it back in; <strong>Duplicate</strong>
+(<code>Ctrl+D</code>) copies it in place.</p>
+<p><strong>The buttons on the instruction itself</strong>, which appear when the pointer is over its
+line, and stay in view on the marked one and on the three that contain other
+instructions: <strong>move up</strong>, <strong>move down</strong>, <strong>duplicate</strong>, <strong>copy</strong> and <strong>delete</strong>. They
+are the same operations, on the line you are pointing at rather than the marked one.</p>
+<p><strong>Deleting an instruction leaves the mark on the line above</strong>, so what you add next takes
+the place of what you just removed — replacing one instruction with another is two steps
+and no reordering. An undo puts the deleted instruction back with everything it
+contained.</p>
+</section><section class="card" id="repeating-instructions-making-decisions-and-leaving-notes" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#repeating-instructions-making-decisions-and-leaving-notes" data-astro-cid-le6ebfyn>Repeating instructions, making decisions and leaving notes</a></h2><p>Beyond plain sequences, a workflow can repeat blocks of instructions, make choices, and carry notes for
+whoever opens it:</p>
+<ul>
+<li>
+<p><strong>Repeat for each item (loop):</strong> you can run a block of instructions <strong>once for each
+item in a saved list</strong>. For example, for each name in a list of customers,
+insert a paragraph with that name. Inside the block, the current item is
+available as a value you can reference with <code>@</code>. The loop has four fields:
+<em>Array key</em> (the saved list to go through), <em>Item key</em> (the name the current
+item takes inside the block — <strong>required</strong>; left empty the loop does nothing),
+<em>Index key</em> (optional: the name under which the <strong>turn number</strong> is available,
+1 for the first item, so you can number rows or name files <code>sheet-@i</code>) and
+<em>Save count key</em> (optional: the name under which the <strong>total number of turns</strong>
+is saved when the loop ends). Item and index names go back to what they were
+when the block finishes.</p>
+<p>A loop can also go over a <strong>group of named lists</strong> — what <em>Group Array By Field
+.json</em> leaves in <em>Save group key</em>, one entry per group. Each turn is then one
+group: <code>@item.name</code> is the group’s name and <code>item.value</code> is its list of
+records, which an inner loop can go over in its turn. And when the name you give
+it holds <strong>neither</strong> a list nor a group of them — a single value, or a name
+nobody saved — the loop <strong>says so</strong> instead of quietly running its block zero
+times.</p>
+</li>
+<li>
+<p><strong>Conditions (if / otherwise):</strong> you can run a block of instructions <strong>only when a
+condition is met</strong> — comparing two values as <em>equal</em>, <em>different</em>, <em>greater
+than</em>, <em>less than</em>, or checking whether one <em>contains</em> the other. You can also
+provide an “otherwise” block that runs when the condition is not met. When the
+comparison is numeric, write the numbers with a <strong>decimal point</strong> (<code>0.5</code>),
+whatever the language of your computer. All the comparisons <strong>tell upper from
+lower case</strong>: <code>Total</code> and <code>total</code> are different values. <em>Greater than</em> and
+<em>less than</em> only make sense between numbers: if either side is not one,
+<strong>neither block runs</strong> — not the “otherwise” one either.</p>
+</li>
+<li>
+<p><strong>Note:</strong> a block of text that <strong>does nothing at all</strong>. It is there so that whoever
+opens the workflow later — you, in six months, or the person you sent it to —
+understands what a stretch of it is for. It is saved in the file along with
+everything else and it is the one text in the program that is written <strong>over as
+many lines as you like</strong>: a note is read, not put into a document.</p>
+<p>A note is <strong>not one of the steps</strong>: it has no number on the canvas, the progress
+bar does not count it, and it produces no warnings. And it is the one text field
+that <strong>does not read <code>@</code> values</strong>: <code>@total</code> written in a note stays the six
+characters <code>@total</code>, because a note is meant for a person, not for the program.
+Put one wherever an instruction goes — inside a loop, or in either block of a
+condition.</p>
+<p>It is also the one thing on the canvas with <strong>no properties panel</strong>: click the
+note and write in it, right where it is read. Its text is all there is to it.</p>
+</li>
+</ul>
+<p>Loops and conditions can be <strong>nested</strong> inside one another to build more elaborate
+workflows, and a note goes anywhere inside them.</p>
+</section><section class="card" id="saving-a-workflow-and-opening-it-again" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#saving-a-workflow-and-opening-it-again" data-astro-cid-le6ebfyn>Saving a workflow, and opening it again</a></h2><p>A workflow is a file of its own, ending in <code>.scriba</code>, and the <em>File</em> menu is where it is kept: <strong>New
+file</strong> starts an empty one, <strong>Save</strong> writes it back where it already lives, <strong>Save as</strong> asks for a
+name and a folder, and <strong>Open</strong> brings one back. Saving the workflow is not the same as producing
+the documents: the <code>.scriba</code> holds the <strong>list of instructions</strong>, and the <code>.docx</code>, <code>.xlsx</code> or <code>.pdf</code> it
+describes appear when you run it.</p>
+<p><strong>It is meant to be passed around.</strong> A <code>.scriba</code> carries the whole workflow — every instruction, every
+field, the notes — in one file you can send to somebody else, who opens it here and runs it.</p>
+<p><strong>Your workflows work on other computers.</strong> When a workflow is saved, every folder and file path
+stored in it has your user name replaced by a marker, and the marker is turned back into the right
+user name when the file is opened. So a workflow saved by one person that reads images from their
+<em>Documents</em> folder keeps working for a colleague whose user folder has a different name, as long as
+the file is in the same place relative to their user folder.</p>
+<p><strong>What it never carries is a password.</strong> If the workflow reads from a database, the file holds only
+the <em>Connection key</em> — a name — and the server, the database and the password are asked for on the
+machine that runs it, every time it runs.</p>
+</section><section class="card" id="running-a-workflow-and-what-it-says-back" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#running-a-workflow-and-what-it-says-back" data-astro-cid-le6ebfyn>Running a workflow, and what it says back</a></h2><p><strong>Run</strong> is in the top bar, and it always runs the workflow <strong>from the file</strong>: if there is work that
+is not on disk it is saved first, and a workflow that has never been saved runs from a temporary
+copy, so trying one out does not force you to pick a name and a folder first.</p>
+<p>While it runs, the bar reads <em>Running… 7/23 · Insert Text .docx</em>, so you can see which step it is
+on; a second run cannot start on top of it, and <strong>Stop</strong> ends the one that is going. Pulling the
+plug is <strong>not a failure</strong> and is not reported as one: nothing is written until the end, so nothing
+is left half done. If any instruction of the workflow reads from a database, this is the moment the
+connection details are asked for.</p>
+<p>When it ends, the <strong>status box</strong> at the bottom of the right-hand panel says what happened. It is a
+<strong>headline and a list</strong>: the headline is the outcome — the files that were written, or the error
+that stopped everything — and under it goes <strong>one line for each thing the run remarked on the way</strong>.
+Click the box to open it; the number in its header counts what is waiting inside, so you can tell a
+clean run from one with ten remarks without opening it.</p>
+<p><strong>Two colours, and they mean the same thing in the box and on the canvas:</strong></p>
+<ul>
+<li><strong>Amber — something was skipped.</strong> The run carried on, but one instruction could not do what it was
+asked: a sheet name the file does not have, a style the document never defines, an average over
+values that were not numbers. This is the one worth reading, because the workflow still ends in
+green and the document still gets written — with a piece of it missing.</li>
+<li><strong>Red — the step that stopped the run.</strong> There is at most one, and it is also the headline. When
+a run stops this way <strong>no file is written at all</strong>, not even the part that had already been built.</li>
+</ul>
+<p>Those same two colours land on the <strong>canvas</strong>, on the dot and the number of the step they belong
+to, so you can go from a message to the line it is talking about. A repeat or a condition gets a
+dot in its corner when what the run said happened <strong>inside</strong> it, because a long block can hide the
+step that earned it off the bottom of the screen. A step the run had no comment on is painted as it
+always is, so a workflow that has never run and one that ran cleanly look the same.</p>
+<p><strong>The marks stay while you fix things.</strong> They are what <em>that</em> run said, so editing a step does not
+wipe them; they go when the next run starts, or when another file is opened.</p>
+</section><section class="card" id="letting-an-assistant-use-the-program" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#letting-an-assistant-use-the-program" data-astro-cid-le6ebfyn>Letting an assistant use the program</a></h2><p>The engine that does the work in this program can also answer an <strong>AI assistant</strong> — the one you
+already use, in its own window — so that you can ask for a document in your own words instead of
+assembling the workflow yourself. <em>Assistant</em>, in the top bar, shows what to paste into your
+assistant’s configuration, with the path already filled in.</p>
+<p>Connected, an assistant can <strong>read every instruction this program has</strong>, write a workflow and check it,
+<strong>save it as a <code>.scriba</code></strong> you can open here, and <strong>run it</strong> to produce the documents. Two things
+stay with you: a workflow that reads from a <strong>database</strong> it will not run, because the connection is
+asked for in this window; and nothing is written into your assistant’s configuration by this
+program — it shows you the lines and the pasting is yours.</p>
+<p>The assistant only knows what the workflow tells it, so <strong>names that are already inside a file</strong>
+— the name of a sheet, of a column, of a style, a path — are yours to give it: it cannot open your
+files to look, and a guessed name does not fail, it quietly does nothing.</p>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>

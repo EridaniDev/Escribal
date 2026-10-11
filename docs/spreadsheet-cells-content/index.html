@@ -1,0 +1,1002 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cells &amp; content (Spreadsheet) — Escribal</title><meta name="description" content="The 20 Spreadsheet instructions of the Cells &amp; content group in Escribal, each with its fields and its behaviour."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/spreadsheet-cells-content/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" aria-current="page" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>Spreadsheet</p><h1 data-astro-cid-ju4pidww>Cells &amp; content</h1></header><div class="prose" data-astro-cid-ju4pidww><p>This group of instructions fills, reads, clears, copies, and annotates the <strong>cells</strong> of
+a spreadsheet: writing single values or whole blocks, reading a cell back into a
+saved value, clearing content or formatting, merging cells, naming ranges, adding
+hyperlinks and comments, and finding or replacing text across a sheet.</p>
+<p><strong>Prerequisite:</strong> before using any of these instructions, the workflow must already
+have an XLSX spreadsheet created or opened (with <em>Create spreadsheet</em>). Every
+instruction works on a <strong>sheet</strong> (tab) inside that spreadsheet, identified by name
+(<code>Sheet1</code> by default), which must already exist.</p>
+<p>These concepts recur across several instructions in this group; they are explained
+here once.</p>
+<ul>
+<li>
+<p><strong>Document:</strong> indicates which document in the workflow the instruction applies to.
+If left empty, the current document is used.</p>
+</li>
+<li>
+<p><strong>Cell addresses use the A1 style:</strong> a cell is named by its column letter
+followed by its row number — for example <code>B3</code> is column B, row 3. A <strong>range</strong> is
+given as two opposite corners, a start cell and an end cell (for example start
+<code>A1</code>, end <code>C3</code> covers a 3×3 block).</p>
+</li>
+<li>
+<p><strong>The sheet must already exist:</strong> the <em>Sheet name</em> field chooses which tab the
+instruction works on, and defaults to <code>Sheet1</code>. If no sheet with that name is found, the instruction does nothing and the workflow continues with the next instruction.</p>
+</li>
+<li>
+<p><strong>Values are typed automatically:</strong> when you write a value, the program decides
+its type on its own — text that looks like a number is stored as a number,
+everything else as text. Turn on <em>Treat value as a date</em> to store it as a date
+instead (when the text can be read as one).</p>
+</li>
+<li>
+<p><strong>An invalid cell address does nothing:</strong> instructions that write to a single cell
+(such as <em>Write cell value</em> or <em>Insert hyperlink</em>) quietly do nothing if the cell
+address is not a valid A1 reference.</p>
+</li>
+<li>
+<p><strong>Dynamic values (<code>@name</code>):</strong> in any text field (cell address, value, sheet name,
+search text, and so on) you can type <code>@</code> followed by the name of a value saved
+earlier in the workflow, and it will be replaced by that value. For example, if
+you saved a cell reference in <code>target</code>, you can type <code>@target</code> in the <em>Cell
+address</em> field.</p>
+</li>
+<li>
+<p><strong>Saving a result:</strong> some instructions can store their result in a named value so a
+later instruction can use it — the “Save … to” fields. Leave the field empty to not
+save anything.</p>
+</li>
+<li>
+<p><strong>“From variable” fields:</strong> the <code>@name</code> trick only works in text fields. The
+<strong>yes/no</strong> options in this group (like <em>Treat value as a date</em> or <em>Case-sensitive</em>)
+each have a companion “from variable” field:</p>
+<ul>
+<li>If you leave it <strong>empty</strong>, the value chosen in the normal yes/no field is used.</li>
+<li>If you <strong>fill it in</strong> with the name of a saved value, the engine <strong>ignores the
+normal field</strong> and reads the yes/no from that variable.</li>
+</ul>
+<p>This is mainly for <strong>chaining instructions</strong> (one instruction saves a value, the next one
+reads it). If you only work with fixed values, you can ignore these fields.</p>
+</li>
+</ul>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#clear-cell-all-spreadsheet" data-astro-cid-le6ebfyn>Clear Cell All .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#clear-cell-content-spreadsheet" data-astro-cid-le6ebfyn>Clear Cell Content .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#clear-cell-format-spreadsheet" data-astro-cid-le6ebfyn>Clear Cell Format .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#copy-cell-spreadsheet" data-astro-cid-le6ebfyn>Copy Cell .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#copy-range-spreadsheet" data-astro-cid-le6ebfyn>Copy Range .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#define-named-range-spreadsheet" data-astro-cid-le6ebfyn>Define Named Range .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#delete-cell-comment-spreadsheet" data-astro-cid-le6ebfyn>Delete Cell Comment .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#delete-hyperlink-spreadsheet" data-astro-cid-le6ebfyn>Delete Hyperlink .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#delete-named-range-spreadsheet" data-astro-cid-le6ebfyn>Delete Named Range .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#find-text-in-sheet-spreadsheet" data-astro-cid-le6ebfyn>Find Text In Sheet .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#insert-hyperlink-spreadsheet" data-astro-cid-le6ebfyn>Insert Hyperlink .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#iterate-rows-spreadsheet" data-astro-cid-le6ebfyn>Iterate Rows .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#merge-cells-spreadsheet" data-astro-cid-le6ebfyn>Merge Cells .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#move-cell-spreadsheet" data-astro-cid-le6ebfyn>Move Cell .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#read-cell-value-spreadsheet" data-astro-cid-le6ebfyn>Read Cell Value .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#replace-text-in-sheet-spreadsheet" data-astro-cid-le6ebfyn>Replace Text In Sheet .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#set-cell-comment-spreadsheet" data-astro-cid-le6ebfyn>Set Cell Comment .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#unmerge-cells-spreadsheet" data-astro-cid-le6ebfyn>Unmerge Cells .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-cell-value-spreadsheet" data-astro-cid-le6ebfyn>Write Cell Value .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-range-values-spreadsheet" data-astro-cid-le6ebfyn>Write Range Values .xlsx</a></li></ul><section class="card" id="clear-cell-all-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#clear-cell-all-spreadsheet" data-astro-cid-le6ebfyn>Clear Cell All .xlsx</a></h2><p>Removes a cell entirely — both its content and its formatting.</p>
+<p><strong>When to use it:</strong> to wipe a cell completely, leaving it as if it had never been
+touched.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to clear (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> deletes the whole cell. If the cell does not exist there is
+nothing to remove, so the instruction does nothing.</p>
+<hr>
+</section><section class="card" id="clear-cell-content-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#clear-cell-content-spreadsheet" data-astro-cid-le6ebfyn>Clear Cell Content .xlsx</a></h2><p>Removes a cell’s value (and any formula) but keeps its formatting.</p>
+<p><strong>When to use it:</strong> to empty a cell while preserving its colors, borders, and number
+format.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to empty (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> clears the value and formula; the cell’s style is left
+untouched. Does nothing if the cell does not exist.</p>
+<hr>
+</section><section class="card" id="clear-cell-format-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#clear-cell-format-spreadsheet" data-astro-cid-le6ebfyn>Clear Cell Format .xlsx</a></h2><p>Removes a cell’s formatting but keeps its value.</p>
+<p><strong>When to use it:</strong> to strip styling from a cell while keeping what it says.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to reset (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> removes the cell’s style, keeping its content. Does nothing
+if the cell does not exist.</p>
+<hr>
+</section><section class="card" id="copy-cell-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#copy-cell-spreadsheet" data-astro-cid-le6ebfyn>Copy Cell .xlsx</a></h2><p>Copies one cell’s value and formatting to another cell.</p>
+<p><strong>When to use it:</strong> to duplicate a cell elsewhere without retyping it.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab both cells are on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Source cell address</td>
+<td>The cell to copy from (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Target cell address</td>
+<td>The cell to copy into (A1 style). Supports <code>@name</code></td>
+<td><code>B1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> copies the value, type, and style from source to target,
+creating the target cell if needed. Does nothing if the source cell does not exist
+or the target address is invalid.</p>
+<hr>
+</section><section class="card" id="copy-range-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#copy-range-spreadsheet" data-astro-cid-le6ebfyn>Copy Range .xlsx</a></h2><p>Copies a rectangular block of cells to a new location.</p>
+<p><strong>When to use it:</strong> to duplicate a table or block of cells elsewhere on the sheet.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cells are on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Source start address</td>
+<td>Top-left corner of the block to copy. Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Source end address</td>
+<td>Bottom-right corner of the block to copy. Supports <code>@name</code></td>
+<td><code>C3</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Target start address</td>
+<td>Where to place the top-left of the copy. Supports <code>@name</code></td>
+<td><code>E1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> copies each cell’s value, type, and style, keeping the
+block’s shape, and places its top-left at the target start. Empty cells in the
+source are skipped. Does nothing if any of the addresses is invalid.</p>
+<hr>
+</section><section class="card" id="define-named-range-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#define-named-range-spreadsheet" data-astro-cid-le6ebfyn>Define Named Range .xlsx</a></h2><p>Gives a friendly name to a cell or range so formulas can refer to it by name.</p>
+<p><strong>When to use it:</strong> to make formulas readable — for example <code>=SUM(Sales)</code> instead of
+<code>=SUM(B2:B10)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range name</td>
+<td>The name to assign. Supports <code>@name</code></td>
+<td><code>MyRange</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the range is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Start cell address</td>
+<td>Top-left corner of the range. Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>End cell address</td>
+<td>Bottom-right corner of the range. Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> creates the named range; if a range with that name already
+exists, it is replaced. If the start and end cells are the same, the name points to
+a single cell. Does nothing if <em>Range name</em> is empty, or if <em>Sheet name</em> does not match an
+existing tab (which would otherwise create a broken name).</p>
+<hr>
+</section><section class="card" id="delete-cell-comment-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#delete-cell-comment-spreadsheet" data-astro-cid-le6ebfyn>Delete Cell Comment .xlsx</a></h2><p>Removes the note attached to a cell.</p>
+<p><strong>When to use it:</strong> to clear a comment you no longer need.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell whose comment to remove (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> removes the comment and its on-sheet marker. Does nothing if
+the cell has no comment.</p>
+<hr>
+</section><section class="card" id="delete-hyperlink-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#delete-hyperlink-spreadsheet" data-astro-cid-le6ebfyn>Delete Hyperlink .xlsx</a></h2><p>Removes the link from a cell but keeps the text shown in it.</p>
+<p><strong>When to use it:</strong> to turn a clickable cell back into plain text.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell whose link to remove (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> removes the hyperlink; the displayed text stays in the cell.
+Does nothing if the cell has no link.</p>
+<hr>
+</section><section class="card" id="delete-named-range-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#delete-named-range-spreadsheet" data-astro-cid-le6ebfyn>Delete Named Range .xlsx</a></h2><p>Removes a previously defined named range.</p>
+<p><strong>When to use it:</strong> to clean up a name you no longer use.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range name</td>
+<td>The named range to remove. Supports <code>@name</code></td>
+<td><code>MyRange</code></td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> removes the named range. Does nothing if <em>Range name</em> is
+empty or no range has that name.</p>
+<hr>
+</section><section class="card" id="find-text-in-sheet-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#find-text-in-sheet-spreadsheet" data-astro-cid-le6ebfyn>Find Text In Sheet .xlsx</a></h2><p>Lists every cell in a sheet whose content contains a piece of text.</p>
+<p><strong>When to use it:</strong> to locate where a word or value appears, or to count how many
+cells contain it, and feed that into later instructions.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to search. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Search text</td>
+<td>The text to look for. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Case-sensitive</td>
+<td>Whether upper/lowercase must match exactly</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Case-sensitive (from variable)</td>
+<td>Reads the case-sensitive yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save matching cells to</td>
+<td>Name under which to save the list of cell addresses found</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count to</td>
+<td>Name under which to save how many cells matched</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> scans the sheet and collects the addresses (like <code>B4</code>) of
+cells that contain the search text, then optionally saves the list of addresses and
+the count. Does nothing if <em>Search text</em> is empty. With <em>Case-sensitive</em> off,
+upper- and lowercase are treated as the same.</p>
+<hr>
+</section><section class="card" id="insert-hyperlink-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#insert-hyperlink-spreadsheet" data-astro-cid-le6ebfyn>Insert Hyperlink .xlsx</a></h2><p>Turns a cell into a clickable web link.</p>
+<p><strong>When to use it:</strong> to add a link to a website in a cell.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to turn into a link (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Web address (URL)</td>
+<td>The full web address to link to. Supports <code>@name</code></td>
+<td><code>https://example.com</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Display text</td>
+<td>The text shown in the cell (if empty, the URL is shown). Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> sets the cell’s text to the display text — or to the URL
+itself when display text is empty — and links it to the address. Any existing link
+on that cell is replaced. The URL must be a full web address (including <code>https://</code>);
+if it is empty or not a full address, nothing happens (the cell is left untouched).
+Does nothing either if the cell address is invalid.</p>
+<hr>
+</section><section class="card" id="iterate-rows-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#iterate-rows-spreadsheet" data-astro-cid-le6ebfyn>Iterate Rows .xlsx</a></h2><p><strong>Publishes the rows of a sheet</strong> into a variable, so a <em>For Each</em> can walk them one by one.</p>
+<p><strong>When to use it:</strong> to go through a sheet row by row — totalling, checking, or copying each row
+somewhere else.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Sheet the rows are read from. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Use first row as header</td>
+<td>Yes: the first row names the fields and is not a turn. No: the fields are <code>column1</code>, <code>column2</code>… and every row is a turn</td>
+<td><code>true</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Use first row as header (from variable)</td>
+<td>Reads that yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save key</td>
+<td>Name of the variable that receives the rows. Empty = the instruction does nothing useful</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Name of the variable that receives how many rows there are</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Only the rows the file has:</strong> a gap between row 3 and row 7 is not four empty turns. A row that
+skips a column does not shift the ones after it, because every cell carries its own address.</p>
+<p><strong>Important behavior:</strong> the turns are a <strong>copy</strong> taken when the instruction runs: what the loop walks
+does not change if the body edits the document. To leave a result back in the row, write it <strong>by
+position</strong> — but this format is the one exception: <em>Write Cell Value</em> takes a <strong>cell address</strong>, not a
+row number, so there is no “(from variable)” field for the <em>Index</em> to feed. Build the address first
+with <em>Set Text Variable</em> — text <code>D{row}</code> with the <em>Index</em> of the <em>For Each</em> saved as <code>row</code> — and pass
+the saved variable to <em>Cell address</em> as <code>@cellAddress</code>.</p>
+<p><strong>The turn is not the row of the sheet.</strong> The <em>Index</em> counts turns: 1 for the first row walked. With
+a header row and no gaps that means the sheet row is <em>Index</em> + 1, which is what the address above
+assumes. If the sheet has empty rows in between, that sum is wrong — and nothing reports it, the
+value simply lands on the wrong row.</p>
+<hr>
+</section><section class="card" id="merge-cells-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#merge-cells-spreadsheet" data-astro-cid-le6ebfyn>Merge Cells .xlsx</a></h2><p>Joins a rectangular range of cells into a single larger cell.</p>
+<p><strong>When to use it:</strong> to make a heading span several columns, for example.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cells are on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Start cell address</td>
+<td>Top-left corner of the range to merge. Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>End cell address</td>
+<td>Bottom-right corner of the range to merge. Supports <code>@name</code></td>
+<td><code>C1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> merges the range into one cell. If that exact range is
+already merged, nothing changes (no duplicate merge is created).</p>
+<hr>
+</section><section class="card" id="move-cell-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#move-cell-spreadsheet" data-astro-cid-le6ebfyn>Move Cell .xlsx</a></h2><p>Moves a cell’s value and formatting to another cell, emptying the original.</p>
+<p><strong>When to use it:</strong> to relocate a cell’s content in a single step.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab both cells are on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Source cell address</td>
+<td>The cell to move from (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Target cell address</td>
+<td>The cell to move into (A1 style). Supports <code>@name</code></td>
+<td><code>B1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> copies the value, type, and style to the target, then
+removes the source cell. Does nothing if the source cell does not exist or the
+target address is invalid.</p>
+<hr>
+</section><section class="card" id="read-cell-value-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#read-cell-value-spreadsheet" data-astro-cid-le6ebfyn>Read Cell Value .xlsx</a></h2><p>Reads what is in a cell and saves it into a named value for later instructions.</p>
+<p><strong>When to use it:</strong> to pick up a value from the sheet and reuse it elsewhere in the
+workflow.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to read (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save value to</td>
+<td>Name under which to save the cell’s value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> reads the cell’s displayed value (resolving shared text
+automatically) and stores it under the <em>Save value to</em> name. If the cell is empty or
+does not exist, an empty value is saved. If <em>Save value to</em> is empty, nothing is
+saved.</p>
+<p><strong>A cell holding a formula reads as empty</strong>, and the run says so. A formula written by the
+workflow —<code>=SUM(D2:D11)</code>— is not worked out by the engine but by the spreadsheet program
+when someone opens the file, so there is no value to read yet. To have that number <strong>in the
+workflow</strong>, walk the rows with <em>Iterate rows</em> and add them up with <em>Aggregate list</em>.</p>
+<hr>
+</section><section class="card" id="replace-text-in-sheet-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#replace-text-in-sheet-spreadsheet" data-astro-cid-le6ebfyn>Replace Text In Sheet .xlsx</a></h2><p>Finds and replaces text across all cells of a sheet.</p>
+<p><strong>When to use it:</strong> to fix a recurring word or value everywhere it appears in a
+sheet.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Search text</td>
+<td>The text to look for. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Replacement text</td>
+<td>The text to put in its place. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Case-sensitive</td>
+<td>Whether upper/lowercase must match exactly</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Match whole cell only</td>
+<td>Replace only cells whose entire content equals the search text</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Case-sensitive (from variable)</td>
+<td>Reads the case-sensitive yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Match whole cell only (from variable)</td>
+<td>Reads the whole-cell yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count to</td>
+<td>Name under which to save how many cells were changed</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> replaces occurrences of the search text with the replacement
+in every cell, and optionally saves how many cells were changed. With <em>Match whole
+cell only</em> on, only cells whose <strong>entire</strong> content equals the search text are
+replaced (and the whole cell is replaced); with it off, the text is replaced
+wherever it appears inside a cell. Does nothing if <em>Search text</em> is empty.</p>
+<hr>
+</section><section class="card" id="set-cell-comment-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#set-cell-comment-spreadsheet" data-astro-cid-le6ebfyn>Set Cell Comment .xlsx</a></h2><p>Attaches a note (comment) to a cell, with an author name.</p>
+<p><strong>When to use it:</strong> to leave an explanation or reminder on a cell.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to annotate (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Comment text</td>
+<td>The note’s text. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Author name</td>
+<td>The name shown as the note’s author. Supports <code>@name</code></td>
+<td><code>Author</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> adds the note to the cell and shows the usual comment
+marker. If the cell already has a comment, it is replaced.</p>
+<hr>
+</section><section class="card" id="unmerge-cells-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#unmerge-cells-spreadsheet" data-astro-cid-le6ebfyn>Unmerge Cells .xlsx</a></h2><p>Splits a previously merged range back into individual cells.</p>
+<p><strong>When to use it:</strong> to undo a merge.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cells are on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Start cell address</td>
+<td>Top-left corner of the merged range. Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>End cell address</td>
+<td>Bottom-right corner of the merged range. Supports <code>@name</code></td>
+<td><code>C1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> removes the merge for that <strong>exact</strong> range. Does nothing if
+that range is not currently merged.</p>
+<hr>
+</section><section class="card" id="write-cell-value-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-cell-value-spreadsheet" data-astro-cid-le6ebfyn>Write Cell Value .xlsx</a></h2><p>Writes a value into a single cell.</p>
+<p><strong>When to use it:</strong> to fill in a cell with text, a number, or a date.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab the cell is on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write to (A1 style). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>The value to write. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Treat value as a date</td>
+<td>Store the value as a date instead of text/number</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Treat as date (from variable)</td>
+<td>Reads the “treat as date” yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> writes the value into the cell, creating the cell if needed.
+The value is stored as a number if it looks like one, otherwise as text; turn on
+<em>Treat value as a date</em> to store it as a date when the text can be read as one. Does
+nothing if the cell address is invalid.</p>
+<hr>
+</section><section class="card" id="write-range-values-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-range-values-spreadsheet" data-astro-cid-le6ebfyn>Write Range Values .xlsx</a></h2><p>Fills a block of cells from a single delimited list of values.</p>
+<p><strong>When to use it:</strong> to load a small table into the sheet in one instruction.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to write to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Start cell address</td>
+<td>Where the block begins (its top-left cell). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Values</td>
+<td>The values, separated by the column and row separators. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Column separator</td>
+<td>Character(s) that separate cells within a row. Supports <code>@name</code></td>
+<td><code>,</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Row separator</td>
+<td>Character(s) that separate rows. Supports <code>@name</code></td>
+<td><code>;</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill by row</td>
+<td>Whether values fill left-to-right then down (on) or top-to-bottom then across (off)</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill by row (from variable)</td>
+<td>Reads the fill-by-row yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> splits <em>Values</em> into rows (by the row separator) and cells
+(by the column separator) and writes them starting at the start cell. With <em>Fill by
+row</em> on, values fill left-to-right then down; with it off, they fill top-to-bottom
+then across (the block is transposed). Each value is typed automatically (number or
+text). Does nothing if <em>Values</em> is empty or either separator is empty.</p>
+<hr>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>

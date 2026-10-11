@@ -1,0 +1,837 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Conditional formatting (Spreadsheet) — Escribal</title><meta name="description" content="The 11 Spreadsheet instructions of the Conditional formatting group in Escribal, each with its fields and its behaviour."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/spreadsheet-conditional-formatting/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" aria-current="page" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>Spreadsheet</p><h1 data-astro-cid-ju4pidww>Conditional formatting</h1></header><div class="prose" data-astro-cid-ju4pidww><p>This group makes cells <strong>change their look automatically based on their value</strong>.
+Instead of coloring cells by hand, you set a rule over a range and the spreadsheet
+program applies it live: highlight the cells that are above a number, the duplicates,
+the top 10, the ones above average; paint a colored gradient, an in-cell bar, or a
+little icon (traffic light, arrow, rating) in each cell; or highlight cells with your
+own formula. Two extra instructions <strong>manage</strong> the rules already on a range (list, reorder,
+delete) and <strong>remove</strong> conditional formatting from a range or the whole sheet.</p>
+<p><strong>Prerequisite:</strong> before using any of these instructions, the workflow must already
+have an XLSX spreadsheet created or opened (with <em>Create spreadsheet</em>). Every
+instruction works on a <strong>sheet</strong> (tab) inside that spreadsheet, identified by name
+(<code>Sheet1</code> by default), which must already exist.</p>
+<p>These concepts recur across several instructions in this group; they are explained
+here once.</p>
+<ul>
+<li>
+<p><strong>Document:</strong> indicates which document in the workflow the instruction applies to.
+If left empty, the current document is used.</p>
+</li>
+<li>
+<p><strong>The sheet must already exist:</strong> the <em>Sheet name</em> field chooses which tab the
+instruction works on, and defaults to <code>Sheet1</code>. If no sheet with that name is found, the instruction does nothing and the workflow continues with the next instruction.</p>
+</li>
+<li>
+<p><strong>A rule covers a range:</strong> each instruction places a rule over a range of cells given as
+<em>top-left cell</em><code>:</code><em>bottom-right cell</em> (<code>A1:A100</code>). The rule then applies to every
+cell in that range. A single cell is written <code>A1</code>, a column-tall range <code>A1:A100</code>.</p>
+</li>
+<li>
+<p><strong>What the rule paints: the background, the letter, or both.</strong> The six highlight
+instructions take a <em>Fill color</em>, a <em>Font color</em> and a <em>Bold</em> switch, and each one only
+touches what you fill in: leaving <em>Fill color</em> empty and setting <em>Font color</em> paints
+<strong>only the letter</strong>, which is what “the amounts over 500 in red” usually means. An
+empty color leaves that part as it is, so a rule with all three empty paints nothing.</p>
+</li>
+<li>
+<p><strong>Several rules can stack on the same range:</strong> applying more than one instruction to the
+same range adds each rule on top of the previous ones; they don’t overwrite each
+other, they layer.</p>
+</li>
+<li>
+<p><strong>Rules are tied to the range they cover:</strong> <em>Manage conditional formatting rules</em> and
+<em>Remove conditional formatting</em> find rules by the range they were created with. To
+manage a rule created over <code>A1:A100</code>, use <code>A1:A100</code> — not a sub-range of it.
+Different <strong>ways of writing the same block</strong> do match: upper or lower case, dollar
+signs and the order of the two corners are ignored, so <code>a1:a100</code>, <code>$A$1:$A$100</code> and
+<code>A100:A1</code> all reach the rules created on <code>A1:A100</code>.</p>
+</li>
+<li>
+<p><strong>Rule order is meaningful:</strong> each new rule is added below the ones already on the
+sheet, and <em>Manage conditional formatting rules</em> can move a rule up or down to change
+which one wins when two rules paint the same cell.</p>
+</li>
+<li>
+<p><strong>Colors are given as hex (RRGGBB):</strong> the color fields in this group take a
+6-character hex code — two digits each for red, green, and blue. For example
+<code>FFFF00</code> is yellow, <code>FF0000</code> red, and <code>63BE7B</code> a green. A leading <code>#</code> is optional.
+Each instruction’s color field lists its default.</p>
+</li>
+<li>
+<p><strong>Dynamic values (<code>@name</code>):</strong> in any text field (sheet name, range, color, comparison,
+formula, icon set type, instruction) you can type <code>@</code> followed by the name of a value saved
+earlier in the workflow, and it will be replaced by that value.</p>
+</li>
+<li>
+<p><strong>Saving a result (<code>Save results</code> / <code>Save count</code>):</strong> <em>Manage conditional formatting
+rules</em> can report what it found. Fill in <em>Save results</em> with a name to store the list
+of rules, and <em>Save count</em> to store how many there are; leave them empty to save
+nothing.</p>
+</li>
+<li>
+<p><strong>“From variable” fields:</strong> the <code>@name</code> trick only works in text fields. The
+<strong>number</strong> fields (<em>Threshold</em>, <em>N</em>, <em>Rule number</em>, the icon thresholds) and the
+<strong>yes/no</strong> options (<em>Use three colors</em>, <em>Show value</em>, <em>Top</em>, <em>Use percent</em>,
+<em>Above average</em>, <em>Entire sheet</em>) each have a companion “from variable” field:</p>
+<ul>
+<li>If you leave it <strong>empty</strong>, the value typed in the normal field is used.</li>
+<li>If you <strong>fill it in</strong> with the name of a saved value, the engine <strong>ignores the
+normal field</strong> and reads the value from that variable.</li>
+</ul>
+<p>This is mainly for <strong>chaining instructions</strong> (one instruction saves a value, the next one
+reads it). If you only work with fixed values, you can ignore these fields.</p>
+</li>
+</ul>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#apply-color-scale-spreadsheet" data-astro-cid-le6ebfyn>Apply Color Scale .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#apply-data-bar-spreadsheet" data-astro-cid-le6ebfyn>Apply Data Bar .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#apply-icon-set-spreadsheet" data-astro-cid-le6ebfyn>Apply Icon Set .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#create-formula-rule-spreadsheet" data-astro-cid-le6ebfyn>Create Formula Rule .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#highlight-above-below-average-spreadsheet" data-astro-cid-le6ebfyn>Highlight Above Below Average .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#highlight-cells-by-value-spreadsheet" data-astro-cid-le6ebfyn>Highlight Cells By Value .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#highlight-duplicate-cells-spreadsheet" data-astro-cid-le6ebfyn>Highlight Duplicate Cells .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#highlight-top-bottom-nspreadsheet" data-astro-cid-le6ebfyn>Highlight Top Bottom N .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#highlight-unique-cells-spreadsheet" data-astro-cid-le6ebfyn>Highlight Unique Cells .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#manage-conditional-formatting-rules-spreadsheet" data-astro-cid-le6ebfyn>Manage Conditional Formatting Rules .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#remove-conditional-formatting-spreadsheet" data-astro-cid-le6ebfyn>Remove Conditional Formatting .xlsx</a></li></ul><section class="card" id="apply-color-scale-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#apply-color-scale-spreadsheet" data-astro-cid-le6ebfyn>Apply Color Scale .xlsx</a></h2><p>Paints a <strong>colored gradient</strong> across a range, so low, middle and high values get
+different colors.</p>
+<p><strong>When to use it:</strong> to see at a glance where the small and large values are in a
+column of numbers (a heat-map look), e.g. red for low sales up to green for high.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells the gradient covers (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Min color</td>
+<td>Color for the lowest values, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>F8696B</code> (red)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Mid color</td>
+<td>Color for the middle values; leave empty for a two-color scale. Supports <code>@name</code></td>
+<td><code>FFEB84</code> (yellow)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Max color</td>
+<td>Color for the highest values, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>63BE7B</code> (green)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Use three colors</td>
+<td>On = three-color scale (min-mid-max); Off = two-color (min-max)</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Use three colors (from variable)</td>
+<td>Reads the three-colors yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> with <em>Use three colors</em> on and a <em>Mid color</em> set, it makes a
+low-middle-high gradient; otherwise a two-color low-high gradient. The rule is added to
+the range (stacking on any rule already there).</p>
+<hr>
+</section><section class="card" id="apply-data-bar-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#apply-data-bar-spreadsheet" data-astro-cid-le6ebfyn>Apply Data Bar .xlsx</a></h2><p>Draws a small <strong>horizontal bar inside each cell</strong>, longer for bigger values.</p>
+<p><strong>When to use it:</strong> to compare the sizes of numbers in a column without a chart — each
+cell shows a mini bar proportional to its value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells that get the bars (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bar color</td>
+<td>Color of the bar, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>638EC6</code> (blue)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show value</td>
+<td>On = keep the number visible next to the bar; Off = show only the bar</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show value (from variable)</td>
+<td>Reads the show-value yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the shortest bar goes to the smallest value in the range and the
+longest to the largest. The rule is added to the range (stacking on any rule already
+there).</p>
+<hr>
+</section><section class="card" id="apply-icon-set-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#apply-icon-set-spreadsheet" data-astro-cid-le6ebfyn>Apply Icon Set .xlsx</a></h2><p>Puts a small <strong>icon in each cell</strong> (traffic light, arrow, rating, …) depending on where
+its value falls.</p>
+<p><strong>When to use it:</strong> to flag values as good/ok/bad or low/medium/high with an at-a-glance
+symbol, like a green/amber/red traffic light per row.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells that get the icons (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Icon set type</td>
+<td>Which icons to use, chosen from a list (see below)</td>
+<td><code>3TrafficLights1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show value</td>
+<td>On = keep the number visible next to the icon; Off = show only the icon</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold 1 %</td>
+<td>Cut-off (as a percentage 0–100) between the 1st and 2nd icon</td>
+<td><code>33</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold 2 %</td>
+<td>Cut-off between the 2nd and 3rd icon</td>
+<td><code>67</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold 3 %</td>
+<td>Cut-off for the 4th icon (only for 4- and 5-icon sets)</td>
+<td><code>75</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold 4 %</td>
+<td>Cut-off for the 5th icon (only for 5-icon sets)</td>
+<td><code>84</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Show value (from variable)</td>
+<td>Reads the show-value yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold 1 % (from variable)</td>
+<td>Reads threshold 1 from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold 2 % (from variable)</td>
+<td>Reads threshold 2 from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold 3 % (from variable)</td>
+<td>Reads threshold 3 from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold 4 % (from variable)</td>
+<td>Reads threshold 4 from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <em>Icon set type</em> is picked from a list of 16 sets, so it cannot be
+typed freely and does not accept <code>@name</code>. Each option starts with how many icons it has
+(3, 4 or 5): 3 traffic lights (plain and rimmed), 3 arrows (color and gray), 3 signs,
+3 symbols (circled and plain), 4 arrows (color and gray), 4 red-to-black, 4 ratings,
+4 traffic lights, 5 arrows (color and gray), 5 ratings and 5 quarters. <em>Threshold 3 %</em>
+is only used by 4- and 5-icon sets, and <em>Threshold 4 %</em> only by 5-icon sets.</p>
+<hr>
+</section><section class="card" id="create-formula-rule-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#create-formula-rule-spreadsheet" data-astro-cid-le6ebfyn>Create Formula Rule .xlsx</a></h2><p>Highlights the cells of a range where <strong>your own formula is true</strong>.</p>
+<p><strong>When to use it:</strong> when the built-in highlights aren’t enough and you need a custom
+condition — for example, highlight a row when another column equals <code>"Overdue"</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells the rule covers (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula</td>
+<td>The condition, written from the top-left cell (<code>A1&gt;100</code>). Supports <code>@name</code></td>
+<td><code>A1&gt;100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill color</td>
+<td>Color for cells where the formula is true, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>FFFF00</code> (yellow)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Font color</td>
+<td>Color for the letter of matching cells, hex <code>RRGGBB</code>; empty leaves the letter as it is. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bold</td>
+<td>On = the letter of matching cells turns bold</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the formula is written <strong>relative to the top-left cell of the
+range</strong> (as in the spreadsheet program’s “use a formula to decide which cells to
+format”); it is evaluated for each cell. If <em>Formula</em> is left empty, nothing happens.</p>
+<hr>
+</section><section class="card" id="highlight-above-below-average-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#highlight-above-below-average-spreadsheet" data-astro-cid-le6ebfyn>Highlight Above Below Average .xlsx</a></h2><p>Highlights the cells whose value is <strong>above (or below) the average</strong> of the range.</p>
+<p><strong>When to use it:</strong> to spot the entries that beat — or fall short of — the average, such
+as the above-average performers in a list of scores.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells to check (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Above average</td>
+<td>On = highlight cells above the average; Off = below the average</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill color</td>
+<td>Color for matching cells, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>C6EFCE</code> (green)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Font color</td>
+<td>Color for the letter of matching cells, hex <code>RRGGBB</code>; empty leaves the letter as it is. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bold</td>
+<td>On = the letter of matching cells turns bold</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Above average (from variable)</td>
+<td>Reads the above/below yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the average is computed over the whole range; each cell above
+(or below, when <em>Above average</em> is off) that average gets the fill color.</p>
+<hr>
+</section><section class="card" id="highlight-cells-by-value-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#highlight-cells-by-value-spreadsheet" data-astro-cid-le6ebfyn>Highlight Cells By Value .xlsx</a></h2><p>Highlights the cells that <strong>compare to a number</strong> a chosen way (greater than, equal, …).</p>
+<p><strong>When to use it:</strong> to color the cells over a threshold (e.g. amounts greater than 1000)
+or matching an exact number.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells to check (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td>The test to apply, chosen from a list</td>
+<td><code>greaterThan</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold</td>
+<td>The number to compare each cell against</td>
+<td><code>0</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill color</td>
+<td>Color for matching cells, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>FFFF00</code> (yellow)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Font color</td>
+<td>Color for the letter of matching cells, hex <code>RRGGBB</code>; empty leaves the letter as it is. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bold</td>
+<td>On = the letter of matching cells turns bold</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Threshold (from variable)</td>
+<td>Reads the threshold number from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <em>Comparison</em> is picked from a list (greater than, greater than or
+equal, less than, less than or equal, equal, not equal), so it cannot be typed freely and
+does not accept <code>@name</code>. Each cell in the range is tested against <em>Threshold</em> and
+highlighted when the test is true.</p>
+<hr>
+</section><section class="card" id="highlight-duplicate-cells-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#highlight-duplicate-cells-spreadsheet" data-astro-cid-le6ebfyn>Highlight Duplicate Cells .xlsx</a></h2><p>Highlights the cells whose value <strong>appears more than once</strong> in the range.</p>
+<p><strong>When to use it:</strong> to find repeated entries — duplicate IDs, emails or codes in a
+column.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells to check (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill color</td>
+<td>Color for duplicated cells, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>FFC7CE</code> (light red)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Font color</td>
+<td>Color for the letter of matching cells, hex <code>RRGGBB</code>; empty leaves the letter as it is. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bold</td>
+<td>On = the letter of matching cells turns bold</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> every cell whose value is shared by at least one other cell in
+the range gets the fill color; values that appear only once are left alone.</p>
+<hr>
+</section><section class="card" id="highlight-top-bottom-nspreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#highlight-top-bottom-nspreadsheet" data-astro-cid-le6ebfyn>Highlight Top Bottom N .xlsx</a></h2><p>Highlights the <strong>highest (or lowest) N cells</strong> of a range — or the top/bottom N percent.</p>
+<p><strong>When to use it:</strong> to mark the best or worst few entries, like the top 5 sales or the
+bottom 10% scores.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells to rank (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>N</td>
+<td>How many cells (or what percent) to highlight</td>
+<td><code>10</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Top</td>
+<td>On = highlight the highest values; Off = the lowest</td>
+<td><code>Yes</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Use percent</td>
+<td>On = <em>N</em> is a percentage (top 10%); Off = a count (top 10 cells)</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill color</td>
+<td>Color for the selected cells, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>FFEB9C</code> (light yellow)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Font color</td>
+<td>Color for the letter of matching cells, hex <code>RRGGBB</code>; empty leaves the letter as it is. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bold</td>
+<td>On = the letter of matching cells turns bold</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>N (from variable)</td>
+<td>Reads N from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Top (from variable)</td>
+<td>Reads the top/bottom yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Use percent (from variable)</td>
+<td>Reads the use-percent yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> with <em>Top</em> on it highlights the largest values, off the smallest.
+With <em>Use percent</em> on, <em>N</em> is read as a percentage of the range (top/bottom N %); off, as
+a plain count of cells.</p>
+<hr>
+</section><section class="card" id="highlight-unique-cells-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#highlight-unique-cells-spreadsheet" data-astro-cid-le6ebfyn>Highlight Unique Cells .xlsx</a></h2><p>Highlights the cells whose value <strong>appears exactly once</strong> in the range.</p>
+<p><strong>When to use it:</strong> the opposite of highlighting duplicates — to find the one-off entries
+that have no repeat.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to apply this to. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Cells to check (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill color</td>
+<td>Color for unique cells, hex <code>RRGGBB</code>. Supports <code>@name</code></td>
+<td><code>C6EFCE</code> (green)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Font color</td>
+<td>Color for the letter of matching cells, hex <code>RRGGBB</code>; empty leaves the letter as it is. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bold</td>
+<td>On = the letter of matching cells turns bold</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> only the cells whose value occurs a single time in the range get
+the fill color; repeated values are left alone.</p>
+<hr>
+</section><section class="card" id="manage-conditional-formatting-rules-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#manage-conditional-formatting-rules-spreadsheet" data-astro-cid-le6ebfyn>Manage Conditional Formatting Rules .xlsx</a></h2><p><strong>Lists, reorders or deletes</strong> the conditional-formatting rules already attached to a
+range.</p>
+<p><strong>When to use it:</strong> to see which rules a range has, change which one wins when rules
+overlap (by moving it up or down), or remove one rule without touching the others.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The exact range the rules were created on (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td><code>A1:A100</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>Chosen from a list: <em>List rules</em> (<code>list</code>), <em>Delete rule</em> (<code>delete</code>), <em>Move rule up</em> (<code>moveUp</code>), <em>Move rule down</em> (<code>moveDown</code>) — the stored values tell upper from lower case</td>
+<td><code>list</code> (List rules)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Rule number</td>
+<td>Which rule to act on, counting from 1 (used by delete/move)</td>
+<td><code>1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Rule number (from variable)</td>
+<td>Reads the rule number from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save results</td>
+<td>Name to store the list of rules under (used by <code>list</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save count</td>
+<td>Name to store the number of rules under</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <em>Action</em> is picked from a list, so it cannot be typed freely and
+does not accept <code>@name</code>. <em>List rules</em> stores a description of each rule in <em>Save results</em>
+and the count in <em>Save count</em>. <em>Delete rule</em> removes the rule at <em>Rule number</em> (and drops
+the whole block if it was the last one). <em>Move rule up</em>/<em>Move rule down</em> swap that rule’s priority
+with its neighbor to change which one takes precedence. An out-of-range index does
+nothing; if the range has no rules, <em>Save count</em> is set to 0. The <em>Range</em> must match the
+one the rules were created with.</p>
+<hr>
+</section><section class="card" id="remove-conditional-formatting-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#remove-conditional-formatting-spreadsheet" data-astro-cid-le6ebfyn>Remove Conditional Formatting .xlsx</a></h2><p>Removes conditional-formatting rules from a <strong>range</strong> or from the <strong>whole sheet</strong>.</p>
+<p><strong>When to use it:</strong> to clear the highlights/gradients/icons you (or an earlier step)
+added, either from one range or from the entire tab.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>The exact range to clear; leave empty to clear the whole sheet (<code>A1:A100</code>). Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Entire sheet</td>
+<td>On = remove every conditional-formatting rule on the sheet</td>
+<td><code>No</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Entire sheet (from variable)</td>
+<td>Reads the entire-sheet yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if <em>Entire sheet</em> is on <strong>or</strong> <em>Range</em> is left empty, every
+conditional-formatting rule on the sheet is removed. Otherwise only the rules on the
+exact matching <em>Range</em> are removed; a range that doesn’t match any rule leaves everything
+unchanged.</p>
+<hr>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>

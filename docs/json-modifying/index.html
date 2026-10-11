@@ -1,0 +1,516 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Modifying (JSON) — Escribal</title><meta name="description" content="The 11 JSON instructions of the Modifying group in Escribal, each with its fields and its behaviour."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/json-modifying/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" aria-current="page" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>JSON</p><h1 data-astro-cid-ju4pidww>Modifying</h1></header><div class="prose" data-astro-cid-ju4pidww><p>This group <strong>changes a loaded JSON document in place</strong> — adding, changing, renaming and removing
+fields, and adding, replacing and removing elements of a list. There is nothing to save: each
+edit stays in the document and is written out when the document is later saved.</p>
+<p><strong>Prerequisite:</strong> a JSON document must already be loaded — created with <em>Create JSON file</em> or
+opened with one of the <em>Opening</em> instructions (for example <em>Open JSON File</em>).</p>
+<p>These concepts recur across the instructions in this group; they are explained here once.</p>
+<ul>
+<li><strong>This group edits the document.</strong> Unlike the reading instructions, these change the document
+directly. The change is kept and written out the next time the document is saved.</li>
+<li><strong>Document:</strong> the <em>Document key</em> names the loaded document to edit. If you leave it empty, the
+<strong>current document</strong> is used. It also accepts <code>@name</code>. (<em>Copy Field</em> and <em>Move Field</em> work
+across two documents, so they use a <em>Source key</em> and a <em>Target key</em> instead.)</li>
+<li><strong>The document must be an object</strong> — a set of named fields. If no document is loaded, or the
+loaded document is a bare list, the field instructions do nothing.</li>
+<li><strong>Dynamic values <code>@name</code>:</strong> the text fields — <em>Document key</em> / <em>Source key</em> / <em>Target key</em>,
+the field-name fields, <em>Array field name</em>, and the <em>Value</em> / <em>New value</em> fields — accept a
+saved value: type <code>@</code> followed by its name and the engine substitutes the value at run time.</li>
+<li><strong>Setting a value — plain text or a saved value (from variable):</strong> the <em>Value</em> and <em>New value</em>
+fields set the field to that <strong>text</strong>. To store something that isn’t plain text — a number, a
+yes/no, a list, or a whole object — use the matching <strong>(from variable)</strong> field instead:
+<em>Value key</em> / <em>New value key</em> names a saved value and the instruction copies it in <strong>as-is, keeping
+its type</strong>, ignoring the plain-text field. <em>Position</em> works the same way with <em>Position key</em>.
+Leave the (from variable) fields empty to use the normal field.</li>
+<li><strong>List positions count from 1</strong> (1 = the first element) for the element instructions.</li>
+</ul>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#add-element-to-array-json" data-astro-cid-le6ebfyn>Add Element To Array .json</a></li><li data-astro-cid-le6ebfyn><a href="#add-field-json" data-astro-cid-le6ebfyn>Add Field .json</a></li><li data-astro-cid-le6ebfyn><a href="#copy-field-json" data-astro-cid-le6ebfyn>Copy Field .json</a></li><li data-astro-cid-le6ebfyn><a href="#modify-element-field-json" data-astro-cid-le6ebfyn>Modify Element Field .json</a></li><li data-astro-cid-le6ebfyn><a href="#modify-field-json" data-astro-cid-le6ebfyn>Modify Field .json</a></li><li data-astro-cid-le6ebfyn><a href="#move-field-json" data-astro-cid-le6ebfyn>Move Field .json</a></li><li data-astro-cid-le6ebfyn><a href="#remove-element-from-array-json" data-astro-cid-le6ebfyn>Remove Element From Array .json</a></li><li data-astro-cid-le6ebfyn><a href="#remove-field-json" data-astro-cid-le6ebfyn>Remove Field .json</a></li><li data-astro-cid-le6ebfyn><a href="#rename-field-json" data-astro-cid-le6ebfyn>Rename Field .json</a></li><li data-astro-cid-le6ebfyn><a href="#replace-element-in-array-json" data-astro-cid-le6ebfyn>Replace Element In Array .json</a></li><li data-astro-cid-le6ebfyn><a href="#set-field-to-null-json" data-astro-cid-le6ebfyn>Set Field To Null .json</a></li></ul><section class="card" id="add-element-to-array-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#add-element-to-array-json" data-astro-cid-le6ebfyn>Add Element To Array .json</a></h2><p><strong>Adds a value to a list held in a field</strong> — at the end, or at the start.</p>
+<p><strong>When to use it:</strong> to append a new item to a list — for example add an order to the <code>orders</code>
+list.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded document to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Array field name</td>
+<td>The field that holds the list, e.g. <code>items</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>The text value to add (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Add at start</td>
+<td>Yes = insert at the beginning; No = append at the end</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Value key <em>(from variable)</em></td>
+<td>Instead of <em>Value</em>, add a saved value as-is, keeping its type</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Add at start (from variable)</td>
+<td>Reads the yes/no value from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the named field must already exist <strong>and be a list</strong>; otherwise nothing
+happens. If <em>Array field name</em> is empty, or no document is loaded (or it isn’t an object),
+nothing happens. When <em>Value key</em> is set it takes precedence over <em>Value</em>.</p>
+<hr>
+</section><section class="card" id="add-field-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#add-field-json" data-astro-cid-le6ebfyn>Add Field .json</a></h2><p><strong>Adds a new field with a value.</strong> Leaves the document untouched if a field with that name
+already exists.</p>
+<p><strong>When to use it:</strong> to introduce a new field — for example add a <code>status</code> field set to <code>active</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded document to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Field name</td>
+<td>The name of the field to add, e.g. <code>newField</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>The text value for the new field (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Value key <em>(from variable)</em></td>
+<td>Add a saved value as-is (number, list, object…) instead of <em>Value</em></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if a field with that name already exists it is <strong>left untouched</strong> — use
+<em>Modify Field</em> to change an existing field. If <em>Field name</em> is empty, or no document is loaded
+(or it isn’t an object), nothing happens. When <em>Value key</em> is set it takes precedence over
+<em>Value</em>.</p>
+<hr>
+</section><section class="card" id="copy-field-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#copy-field-json" data-astro-cid-le6ebfyn>Copy Field .json</a></h2><p><strong>Copies a field’s value into another field</strong>, optionally in a different document. The original
+is left in place.</p>
+<p><strong>When to use it:</strong> to duplicate a value — for example copy <code>name</code> into <code>displayName</code>, or copy a
+field from one document into another.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source key</td>
+<td>The document to copy from. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Source field name</td>
+<td>The field to copy, e.g. <code>name</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Target key</td>
+<td>The document to copy into. Empty = the same document as the source (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Target field name</td>
+<td>The field to write the copy to, e.g. <code>nameCopy</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the source field must exist; if it doesn’t, or either field name is
+empty, nothing happens. If the target field already exists it is <strong>overwritten</strong>. A <strong>copy</strong> of
+the value is written, so later changes to one field don’t affect the other. If <em>Target key</em>
+names a document that isn’t loaded (or isn’t an object), nothing happens.</p>
+<hr>
+</section><section class="card" id="modify-element-field-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#modify-element-field-json" data-astro-cid-le6ebfyn>Modify Element Field .json</a></h2><p><strong>Writes one field inside an element of an array</strong>, choosing the element by its position.</p>
+<p><strong>When to use it:</strong> to leave a result in each record while a <em>For Each</em> walks them — the calculated
+amount of an invoice line, a status, a total. <em>Modify Field</em> only reaches the fields at the top of
+the document, and <em>Replace Element In Array</em> swaps the <strong>whole</strong> element, so changing one field with
+it meant rebuilding the record.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Array field name</td>
+<td>Name of the array field. Empty = the document itself is the array. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>Position of the element (starts at 1)</td>
+<td><code>1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Field name</td>
+<td>Field to write inside the element. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Text to write. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Position (from variable)</td>
+<td>Reads the position from a saved value — this is where the loop’s <em>Index</em> goes</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Value (from variable)</td>
+<td>Reads the value from a saved variable, keeping its type (a number stays a number)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A field the element does not have yet is added</strong>, because on the first turn the result does not
+exist anywhere. A position that does not exist does nothing, and neither does an element that is not
+an object.</p>
+<hr>
+</section><section class="card" id="modify-field-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#modify-field-json" data-astro-cid-le6ebfyn>Modify Field .json</a></h2><p><strong>Changes the value of an existing field.</strong> Does nothing if the field doesn’t exist.</p>
+<p><strong>When to use it:</strong> to update a value — for example change <code>status</code> from <code>pending</code> to <code>done</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded document to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Field name</td>
+<td>The existing field to change, e.g. <code>status</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>New value</td>
+<td>The new text value (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>New value key <em>(from variable)</em></td>
+<td>Set the field to a saved value as-is instead of <em>New value</em></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if the field doesn’t exist it is <strong>not</strong> created — use <em>Add Field</em> for
+that. If <em>Field name</em> is empty, or no document is loaded (or it isn’t an object), nothing
+happens. When <em>New value key</em> is set it takes precedence over <em>New value</em>.</p>
+<hr>
+</section><section class="card" id="move-field-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#move-field-json" data-astro-cid-le6ebfyn>Move Field .json</a></h2><p><strong>Moves a field from one document into another</strong> (or to a new name in the same document),
+<strong>removing the original</strong>.</p>
+<p><strong>When to use it:</strong> to relocate a field — for example move <code>total</code> out of one document and into
+a summary document.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source key</td>
+<td>The document to move from. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Source field name</td>
+<td>The field to move, e.g. <code>total</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Target key</td>
+<td>The document to move into. Empty = the same document as the source (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Target field name</td>
+<td>The name to give the field at the destination; empty = keep the same name (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the source field must exist; if it doesn’t, or <em>Source field name</em> is
+empty, nothing happens. The original field is <strong>removed</strong> after the move. If the destination
+already has a field with that name it is overwritten. If <em>Target key</em> names a document that isn’t
+loaded (or isn’t an object), nothing happens.</p>
+<hr>
+</section><section class="card" id="remove-element-from-array-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#remove-element-from-array-json" data-astro-cid-le6ebfyn>Remove Element From Array .json</a></h2><p><strong>Removes the element at a given position</strong> from a list.</p>
+<p><strong>When to use it:</strong> to drop one item from a list — for example remove the second entry.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded document to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Array field name</td>
+<td>The field that holds the list, e.g. <code>items</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>Which element to remove, counting from 1 (1 = first)</td>
+<td>1</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Position key <em>(from variable)</em></td>
+<td>Take the position from a saved value instead of <em>Position</em></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <em>Position</em> counts from <strong>1</strong>. If it is below 1 or past the end of the
+list, nothing happens. The named field must exist and be a list; otherwise nothing happens. If
+<em>Array field name</em> is empty, or no document is loaded, nothing happens.</p>
+<hr>
+</section><section class="card" id="remove-field-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#remove-field-json" data-astro-cid-le6ebfyn>Remove Field .json</a></h2><p><strong>Removes a field and its value</strong> from the document.</p>
+<p><strong>When to use it:</strong> to delete a field — for example strip an internal <code>debug</code> field before
+saving.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded document to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Field name</td>
+<td>The field to remove, e.g. <code>debug</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if the field isn’t there, nothing changes (no error). If <em>Field name</em> is
+empty, or no document is loaded (or it isn’t an object), nothing happens.</p>
+<hr>
+</section><section class="card" id="rename-field-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#rename-field-json" data-astro-cid-le6ebfyn>Rename Field .json</a></h2><p><strong>Renames a field, keeping its value.</strong></p>
+<p><strong>When to use it:</strong> to fix or change a field’s name — for example rename <code>oldName</code> to <code>newName</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded document to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Current name</td>
+<td>The existing field to rename, e.g. <code>oldName</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>New name</td>
+<td>The name to give it, e.g. <code>newName</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> nothing happens if the current field is missing, <strong>or if a field with
+the new name already exists</strong> (so an existing field is never overwritten). If either name is
+empty, or no document is loaded (or it isn’t an object), nothing happens.</p>
+<hr>
+</section><section class="card" id="replace-element-in-array-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#replace-element-in-array-json" data-astro-cid-le6ebfyn>Replace Element In Array .json</a></h2><p><strong>Replaces the value at a given position</strong> in a list.</p>
+<p><strong>When to use it:</strong> to overwrite one item — for example change the third item to a new value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded document to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Array field name</td>
+<td>The field that holds the list, e.g. <code>items</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>Which element to replace, counting from 1 (1 = first)</td>
+<td>1</td>
+<td>No</td>
+</tr>
+<tr>
+<td>New value</td>
+<td>The new text value for that element (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Position key <em>(from variable)</em></td>
+<td>Take the position from a saved value instead of <em>Position</em></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>New value key <em>(from variable)</em></td>
+<td>Use a saved value as-is instead of <em>New value</em></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <em>Position</em> counts from <strong>1</strong>; below 1 or past the end of the list does
+nothing. The named field must exist and be a list. When <em>New value key</em> is set it takes
+precedence over <em>New value</em>. If <em>Array field name</em> is empty, or no document is loaded, nothing
+happens.</p>
+<hr>
+</section><section class="card" id="set-field-to-null-json" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#set-field-to-null-json" data-astro-cid-le6ebfyn>Set Field To Null .json</a></h2><p><strong>Sets an existing field’s value to null</strong> — an explicit “no value”.</p>
+<p><strong>When to use it:</strong> to mark a field as empty or unknown while keeping the field itself — for
+example clear <code>endDate</code> but keep the field present.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document key</td>
+<td>The loaded document to edit. Empty = current document (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Field name</td>
+<td>The existing field to clear, e.g. <code>endDate</code> (accepts <code>@name</code>)</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the field must already exist; if it doesn’t, nothing happens (it is not
+created). This sets the value to <code>null</code>, which is different from <em>Remove Field</em> — that deletes
+the field entirely. If <em>Field name</em> is empty, or no document is loaded (or it isn’t an object),
+nothing happens.</p>
+<hr>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>

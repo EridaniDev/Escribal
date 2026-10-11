@@ -1,0 +1,548 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Calculations (More) — Escribal</title><meta name="description" content="The 8 More instructions of the Calculations group in Escribal, each with its fields and its behaviour."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/more-calculations/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" aria-current="page" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>More</p><h1 data-astro-cid-ju4pidww>Calculations</h1></header><div class="prose" data-astro-cid-ju4pidww><p>This group does <strong>arithmetic on the variables</strong> the workflow carries, without opening any document,
+and turns the result into the text a person reads. Until it existed, the only way to work out a line
+of an invoice or a percentage was to open a JSON document and use it as a calculator.</p>
+<p><strong>Prerequisite:</strong> none. These instructions do not need a document to be open.</p>
+<p><strong>How exact they are.</strong> <em>Calculate variable</em> and <em>Round variable</em> work in base 10 and are <strong>exact</strong>:
+<code>0.1 + 0.2</code> is <code>0.3</code>, and not the <code>0.30000000000000004</code> a spreadsheet gets and hides by rounding what
+it shows. <em>Scientific calculation</em> does the things that do not exist in base 10 — roots, logarithms,
+angles — and keeps <strong>15 significant digits, the same as a spreadsheet</strong>. A result beyond
+±7.9·10²⁸ is not saved: these instructions promise an exact number and beyond that they cannot keep it.</p>
+<p><strong>Three rules shared by the calculations:</strong></p>
+<ul>
+<li><strong>An empty value counts as <code>0</code></strong>, the same way an empty cell counts inside a sum. So a running
+total works without being set up first. <em>Format number</em> is the one exception: with nothing to show
+it saves nothing and says so, because a total nobody worked out must not appear as <code>0.00 €</code> in the
+middle of an invoice.</li>
+<li><strong>Text that is not a number saves nothing.</strong> A spreadsheet answers <code>#VALUE!</code>; here nothing is
+written, so the previous value of the name stays as it was.</li>
+<li><strong>A calculation with no answer saves nothing either</strong> — dividing by zero, the root of a negative
+number, the logarithm of zero — and the run says so and carries on.</li>
+</ul>
+<p>Numbers are written with a <strong>dot</strong> for the decimals and no thousands separator: <code>1234.5</code>.</p>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#aggregate-variable" data-astro-cid-le6ebfyn>Aggregate list</a></li><li data-astro-cid-le6ebfyn><a href="#calculate-variable" data-astro-cid-le6ebfyn>Calculate variable</a></li><li data-astro-cid-le6ebfyn><a href="#pad-text-variable" data-astro-cid-le6ebfyn>Fit text to width</a></li><li data-astro-cid-le6ebfyn><a href="#format-number-variable" data-astro-cid-le6ebfyn>Format number</a></li><li data-astro-cid-le6ebfyn><a href="#group-and-aggregate-variable" data-astro-cid-le6ebfyn>Group and aggregate</a></li><li data-astro-cid-le6ebfyn><a href="#list-fields-variable" data-astro-cid-le6ebfyn>List fields</a></li><li data-astro-cid-le6ebfyn><a href="#round-variable" data-astro-cid-le6ebfyn>Round variable</a></li><li data-astro-cid-le6ebfyn><a href="#calculate-scientific-variable" data-astro-cid-le6ebfyn>Scientific calculation</a></li></ul><section class="card" id="aggregate-variable" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#aggregate-variable" data-astro-cid-le6ebfyn>Aggregate list</a></h2><p><strong>Turns a whole list into one number</strong> — the total of a column, its average, the smallest,
+the largest, or how many entries there are.</p>
+<p><strong>When to use it:</strong> after <em>Iterate rows</em>, to get the figure the workflow needs: the total
+of a column of amounts, the average of a column, the number of rows. <em>Calculate variable</em>
+works with two values; this one works with all of them at once.</p>
+<p><strong>It adds up a column, not a figure worked out row by row.</strong> <em>Field</em> names a column each
+entry already carries. An invoice line —quantity × price— is not one of them: work it out
+inside the <em>For each</em> with <em>Calculate variable</em> and add it to a running total there, or
+write it into each entry first with <em>Modify element field</em> and aggregate afterwards.</p>
+<p><strong>It works with every format.</strong> <em>Iterate rows</em> leaves the rows of a spreadsheet, a CSV, a
+Word or Markdown table, a PowerPoint table or a text file in the same shape, so the same
+instruction adds up all of them and there is no “sum a column” per format.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List</td>
+<td>Name of the list to read, the one <em>Iterate rows</em> saved. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>Which column of each entry to read; empty = the entry itself is the number. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Operation</td>
+<td><code>sum</code>, <code>average</code>, <code>min</code>, <code>max</code> or <code>count</code></td>
+<td><code>sum</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals</td>
+<td>Decimals kept in the result; <code>-1</code> keeps them all</td>
+<td><code>-1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals (from variable)</td>
+<td>Reads the decimals from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save key</td>
+<td>Name the result is saved under</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> with no <em>Save key</em>, or when <em>List</em> names something that is not a
+list, nothing is saved and the run says so. <code>sum</code>, <code>average</code>, <code>min</code> and <code>max</code> <strong>only look at
+the entries that are numbers</strong>, and step over blanks and words, which is what a spreadsheet
+does with a column. When <strong>not one</strong> entry is a number — a <em>Field</em> nobody has, or a column
+of text — nothing is saved and the run says which name it read: a total that was never
+worked out must not arrive as <code>0</code>. <code>count</code> counts <strong>entries</strong>, all of them, whatever they
+hold, and does not look at <em>Field</em>. Sums are exact in base 10, so <code>0.1 + 0.2</code> is <code>0.3</code>.</p>
+<p><strong>A spreadsheet formula is a different thing.</strong> Writing <code>=SUM(D2:D11)</code> into the file with
+<em>Write math formula</em> is better <strong>for the file</strong> — it recalculates itself when someone edits
+the sheet. But the engine does not work it out, the spreadsheet program does when the file
+is opened, so that total is not available <strong>to the workflow</strong>: to compare it, print it in
+another document or use it in a file name, add it up here.</p>
+<hr>
+</section><section class="card" id="calculate-variable" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#calculate-variable" data-astro-cid-le6ebfyn>Calculate variable</a></h2><p><strong>Does one operation with two values</strong> and saves the result.</p>
+<p><strong>When to use it:</strong> to work out an amount, a percentage or a total — the line of an invoice
+(<code>quantity</code> × <code>price</code>), a running total inside a <em>For each</em>, a discount.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First value</td>
+<td>The first number. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Operation</td>
+<td><code>add</code>, <code>subtract</code>, <code>multiply</code>, <code>divide</code>, <code>mod</code>, <code>intDivide</code>, <code>power</code>, <code>percentOf</code>, <code>percentage</code>, <code>min</code> or <code>max</code></td>
+<td><code>add</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Second value</td>
+<td>The second number. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals</td>
+<td>Decimals kept in the result; <code>-1</code> keeps them all</td>
+<td><code>-1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals (from variable)</td>
+<td>Reads the decimals from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save key</td>
+<td>Name the result is saved under</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> with no <em>Save key</em> the instruction does nothing. <code>percentOf</code> is <em>the second
+value per cent of the first</em> (<code>340</code> and <code>21</code> gives <code>71.4</code>); <code>percentage</code> is <em>how much per cent
+the first is of the second</em> (<code>34</code> and <code>340</code> gives <code>10</code>). <code>intDivide</code> gives the quotient with
+the decimals cut off. <code>power</code> with a whole exponent is exact (<code>1.1</code> to the <code>3</code> is exactly <code>1.331</code>).
+Rounding goes <strong>away from zero</strong> at the midpoint: <code>2.5</code> with 0 decimals is <code>3</code>. The result is saved
+with no trailing zeros: <code>4</code> × <code>45.5</code> is saved as <code>182</code>.</p>
+<hr>
+</section><section class="card" id="pad-text-variable" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#pad-text-variable" data-astro-cid-le6ebfyn>Fit text to width</a></h2><p><strong>Makes a piece of text exactly as wide as you say</strong>, filling what is left over so the next
+one starts in the same place on every line.</p>
+<p><strong>When to use it:</strong> to make columns in a <strong>plain text</strong> file — a delivery note, a listing, a
+receipt — where the columns are made of spaces and nothing else. Amounts read right-aligned,
+names left-aligned. It is also what draws a line of dots between a heading and its page
+number, using <code>.</code> as the fill.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text</td>
+<td>The text to lay out; empty is a real value and comes out as that many blanks. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>How many characters wide the result is. <code>0</code> or less leaves the text as it is</td>
+<td><code>0</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Align</td>
+<td><code>left</code>, <code>center</code> or <code>right</code></td>
+<td><code>left</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Fill character</td>
+<td>What the leftover space is filled with; only the first character is used, and empty means spaces</td>
+<td>(a space)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cut if it does not fit</td>
+<td>Whether a text longer than <em>Width</em> is cut short</td>
+<td><code>false</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Width (from variable)</td>
+<td>Reads the width from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cut if it does not fit (from variable)</td>
+<td>Reads it from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save key</td>
+<td>Name the result is saved under</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> it saves <strong>text</strong>, so it goes wherever text goes and works for all
+eight formats — but it only lines anything up where every character takes the same space,
+which is the plain text file. A text <strong>longer</strong> than <em>Width</em> comes out <strong>whole</strong> and pushes
+its own column: losing part of a value has to be asked for with <em>Cut if it does not fit</em>.
+When centring leaves an odd space over, the extra one goes on the right. The natural order is
+<em>Calculate variable</em> → <em>Format number</em> → this one: work the number out, write it the way a
+person reads it, then line it up.</p>
+<hr>
+</section><section class="card" id="format-number-variable" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#format-number-variable" data-astro-cid-le6ebfyn>Format number</a></h2><p><strong>Writes a number the way a person reads it</strong> — <code>1,234.56</code>, <code>1.234,56 €</code>, <code>0007</code> — and saves it as
+text.</p>
+<p><strong>When to use it:</strong> as the <strong>last</strong> step, once the number is worked out and just before it goes into
+the document: an amount with its currency, a percentage, an invoice number padded with zeros.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number</td>
+<td>The number to show. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Decimals</td>
+<td>Decimals shown, filled with zeros to reach them; <code>-1</code> shows the ones the number has</td>
+<td><code>2</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Number style</td>
+<td><code>english</code> (1,234.56), <code>european</code> (1.234,56), <code>spaced</code> (1 234,56) or <code>plain</code> (1234.56)</td>
+<td><code>english</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Symbol</td>
+<td>Currency or unit written next to the number; empty writes none. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Symbol position</td>
+<td><code>before</code> or <code>after</code> the number</td>
+<td><code>before</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Minimum digits</td>
+<td>Digits before the decimals, filled with zeros on the left; <code>0</code> fills nothing</td>
+<td><code>0</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Always show sign</td>
+<td>Writes a <code>+</code> in front of a positive number</td>
+<td><code>false</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals (from variable)</td>
+<td>Reads the decimals from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Minimum digits (from variable)</td>
+<td>Reads the digits from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Always show sign (from variable)</td>
+<td>Reads the yes/no from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save key</td>
+<td>Name the text is saved under</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> with no <em>Save key</em>, or with no number to show, nothing is saved. The result
+is <strong>text</strong>, so it goes wherever a text goes —a paragraph, a cell, a slide, a JSON field— but the
+calculations can no longer read it back as a number: this is the last step, not the first. The symbol
+is glued in front (<code>$1,234.56</code>) and takes a space when it comes after (<code>1.234,56 €</code>), and the minus
+sign stays outside it (<code>-$1,234.56</code>). Rounding goes <strong>away from zero</strong> at the midpoint, so <code>2.345</code>
+with 2 decimals is <code>2.35</code>. Zero is not positive, so it never gets a <code>+</code>. The zeros added by <em>Minimum
+digits</em> are grouped like any other digit (<code>0,007</code> in the <code>english</code> style), so a code that must not be
+grouped asks for the <code>plain</code> style.</p>
+<hr>
+</section><section class="card" id="group-and-aggregate-variable" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#group-and-aggregate-variable" data-astro-cid-le6ebfyn>Group and aggregate</a></h2><p><strong>One number per group</strong> — the total per salesperson, the average per region, how many rows each
+category has. It splits a saved list into groups by the value of one field and collapses each group
+into a single figure.</p>
+<p><strong>When to use it:</strong> after <em>Iterate rows</em>, when the report has one line per group instead of one
+line per row. <em>Aggregate list</em> turns a whole list into one number; this one turns it into one number
+<strong>per group</strong>, which is what a summary is.</p>
+<p><strong>What it saves is a list you can walk.</strong> The result is a list with one entry per group, each
+carrying the group’s <code>name</code> and its <code>value</code>, so a <em>Repeat for each</em> over it writes the report: the
+current entry’s <code>@group.name</code> is the heading and <code>@group.value</code> is the figure. Glue the two into a
+row with <em>Set text</em>, because a @name only resolves when it is the whole value.</p>
+<p><strong>It works with every format.</strong> <em>Iterate rows</em> leaves the rows of a spreadsheet, a CSV, a Word or
+Markdown table, a PowerPoint table or a text file in the same shape, so the same instruction groups all
+of them and there is no “group by” per format. If the data is already an open CSV, <em>Group and
+aggregate (.csv)</em> does it in one step and writes the table into the document itself.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List</td>
+<td>Name of the list to read, the one <em>Iterate rows</em> saved. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Group by field</td>
+<td>The column whose value names each group. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>The column to collapse; empty = the entry itself is the number. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Operation</td>
+<td><code>sum</code>, <code>average</code>, <code>min</code>, <code>max</code> or <code>count</code></td>
+<td><code>sum</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals</td>
+<td>Decimals kept in each figure; <code>-1</code> keeps them all</td>
+<td><code>-1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals (from variable)</td>
+<td>Reads the decimals from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save key</td>
+<td>Name the list of groups is saved under</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Saves how many groups there were</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the groups come out <strong>in the order they first appear</strong> in the list, so the
+report follows the data and not the alphabet. With no <em>Save key</em> and no <em>Save count key</em>, or when
+<em>List</em> names something that is not a list, or with no <em>Group by field</em>, nothing is saved and the run
+says so. Entries that are not records, or that have no such column, are grouped together under
+<code>_unknown</code>, which you can see in the result. <code>sum</code>, <code>average</code>, <code>min</code> and <code>max</code> <strong>only look at the
+entries that are numbers</strong>; a group where <strong>not one</strong> of them is keeps its line with an <strong>empty</strong>
+figure — the group is not dropped and a total nobody worked out does not arrive as <code>0</code> — and the run
+says which group it was. <code>count</code> counts entries, whatever they hold, and does not look at <em>Field</em>.
+Sums are exact in base 10.</p>
+<hr>
+</section><section class="card" id="list-fields-variable" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#list-fields-variable" data-astro-cid-le6ebfyn>List fields</a></h2><p><strong>Says which columns a list has.</strong></p>
+<p><strong>When to use it:</strong> right after opening a file and running <em>Iterate rows</em>, to check that the
+column you are about to read really is there — or to walk the columns with a <em>For each</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List</td>
+<td>Name of the list to look at, the one <em>Iterate rows</em> saved. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Save fields key</td>
+<td>Name the list of column names is saved under</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Save count key</td>
+<td>Name the number of columns is saved under</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> with both save fields empty, or when <em>List</em> names something that is
+not a list, nothing is saved and the run says so. The columns come out <strong>in the order they
+appear</strong>, and the whole list is walked, so a column carried by only some entries also shows
+up. Without this, “the amounts are in <em>Importe</em>” is a guess: if the title does not match,
+the sum comes out at zero and nothing warns you.</p>
+<hr>
+</section><section class="card" id="round-variable" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#round-variable" data-astro-cid-le6ebfyn>Round variable</a></h2><p><strong>Rounds a number</strong> or takes its whole part.</p>
+<p><strong>When to use it:</strong> to leave an amount at two decimals, to round a quantity up, or to drop the sign.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>The number to round. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Operation</td>
+<td><code>round</code>, <code>floor</code>, <code>ceiling</code>, <code>truncate</code>, <code>abs</code> or <code>negate</code></td>
+<td><code>round</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals</td>
+<td>Decimal place the operation works at</td>
+<td><code>0</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals (from variable)</td>
+<td>Reads the decimals from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save key</td>
+<td>Name the result is saved under</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <code>round</code> goes <strong>away from zero</strong> at the midpoint (<code>2.5</code> gives <code>3</code>, <code>-2.5</code>
+gives <code>-3</code>), which is what a spreadsheet does. <code>floor</code>, <code>ceiling</code> and <code>truncate</code> also work
+at the decimal place given in <em>Decimals</em>, so they can round to cents and not only to units. <code>truncate</code>
+cuts towards zero. <em>Decimals</em> limits how many decimals are kept; it does not add zeros to
+reach them, which is a question of presentation and not of calculation.</p>
+<hr>
+</section><section class="card" id="calculate-scientific-variable" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#calculate-scientific-variable" data-astro-cid-le6ebfyn>Scientific calculation</a></h2><p><strong>Roots, logarithms and angles</strong> on a value, saved under a name.</p>
+<p><strong>When to use it:</strong> whenever the calculation is not one of the four basic ones — a square root, a
+logarithm, the sine of an angle.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>The number the operation is applied to. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Operation</td>
+<td><code>sqrt</code>, <code>root</code>, <code>ln</code>, <code>log10</code>, <code>log</code>, <code>exp</code>, <code>sin</code>, <code>cos</code>, <code>tan</code>, <code>asin</code>, <code>acos</code>, <code>atan</code>, <code>toRadians</code> or <code>toDegrees</code></td>
+<td><code>sqrt</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Second value (root and logarithm)</td>
+<td>Which root, or the base of the logarithm. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals</td>
+<td>Decimals kept in the result; <code>-1</code> keeps them all</td>
+<td><code>-1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Decimals (from variable)</td>
+<td>Reads the decimals from a saved value</td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Save key</td>
+<td>Name the result is saved under</td>
+<td>(empty)</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <strong>angles are in radians</strong>, like a spreadsheet — <code>toRadians</code> and
+<code>toDegrees</code> are in the list for whoever thinks in degrees. Nothing is saved when the
+calculation has no answer: the root of a negative number, the logarithm of zero or less, a logarithm
+in base 1, an arc sine or arc cosine outside <code>-1</code> to <code>1</code>. Results are kept to 15 significant digits.</p>
+<hr>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>

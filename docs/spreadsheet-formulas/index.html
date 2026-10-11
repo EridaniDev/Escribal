@@ -1,0 +1,807 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-ju4pidww><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Formulas (Spreadsheet) — Escribal</title><meta name="description" content="The 15 Spreadsheet instructions of the Formulas group in Escribal, each with its fields and its behaviour."><meta name="theme-color" content="#1b1f22"><link rel="canonical" href="https://escribal.com/docs/spreadsheet-formulas/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="stylesheet" href="/_astro/Layout.BGU1ELdE.css"><style>.group[data-astro-cid-fsxxektz]{letter-spacing:.06em;text-transform:uppercase;color:var(--textDim);margin:0 0 .3rem;padding:0 .6rem;font-size:.75rem}ul[data-astro-cid-fsxxektz]{margin:0 0 1.2rem;padding:0;list-style:none}li[data-astro-cid-fsxxektz]{margin:0}a[data-astro-cid-fsxxektz]{border-left:var(--markBorder) solid transparent;border-radius:var(--radiusS);color:var(--color5);padding:.2rem .6rem;font-size:.95rem;line-height:1.4;text-decoration:none;display:block}a[data-astro-cid-fsxxektz]:hover,a[data-astro-cid-fsxxektz]:focus-visible{background:var(--color2)}a[data-astro-cid-fsxxektz][aria-current=page]{border-left-color:var(--color6);background:var(--color2)}.jump[data-astro-cid-le6ebfyn]{columns:2;background:var(--color2);border:1px solid var(--color1);border-radius:var(--radiusL);column-gap:2rem;margin:2rem 0 0;padding:1rem 1.2rem;list-style:none}.jump[data-astro-cid-le6ebfyn] li[data-astro-cid-le6ebfyn]{break-inside:avoid;margin:0;padding:.15rem 0}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color5);text-decoration:none}.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:hover,.jump[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]:focus-visible{color:var(--color6)}.card[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);margin-top:3rem;padding-top:2rem;scroll-margin-top:4.5rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn]{margin:0 0 1rem;font-size:1.45rem}.card[data-astro-cid-le6ebfyn] h2[data-astro-cid-le6ebfyn] a[data-astro-cid-le6ebfyn]{color:var(--color6);text-decoration:none}.license[data-astro-cid-le6ebfyn]{border-top:1px solid var(--color1);color:var(--textDim);margin:4rem 0 0;padding-top:1.5rem;font-size:.9rem}@media (width<=40rem){.jump[data-astro-cid-le6ebfyn]{columns:1}}
+</style></head><body data-astro-cid-ju4pidww><header class="top" data-astro-cid-ju4pidww><div class="bar" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><nav aria-label="Main" data-astro-cid-ju4pidww><a href="/" data-astro-cid-ju4pidww>Home</a><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a><a href="/guides/" data-astro-cid-ju4pidww>Guides</a><a href="/examples/" data-astro-cid-ju4pidww>Examples</a><a href="/docs/" aria-current="page" data-astro-cid-ju4pidww>Docs</a><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a><a class="download" href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Download</a></nav></div></header><main data-astro-cid-ju4pidww><div class="wrap info split" data-astro-cid-ju4pidww><aside data-astro-cid-ju4pidww><nav aria-label="Documentation" data-astro-cid-fsxxektz><p class="group" data-astro-cid-fsxxektz>The program</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/how-the-program-works/" data-astro-cid-fsxxektz>How the program works</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text Doc</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-doc-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-character-formatting/" data-astro-cid-fsxxektz>Character formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-comments-tracked-changes/" data-astro-cid-fsxxektz>Comments &amp; tracked changes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-page-section-layout/" data-astro-cid-fsxxektz>Page &amp; section layout</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-protection-properties/" data-astro-cid-fsxxektz>Protection &amp; properties</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-references-fields/" data-astro-cid-fsxxektz>References &amp; fields</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-doc-text-content/" data-astro-cid-fsxxektz>Text content</a></li></ul><p class="group" data-astro-cid-fsxxektz>Presentation</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/presentation-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-animations-transitions/" data-astro-cid-fsxxektz>Animations &amp; transitions</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-headers-footers/" data-astro-cid-fsxxektz>Headers &amp; footers</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-shapes/" data-astro-cid-fsxxektz>Shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-slides/" data-astro-cid-fsxxektz>Slides</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/presentation-themes-masters/" data-astro-cid-fsxxektz>Themes &amp; masters</a></li></ul><p class="group" data-astro-cid-fsxxektz>Spreadsheet</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cell-formatting/" data-astro-cid-fsxxektz>Cell formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-cells-content/" data-astro-cid-fsxxektz>Cells &amp; content</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-conditional-formatting/" data-astro-cid-fsxxektz>Conditional formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-data-validation/" data-astro-cid-fsxxektz>Data validation</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-formulas/" aria-current="page" data-astro-cid-fsxxektz>Formulas</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-images-shapes/" data-astro-cid-fsxxektz>Images &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-page-setup-printing/" data-astro-cid-fsxxektz>Page setup &amp; printing</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-protection/" data-astro-cid-fsxxektz>Protection</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-rows-columns/" data-astro-cid-fsxxektz>Rows &amp; columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheet-view/" data-astro-cid-fsxxektz>Sheet view</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sheets/" data-astro-cid-fsxxektz>Sheets</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-sorting-filtering/" data-astro-cid-fsxxektz>Sorting &amp; filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/spreadsheet-tables/" data-astro-cid-fsxxektz>Tables</a></li></ul><p class="group" data-astro-cid-fsxxektz>PDF</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/pdf-annotations-watermarks/" data-astro-cid-fsxxektz>Annotations &amp; watermarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-charts/" data-astro-cid-fsxxektz>Charts</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-document-setup/" data-astro-cid-fsxxektz>Document setup</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-drawing-shapes/" data-astro-cid-fsxxektz>Drawing &amp; shapes</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-images/" data-astro-cid-fsxxektz>Images</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-links-bookmarks/" data-astro-cid-fsxxektz>Links &amp; bookmarks</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-output-saving/" data-astro-cid-fsxxektz>Output &amp; saving</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-pages-sections/" data-astro-cid-fsxxektz>Pages &amp; sections</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-paragraph-formatting/" data-astro-cid-fsxxektz>Paragraph formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-styles/" data-astro-cid-fsxxektz>Styles</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-table-of-contents/" data-astro-cid-fsxxektz>Table of contents</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-formatting/" data-astro-cid-fsxxektz>Text &amp; formatting</a></li><li data-astro-cid-fsxxektz><a href="/docs/pdf-text-positioning/" data-astro-cid-fsxxektz>Text positioning</a></li></ul><p class="group" data-astro-cid-fsxxektz>Text file</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/text-file-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/text-file-opening/" data-astro-cid-fsxxektz>Opening</a></li></ul><p class="group" data-astro-cid-fsxxektz>Markdown</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/markdown-advanced/" data-astro-cid-fsxxektz>Advanced</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-analysis/" data-astro-cid-fsxxektz>Analysis</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-block-elements/" data-astro-cid-fsxxektz>Block elements</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-editing/" data-astro-cid-fsxxektz>Editing</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-frontmatter/" data-astro-cid-fsxxektz>Frontmatter</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-links-images/" data-astro-cid-fsxxektz>Links &amp; images</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-lists/" data-astro-cid-fsxxektz>Lists</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-tables/" data-astro-cid-fsxxektz>Tables</a></li><li data-astro-cid-fsxxektz><a href="/docs/markdown-text-formatting/" data-astro-cid-fsxxektz>Text formatting</a></li></ul><p class="group" data-astro-cid-fsxxektz>CSV / TSV</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-aggregation/" data-astro-cid-fsxxektz>Aggregation</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-columns/" data-astro-cid-fsxxektz>Columns</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-combining-files/" data-astro-cid-fsxxektz>Combining files</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-editing-values/" data-astro-cid-fsxxektz>Editing values</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-filtering/" data-astro-cid-fsxxektz>Filtering</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-inspection/" data-astro-cid-fsxxektz>Inspection</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-reading/" data-astro-cid-fsxxektz>Reading</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-saving-exporting/" data-astro-cid-fsxxektz>Saving &amp; exporting</a></li><li data-astro-cid-fsxxektz><a href="/docs/csv-tsv-sorting/" data-astro-cid-fsxxektz>Sorting</a></li></ul><p class="group" data-astro-cid-fsxxektz>JSON</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/json-conversion/" data-astro-cid-fsxxektz>Conversion</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-create/" data-astro-cid-fsxxektz>Create</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-merging/" data-astro-cid-fsxxektz>Merging</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-modifying/" data-astro-cid-fsxxektz>Modifying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-opening/" data-astro-cid-fsxxektz>Opening</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-querying/" data-astro-cid-fsxxektz>Querying</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-reading-values/" data-astro-cid-fsxxektz>Reading values</a></li><li data-astro-cid-fsxxektz><a href="/docs/json-transformation/" data-astro-cid-fsxxektz>Transformation</a></li></ul><p class="group" data-astro-cid-fsxxektz>More</p><ul data-astro-cid-fsxxektz><li data-astro-cid-fsxxektz><a href="/docs/more-calculations/" data-astro-cid-fsxxektz>Calculations</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-database/" data-astro-cid-fsxxektz>Database</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-document/" data-astro-cid-fsxxektz>Document</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-flow/" data-astro-cid-fsxxektz>Flow</a></li><li data-astro-cid-fsxxektz><a href="/docs/more-general/" data-astro-cid-fsxxektz>General</a></li></ul></nav></aside><div class="content" data-astro-cid-ju4pidww><header class="head" data-astro-cid-ju4pidww><a class="back" href="/docs/" data-astro-cid-ju4pidww><span aria-hidden="true" data-astro-cid-ju4pidww>←</span> Back to Docs</a><p class="label" data-astro-cid-ju4pidww>Spreadsheet</p><h1 data-astro-cid-ju4pidww>Formulas</h1></header><div class="prose" data-astro-cid-ju4pidww><p>This group <strong>writes formulas</strong> into cells. It covers a single formula in one cell,
+array formulas over a range, ready-made helpers for the common function families
+(text, date, logical, lookup, statistical, financial, math), user-defined
+functions, formulas that reference <strong>another sheet</strong> or <strong>another workbook</strong>,
+copying a formula across a range (adjusting the references as it goes), converting
+a reference inside a formula to absolute/relative form, and defining a workbook-wide
+<strong>named formula</strong>.</p>
+<p><strong>Prerequisite:</strong> before using any of these instructions, the workflow must already
+have an XLSX spreadsheet created or opened (with <em>Create spreadsheet</em>). Every
+instruction works on a <strong>sheet</strong> (tab) inside that spreadsheet, identified by name
+(<code>Sheet1</code> by default), which must already exist.</p>
+<p>These concepts recur across several instructions in this group; they are explained
+here once.</p>
+<ul>
+<li><strong>Document:</strong> indicates which document in the workflow the instruction applies to.
+If left empty, the current document is used.</li>
+<li><strong>The sheet must already exist:</strong> the <em>Sheet name</em> field chooses which tab the
+instruction works on, and defaults to <code>Sheet1</code>. If no sheet with that name is found, the instruction does nothing and the workflow continues with the next instruction.</li>
+<li><strong>Cells are created automatically:</strong> the target cell (and its row) is created if
+it doesn’t exist yet. If a cell address is invalid, that instruction simply does
+nothing.</li>
+<li><strong>Formulas are stored, not calculated here:</strong> the instruction writes the formula text
+into the cell and marks it for recalculation. The <strong>result appears when you open
+the file in Excel</strong> (or another spreadsheet app), which does the actual math — the
+engine itself doesn’t evaluate formulas.</li>
+<li><strong>The leading <code>=</code> is optional:</strong> you can type a formula with or without the
+leading <code>=</code> (<code>=SUM(B1:B10)</code> or <code>SUM(B1:B10)</code>); both work.</li>
+<li><strong>Leaving the essential field empty does nothing:</strong> every instruction in this group
+needs one piece of content — the <em>Formula</em>, the <em>Function name</em>, the <em>Name</em> of the
+defined name, or the sheet/workbook being referenced. If that field is left empty,
+the instruction <strong>does nothing</strong> instead of writing a broken formula such as <code>(B1)</code> or
+<code>'[]Sheet1'!$B$2</code> into the cell. Optional pieces (the <em>Arguments</em>, for instance)
+may be empty — <code>TODAY()</code> takes none.</li>
+<li><strong>Dynamic values (<code>@name</code>):</strong> every field in this group is a text field, so in
+any of them (sheet name, cell address, formula, function name, arguments, …) you
+can type <code>@</code> followed by the name of a value saved earlier in the workflow, and it
+will be replaced by that value.</li>
+</ul>
+<ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#copy-formula-to-range-spreadsheet" data-astro-cid-le6ebfyn>Copy Formula To Range .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#define-named-formula-spreadsheet" data-astro-cid-le6ebfyn>Define Named Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#set-absolute-reference-spreadsheet" data-astro-cid-le6ebfyn>Set Absolute Reference .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-array-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Array Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-cell-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Cell Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-date-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Date Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-financial-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Financial Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-formula-with-sheet-reference-spreadsheet" data-astro-cid-le6ebfyn>Write Formula With Sheet Reference .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-formula-with-workbook-reference-spreadsheet" data-astro-cid-le6ebfyn>Write Formula With Workbook Reference .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-logical-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Logical Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-lookup-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Lookup Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-math-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Math Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-statistical-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Statistical Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-text-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Text Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-udf-formula-spreadsheet" data-astro-cid-le6ebfyn>Write UDF Formula .xlsx</a></li></ul><section class="card" id="copy-formula-to-range-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#copy-formula-to-range-spreadsheet" data-astro-cid-le6ebfyn>Copy Formula To Range .xlsx</a></h2><p>Copies the formula from one cell to every cell of a range, <strong>adjusting the relative
+references</strong> for each destination cell (just like dragging a formula down or across
+in Excel).</p>
+<p><strong>When to use it:</strong> after writing a formula in the first row of a column (e.g.
+<code>=A2*B2</code>), to fill the same calculation down a whole range without rewriting it.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Source cell address</td>
+<td>Cell holding the formula to copy (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Target start cell</td>
+<td>Top-left cell of the range to fill (<code>A2</code>). Supports <code>@name</code></td>
+<td><code>A2</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Target end cell</td>
+<td>Bottom-right cell of the range to fill (<code>A10</code>). Supports <code>@name</code></td>
+<td><code>A10</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> <strong>relative</strong> references shift with each cell; references
+fixed with <code>$</code> (e.g. <code>$B$1</code>) stay put. If the source cell has <strong>no formula</strong>, or any
+address is invalid, nothing happens.</p>
+<hr>
+</section><section class="card" id="define-named-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#define-named-formula-spreadsheet" data-astro-cid-le6ebfyn>Define Named Formula .xlsx</a></h2><p>Creates a <strong>named formula</strong> at the workbook level — a name that stands for a formula
+or expression and can be reused in other formulas.</p>
+<p><strong>When to use it:</strong> to give a meaningful name to a calculation or a range
+(e.g. <code>TaxRate</code>, <code>TotalRevenue</code>) and then write cleaner formulas that use the name.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>The name being defined (<code>TotalRevenue</code>). Supports <code>@name</code></td>
+<td><code>TotalRevenue</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula</td>
+<td>The formula/expression the name stands for. Supports <code>@name</code></td>
+<td><code>=SUM(Sheet1!$B$2:$B$100)</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>Optional note describing the name. Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> if a name with the same text already exists, it is
+<strong>replaced</strong>. The leading <code>=</code> is removed automatically. The comment is only added
+when it isn’t empty.</p>
+<hr>
+</section><section class="card" id="set-absolute-reference-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#set-absolute-reference-spreadsheet" data-astro-cid-le6ebfyn>Set Absolute Reference .xlsx</a></h2><p>Changes a cell reference <strong>inside an existing formula</strong> to absolute, mixed, or
+relative form (adding or removing the <code>$</code> signs).</p>
+<p><strong>When to use it:</strong> to lock (or unlock) a reference in a formula you already wrote —
+for example turning <code>A1</code> into <code>$A$1</code> so it won’t shift when copied.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The reference to reformat (e.g. <code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Reference style</td>
+<td><code>absolute</code> (<code>$A$1</code>), <code>col</code> (<code>$A1</code>), <code>row</code> (<code>A$1</code>) or <code>relative</code> (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>absolute</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Target cell</td>
+<td>The cell whose formula will be edited (<code>B1</code>). Supports <code>@name</code></td>
+<td><code>B1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> it edits the formula that already lives in <em>Target cell</em>,
+replacing every occurrence of the given reference with the chosen style. If the
+target cell has <strong>no formula</strong>, nothing happens. An unknown style falls back to
+<code>absolute</code>.</p>
+<hr>
+</section><section class="card" id="write-array-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-array-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Array Formula .xlsx</a></h2><p>Writes an <strong>array formula</strong> (also called a CSE formula) over a cell or a range —
+one formula that produces results across several cells at once.</p>
+<p><strong>When to use it:</strong> for calculations that work on whole ranges at a time, such as
+<code>=A1:A5*B1:B5</code> to multiply two columns element by element.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Start cell</td>
+<td>Top-left cell of the array range (<code>C1</code>). Supports <code>@name</code></td>
+<td><code>C1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>End cell</td>
+<td>Bottom-right cell of the array range (<code>C5</code>). Supports <code>@name</code></td>
+<td><code>C5</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula</td>
+<td>The array formula (<code>=A1:A5*B1:B5</code>, with or without <code>{ }</code>). Supports <code>@name</code></td>
+<td><code>=A1:A5*B1:B5</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the formula is attached to the <strong>first cell</strong> of the range
+and marked as spanning the whole range; Excel fills in the other cells when it
+recalculates. Any surrounding <code>{ }</code> and leading <code>=</code> are removed automatically.</p>
+<hr>
+</section><section class="card" id="write-cell-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-cell-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Cell Formula .xlsx</a></h2><p>Writes a <strong>formula into a single cell</strong>. This is the general-purpose instruction — it
+accepts any formula, including cross-sheet, cross-workbook and user-defined function
+calls.</p>
+<p><strong>When to use it:</strong> whenever you need a plain formula in one cell and don’t need one
+of the specialized helpers below.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write the formula into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula</td>
+<td>The formula text (<code>=SUM(B1:B10)</code>, <code>=</code> optional). Supports <code>@name</code></td>
+<td><code>=SUM(B1:B10)</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the leading <code>=</code> is optional. The cell and its row are
+created if missing; an invalid cell address is a no-op.</p>
+<hr>
+</section><section class="card" id="write-date-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-date-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Date Formula .xlsx</a></h2><p>Helper that writes a <strong>date/time function</strong> into a cell (e.g. <code>TODAY</code>, <code>NOW</code>, <code>YEAR</code>,
+<code>MONTH</code>, <code>DAY</code>, <code>DATE</code>).</p>
+<p><strong>When to use it:</strong> to insert a date calculation without typing the parentheses —
+you give the function name and its arguments separately.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Function name</td>
+<td>The date function (<code>TODAY</code>, <code>YEAR</code>, …). Supports <code>@name</code></td>
+<td><code>TODAY</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td>What goes inside the parentheses (may be empty). Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the final formula is built as <code>FUNCTION(arguments)</code>; the
+function name is written in upper case. Leave <em>Arguments</em> empty for functions that
+take none (<code>TODAY()</code>, <code>NOW()</code>).</p>
+<hr>
+</section><section class="card" id="write-financial-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-financial-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Financial Formula .xlsx</a></h2><p>Helper that writes a <strong>financial function</strong> into a cell (e.g. <code>PMT</code>, <code>NPV</code>, <code>IRR</code>,
+<code>FV</code>, <code>PV</code>).</p>
+<p><strong>When to use it:</strong> for loan, investment and cash-flow calculations, giving the
+function name and its arguments separately.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Function name</td>
+<td>The financial function (<code>PMT</code>, <code>NPV</code>, …). Supports <code>@name</code></td>
+<td><code>PMT</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td>What goes inside the parentheses (<code>B1/12, B2, B3</code>). Supports <code>@name</code></td>
+<td><code>B1/12, B2, B3</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the final formula is built as <code>FUNCTION(arguments)</code>; the
+function name is written in upper case.</p>
+<hr>
+</section><section class="card" id="write-formula-with-sheet-reference-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-formula-with-sheet-reference-spreadsheet" data-astro-cid-le6ebfyn>Write Formula With Sheet Reference .xlsx</a></h2><p>Writes a formula that <strong>references a cell or range in another sheet</strong> of the same
+workbook (e.g. <code>='Sheet2'!$B$2</code>).</p>
+<p><strong>When to use it:</strong> to pull a value or run a calculation on data that lives on a
+different tab.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab where the formula is written. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Referenced sheet</td>
+<td>The other tab being referenced (<code>Sheet2</code>). Supports <code>@name</code></td>
+<td><code>Sheet2</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Referenced cell</td>
+<td>The cell or range on that tab (<code>B2</code>, <code>B2:B10</code>). Supports <code>@name</code></td>
+<td><code>B2</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula prefix</td>
+<td>Text placed before the reference (<code>=</code>, or <code>=SUM(</code>). Supports <code>@name</code></td>
+<td><code>=</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula suffix</td>
+<td>Text placed after the reference (e.g. <code>)</code>). Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the referenced cell/range is turned into an <strong>absolute</strong>
+reference (<code>$B$2</code>) and wrapped as <code>'Sheet'!$B$2</code>, then combined with the prefix and
+suffix. So <em>prefix</em> <code>=SUM(</code>, <em>referenced cell</em> <code>B2:B10</code>, <em>suffix</em> <code>)</code> gives
+<code>=SUM('Sheet2'!$B$2:$B$10)</code>.</p>
+<hr>
+</section><section class="card" id="write-formula-with-workbook-reference-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-formula-with-workbook-reference-spreadsheet" data-astro-cid-le6ebfyn>Write Formula With Workbook Reference .xlsx</a></h2><p>Writes a formula that <strong>references a cell or range in another workbook</strong> (a separate
+<code>.xlsx</code> file), using Excel’s external-link syntax (e.g. <code>=[Budget.xlsx]Sheet1!$B$2</code>).</p>
+<p><strong>When to use it:</strong> to link a value from a different spreadsheet file into this one.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab where the formula is written. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>External file path</td>
+<td>Path of the other workbook. Only its file name is used. Supports <code>@name</code></td>
+<td><code>C:\Data\Budget.xlsx</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>External sheet name</td>
+<td>The tab inside that workbook (<code>Sheet1</code>). Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>External cell address</td>
+<td>The cell or range in that workbook (<code>B2</code>). Supports <code>@name</code></td>
+<td><code>B2</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula prefix</td>
+<td>Text placed before the reference (<code>=</code>, or <code>=SUM(</code>). Supports <code>@name</code></td>
+<td><code>=</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Formula suffix</td>
+<td>Text placed after the reference (e.g. <code>)</code>). Supports <code>@name</code></td>
+<td>(empty)</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> only the <strong>file name</strong> of <em>External file path</em> is used in the
+formula; the external reference is made absolute and written as
+<code>'[FileName.xlsx]Sheet'!$B$2</code>. The result shows correct values in Excel only when
+that external file is reachable.</p>
+<hr>
+</section><section class="card" id="write-logical-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-logical-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Logical Formula .xlsx</a></h2><p>Helper that writes a <strong>logical function</strong> into a cell (e.g. <code>IF</code>, <code>AND</code>, <code>OR</code>, <code>NOT</code>,
+<code>IFERROR</code>).</p>
+<p><strong>When to use it:</strong> for decisions and conditions, giving the function name and its
+arguments separately.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Function name</td>
+<td>The logical function (<code>IF</code>, <code>AND</code>, …). Supports <code>@name</code></td>
+<td><code>IF</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td>What goes inside the parentheses. Supports <code>@name</code></td>
+<td><code>B1&gt;0, "Positive", "Zero or negative"</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the final formula is built as <code>FUNCTION(arguments)</code>; the
+function name is written in upper case. Text values inside the arguments must keep
+their own quotes.</p>
+<hr>
+</section><section class="card" id="write-lookup-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-lookup-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Lookup Formula .xlsx</a></h2><p>Helper that writes a <strong>lookup function</strong> into a cell (e.g. <code>VLOOKUP</code>, <code>HLOOKUP</code>,
+<code>XLOOKUP</code>, <code>INDEX</code>, <code>MATCH</code>).</p>
+<p><strong>When to use it:</strong> to fetch a value from a table by matching a key, giving the
+function name and its arguments separately.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Function name</td>
+<td>The lookup function (<code>VLOOKUP</code>, <code>INDEX</code>, …). Supports <code>@name</code></td>
+<td><code>VLOOKUP</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td>What goes inside the parentheses. Supports <code>@name</code></td>
+<td><code>D1, A1:B100, 2, FALSE</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the final formula is built as <code>FUNCTION(arguments)</code>; the
+function name is written in upper case.</p>
+<hr>
+</section><section class="card" id="write-math-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-math-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Math Formula .xlsx</a></h2><p>Helper that writes a <strong>math function</strong> into a cell (e.g. <code>ROUND</code>, <code>INT</code>, <code>ABS</code>,
+<code>POWER</code>, <code>SQRT</code>, <code>MOD</code>).</p>
+<p><strong>When to use it:</strong> for arithmetic and rounding, giving the function name and its
+arguments separately.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Function name</td>
+<td>The math function (<code>ROUND</code>, <code>POWER</code>, …). Supports <code>@name</code></td>
+<td><code>ROUND</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td>What goes inside the parentheses (<code>B1, 2</code>). Supports <code>@name</code></td>
+<td><code>B1, 2</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the final formula is built as <code>FUNCTION(arguments)</code>; the
+function name is written in upper case.</p>
+<hr>
+</section><section class="card" id="write-statistical-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-statistical-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Statistical Formula .xlsx</a></h2><p>Helper that writes a <strong>statistical function</strong> into a cell (e.g. <code>AVERAGE</code>, <code>COUNT</code>,
+<code>MAX</code>, <code>MIN</code>, <code>SUM</code>, <code>MEDIAN</code>).</p>
+<p><strong>When to use it:</strong> to summarize a column or range, giving the function name and its
+arguments separately.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Function name</td>
+<td>The statistical function (<code>AVERAGE</code>, <code>MAX</code>, …). Supports <code>@name</code></td>
+<td><code>AVERAGE</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td>What goes inside the parentheses (<code>B1:B100</code>). Supports <code>@name</code></td>
+<td><code>B1:B100</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the final formula is built as <code>FUNCTION(arguments)</code>; the
+function name is written in upper case.</p>
+<hr>
+</section><section class="card" id="write-text-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-text-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Text Formula .xlsx</a></h2><p>Helper that writes a <strong>text function</strong> into a cell (e.g. <code>CONCAT</code>, <code>UPPER</code>, <code>LOWER</code>,
+<code>TRIM</code>, <code>LEN</code>, <code>LEFT</code>, <code>RIGHT</code>).</p>
+<p><strong>When to use it:</strong> to build or clean up text, giving the function name and its
+arguments separately.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Function name</td>
+<td>The text function (<code>CONCAT</code>, <code>UPPER</code>, …). Supports <code>@name</code></td>
+<td><code>CONCAT</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td>What goes inside the parentheses. Supports <code>@name</code></td>
+<td><code>B1, " ", C1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> the final formula is built as <code>FUNCTION(arguments)</code>; the
+function name is written in upper case. Literal text inside the arguments must keep
+its own quotes.</p>
+<hr>
+</section><section class="card" id="write-udf-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-udf-formula-spreadsheet" data-astro-cid-le6ebfyn>Write UDF Formula .xlsx</a></h2><p>Writes a call to a <strong>user-defined function</strong> (UDF) — a custom function stored in the
+workbook or provided by an add-in.</p>
+<p><strong>When to use it:</strong> to call your own function by name (e.g. <code>MyCustomFunction</code>) the
+same way you’d call a built-in one.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Meaning</th>
+<th>Default</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Document the instruction applies to</td>
+<td>(current document)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sheet name</td>
+<td>Tab to work on. Supports <code>@name</code></td>
+<td><code>Sheet1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cell address</td>
+<td>The cell to write into (<code>A1</code>). Supports <code>@name</code></td>
+<td><code>A1</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>UDF name</td>
+<td>The custom function’s name (case preserved). Supports <code>@name</code></td>
+<td><code>MyCustomFunction</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td>What goes inside the parentheses (<code>B1, C1</code>). Supports <code>@name</code></td>
+<td><code>B1, C1</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important behavior:</strong> unlike the other helpers, the UDF name <strong>keeps its exact
+case</strong> (it is not upper-cased). The function only returns a real value in Excel if
+that UDF actually exists in the workbook or a loaded add-in.</p>
+<hr>
+</section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>
