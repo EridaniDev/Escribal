@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://escribal.com/sitemap-index.xml
