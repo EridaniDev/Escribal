@@ -24,9 +24,9 @@ instruction works on, and defaults to <code>Sheet1</code>. If no sheet with that
 <li>
 <p><strong>Data ranges use spreadsheet notation:</strong> fields like <em>Category range</em>,
 <em>Values range</em>, <em>X range</em>, <em>Y range</em> and <em>Size range</em> point at the cells that hold
-the data, written the Excel way — <code>Sheet1!$A$1:$A$5</code>. The chart stores these
-references; the bars, lines and slices are drawn when you open the file in Excel
-(or another spreadsheet app).</p>
+the data, written the spreadsheet way — <code>Sheet1!$A$1:$A$5</code>. The chart stores these
+references; the bars, lines and slices are drawn when you open the file in a
+spreadsheet app.</p>
 </li>
 <li>
 <p><strong>Where the chart sits (anchoring):</strong> the <em>Insert</em> instructions place a chart by its
@@ -800,8 +800,9 @@ revenue as columns and a percentage as a line.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Important behavior:</strong> both series share the category labels. With <em>Line on second
-axis</em> set to Yes, the line gets its own right-hand scale. A title is only shown when
+<p><strong>Important behavior:</strong> both series share the category labels, and the line joins its
+points with straight segments. With <em>Line on second axis</em> set to Yes, the line gets its
+own right-hand scale. A title is only shown when
 <em>Title</em> isn’t empty. If the named sheet doesn’t exist, the instruction does nothing.
 If <em>Save chart number</em> is filled, the new chart’s number (its position
 among the sheet’s charts) is saved there.</p>

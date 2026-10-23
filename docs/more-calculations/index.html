@@ -30,7 +30,7 @@ entry already carries. An invoice line —quantity × price— is not one of the
 inside the <em>For each</em> with <em>Calculate variable</em> and add it to a running total there, or
 write it into each entry first with <em>Modify element field</em> and aggregate afterwards.</p>
 <p><strong>It works with every format.</strong> <em>Iterate rows</em> leaves the rows of a spreadsheet, a CSV, a
-Word or Markdown table, a PowerPoint table or a text file in the same shape, so the same
+document or Markdown table, a presentation table or a text file in the same shape, so the same
 instruction adds up all of them and there is no “sum a column” per format.</p>
 <table>
 <thead>
@@ -326,8 +326,8 @@ line per row. <em>Aggregate list</em> turns a whole list into one number; this o
 carrying the group’s <code>name</code> and its <code>value</code>, so a <em>Repeat for each</em> over it writes the report: the
 current entry’s <code>@group.name</code> is the heading and <code>@group.value</code> is the figure. Glue the two into a
 row with <em>Set text</em>, because a @name only resolves when it is the whole value.</p>
-<p><strong>It works with every format.</strong> <em>Iterate rows</em> leaves the rows of a spreadsheet, a CSV, a Word or
-Markdown table, a PowerPoint table or a text file in the same shape, so the same instruction groups all
+<p><strong>It works with every format.</strong> <em>Iterate rows</em> leaves the rows of a spreadsheet, a CSV, a document or
+Markdown table, a presentation table or a text file in the same shape, so the same instruction groups all
 of them and there is no “group by” per format. If the data is already an open CSV, <em>Group and
 aggregate (.csv)</em> does it in one step and writes the table into the document itself.</p>
 <table>

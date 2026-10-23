@@ -19,7 +19,7 @@ If left empty, the current document is used.</p>
 <p><strong>Style ID:</strong> every style has a short <strong>ID</strong> that identifies it (for example
 <code>Heading1</code>, <code>Normal</code>, or a custom name you choose). Instructions that apply, modify,
 or delete a style refer to it by this ID. It is different from the <em>Display
-name</em>, which is the friendly name Word shows in its styles list.</p>
+name</em>, which is the friendly name shown in the styles list.</p>
 </li>
 <li>
 <p><strong>Dynamic values (<code>@name</code>):</strong> in any text field you can type <code>@</code> followed by
@@ -169,7 +169,7 @@ From Document .docx</em>; a document opened from disk already carries its own. W
 is missing the run says so, naming the styles the document does have, and <em>validate</em>
 warns before running.</p>
 <hr>
-</section><section class="card" id="copy-styles-from-document-document-text" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#copy-styles-from-document-document-text" data-astro-cid-le6ebfyn>Copy Styles From Document .docx</a></h2><p>Copies style definitions from another Word document into the current one.</p>
+</section><section class="card" id="copy-styles-from-document-document-text" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#copy-styles-from-document-document-text" data-astro-cid-le6ebfyn>Copy Styles From Document .docx</a></h2><p>Copies style definitions from another document into the current one.</p>
 <p><strong>When to use it:</strong> to reuse a set of styles you defined in a template or another
 file, without recreating them by hand.</p>
 <table>
@@ -259,7 +259,7 @@ a specific font, size, color, and alignment.</p>
 </tr>
 <tr>
 <td>Display name</td>
-<td>Name shown for the style in Word’s styles list. Supports <code>@name</code></td>
+<td>Name shown for the style in the styles list. Supports <code>@name</code></td>
 <td>(empty)</td>
 <td>Yes</td>
 </tr>
@@ -363,7 +363,7 @@ on</em> of <code>Normal</code> is ignored (Normal is a paragraph style).</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Important behavior:</strong> only <strong>custom</strong> styles can be deleted; Word’s built-in
+<p><strong>Important behavior:</strong> only <strong>custom</strong> styles can be deleted; the built-in
 styles are protected and left untouched. If <em>Style ID</em> is empty, or the style
 does not exist or is not custom, nothing happens.</p>
 <hr>

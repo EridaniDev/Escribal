@@ -198,7 +198,7 @@ paragraphs yet, one is created.</p>
 search looks inside each run of text; when a match is fully removed and nothing is
 left in that run, the run is deleted. The number of removals is saved in <em>Save
 count in</em> if set — it counts <strong>runs touched</strong>, not occurrences, so a run holding the
-word twice counts once. Word splits a paragraph into
+word twice counts once. A paragraph is split into
 <em>runs</em> whenever the formatting changes (and sometimes after editing or spell-checking), and the
 search looks <strong>inside each run separately</strong> — so a phrase that happens to be split across two runs
 (for example because one word is bold) <strong>is not found</strong>, silently. If a search that should match
@@ -270,7 +270,7 @@ a word for a new value.</p>
 <p><strong>Important behavior:</strong> if <em>Search text</em> is empty, the instruction does nothing.
 Matching and replacing happen within each run of text. The number of replacements is
 saved in <em>Save count in</em> if set — it counts <strong>runs touched</strong>, not occurrences, so a
-run holding the word twice counts once. Word splits a paragraph into
+run holding the word twice counts once. A paragraph is split into
 <em>runs</em> whenever the formatting changes (and sometimes after editing or spell-checking), and the
 search looks <strong>inside each run separately</strong> — so a phrase that happens to be split across two runs
 (for example because one word is bold) <strong>is not found</strong>, silently. If a search that should match
@@ -324,7 +324,7 @@ count for a later decision (for example, an <em>If</em>).</p>
 <p><strong>Important behavior:</strong> if <em>Search text</em> is empty, the instruction does nothing. It only
 reads the document; nothing is changed. The count is the number of text runs that
 contain the search text (not necessarily the total number of occurrences), saved in
-<em>Save count in</em> if set. Word splits a paragraph into
+<em>Save count in</em> if set. A paragraph is split into
 <em>runs</em> whenever the formatting changes (and sometimes after editing or spell-checking), and the
 search looks <strong>inside each run separately</strong> — so a phrase that happens to be split across two runs
 (for example because one word is bold) <strong>is not found</strong>, silently. If a search that should match
@@ -413,7 +413,7 @@ updating each time the document is opened.</p>
 </tbody>
 </table>
 <p><strong>Important behavior:</strong> with <em>As fixed text</em> off, an auto-updating DATE and/or TIME
-field is inserted (Word refreshes it when the document is opened or fields are
+field is inserted (the word processor refreshes it when the document is opened or fields are
 updated); with it on, the current date/time is written as plain text and, if <em>Save
 text in</em> is set, that text is also saved. If both date and time are included, they
 are separated by a space. The format codes follow the usual day/month/year and
@@ -496,7 +496,7 @@ For page numbers in the header or footer area, use the <em>Headers &amp; footers
 </tr>
 </tbody>
 </table>
-<p><strong>Important behavior:</strong> a PAGE field is inserted (shown as <code>1</code> until Word updates
+<p><strong>Important behavior:</strong> a PAGE field is inserted (shown as <code>1</code> until the word processor updates
 it). With <em>Include total pages</em> on, the <em>Separator</em> text and a NUMPAGES field are
 added after it. The field is placed at the given bookmark, or at the end of the
 document if the bookmark is empty or not found.</p>

@@ -22,7 +22,7 @@ it doesn’t exist yet. If a cell address is invalid, that instruction simply do
 nothing.</li>
 <li><strong>Formulas are stored, not calculated here:</strong> the instruction writes the formula text
 into the cell and marks it for recalculation. The <strong>result appears when you open
-the file in Excel</strong> (or another spreadsheet app), which does the actual math — the
+the file in a spreadsheet app</strong>, which does the actual math — the
 engine itself doesn’t evaluate formulas.</li>
 <li><strong>The leading <code>=</code> is optional:</strong> you can type a formula with or without the
 leading <code>=</code> (<code>=SUM(B1:B10)</code> or <code>SUM(B1:B10)</code>); both work.</li>
@@ -39,7 +39,7 @@ will be replaced by that value.</li>
 </ul>
 <ul class="jump" data-astro-cid-le6ebfyn><li data-astro-cid-le6ebfyn><a href="#copy-formula-to-range-spreadsheet" data-astro-cid-le6ebfyn>Copy Formula To Range .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#define-named-formula-spreadsheet" data-astro-cid-le6ebfyn>Define Named Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#set-absolute-reference-spreadsheet" data-astro-cid-le6ebfyn>Set Absolute Reference .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-array-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Array Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-cell-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Cell Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-date-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Date Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-financial-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Financial Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-formula-with-sheet-reference-spreadsheet" data-astro-cid-le6ebfyn>Write Formula With Sheet Reference .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-formula-with-workbook-reference-spreadsheet" data-astro-cid-le6ebfyn>Write Formula With Workbook Reference .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-logical-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Logical Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-lookup-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Lookup Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-math-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Math Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-statistical-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Statistical Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-text-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Text Formula .xlsx</a></li><li data-astro-cid-le6ebfyn><a href="#write-udf-formula-spreadsheet" data-astro-cid-le6ebfyn>Write UDF Formula .xlsx</a></li></ul><section class="card" id="copy-formula-to-range-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#copy-formula-to-range-spreadsheet" data-astro-cid-le6ebfyn>Copy Formula To Range .xlsx</a></h2><p>Copies the formula from one cell to every cell of a range, <strong>adjusting the relative
 references</strong> for each destination cell (just like dragging a formula down or across
-in Excel).</p>
+in a spreadsheet app).</p>
 <p><strong>When to use it:</strong> after writing a formula in the first row of a column (e.g.
 <code>=A2*B2</code>), to fill the same calculation down a whole range without rewriting it.</p>
 <table>
@@ -230,7 +230,7 @@ one formula that produces results across several cells at once.</p>
 </tbody>
 </table>
 <p><strong>Important behavior:</strong> the formula is attached to the <strong>first cell</strong> of the range
-and marked as spanning the whole range; Excel fills in the other cells when it
+and marked as spanning the whole range; the spreadsheet app fills in the other cells when it
 recalculates. Any surrounding <code>{ }</code> and leading <code>=</code> are removed automatically.</p>
 <hr>
 </section><section class="card" id="write-cell-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-cell-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Cell Formula .xlsx</a></h2><p>Writes a <strong>formula into a single cell</strong>. This is the general-purpose instruction — it
@@ -440,7 +440,7 @@ suffix. So <em>prefix</em> <code>=SUM(</code>, <em>referenced cell</em> <code>B2
 <code>=SUM('Sheet2'!$B$2:$B$10)</code>.</p>
 <hr>
 </section><section class="card" id="write-formula-with-workbook-reference-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-formula-with-workbook-reference-spreadsheet" data-astro-cid-le6ebfyn>Write Formula With Workbook Reference .xlsx</a></h2><p>Writes a formula that <strong>references a cell or range in another workbook</strong> (a separate
-<code>.xlsx</code> file), using Excel’s external-link syntax (e.g. <code>=[Budget.xlsx]Sheet1!$B$2</code>).</p>
+<code>.xlsx</code> file), using the spreadsheet external-link syntax (e.g. <code>=[Budget.xlsx]Sheet1!$B$2</code>).</p>
 <p><strong>When to use it:</strong> to link a value from a different spreadsheet file into this one.</p>
 <table>
 <thead>
@@ -504,7 +504,7 @@ suffix. So <em>prefix</em> <code>=SUM(</code>, <em>referenced cell</em> <code>B2
 </table>
 <p><strong>Important behavior:</strong> only the <strong>file name</strong> of <em>External file path</em> is used in the
 formula; the external reference is made absolute and written as
-<code>'[FileName.xlsx]Sheet'!$B$2</code>. The result shows correct values in Excel only when
+<code>'[FileName.xlsx]Sheet'!$B$2</code>. The result shows correct values in a spreadsheet app only when
 that external file is reachable.</p>
 <hr>
 </section><section class="card" id="write-logical-formula-spreadsheet" data-astro-cid-le6ebfyn><h2 data-astro-cid-le6ebfyn><a href="#write-logical-formula-spreadsheet" data-astro-cid-le6ebfyn>Write Logical Formula .xlsx</a></h2><p>Helper that writes a <strong>logical function</strong> into a cell (e.g. <code>IF</code>, <code>AND</code>, <code>OR</code>, <code>NOT</code>,
@@ -801,7 +801,7 @@ same way you’d call a built-in one.</p>
 </tbody>
 </table>
 <p><strong>Important behavior:</strong> unlike the other helpers, the UDF name <strong>keeps its exact
-case</strong> (it is not upper-cased). The function only returns a real value in Excel if
+case</strong> (it is not upper-cased). The function only returns a real value in a spreadsheet if
 that UDF actually exists in the workbook or a loaded add-in.</p>
 <hr>
 </section></div><p class="license" data-astro-cid-le6ebfyn>This documentation is the help of the application, and it comes under<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" data-astro-cid-le6ebfyn>Creative Commons Attribution 4.0</a>.</p></div></div></main><footer class="bottom" data-astro-cid-ju4pidww><div class="bar columns" data-astro-cid-ju4pidww><div class="about" data-astro-cid-ju4pidww><a class="brand" href="/" data-astro-cid-ju4pidww><img src="/favicon.svg" alt="" width="28" height="28" data-astro-cid-ju4pidww>Escribal</a><p data-astro-cid-ju4pidww>Your documents write themselves.</p><p data-astro-cid-ju4pidww>© 2026 Erik Monrreal, publishing as EridaniDev</p></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Product</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/use-cases/" data-astro-cid-ju4pidww>Use cases</a></li><li data-astro-cid-ju4pidww><a href="/guides/" data-astro-cid-ju4pidww>Guides</a></li><li data-astro-cid-ju4pidww><a href="/examples/" data-astro-cid-ju4pidww>Examples</a></li><li data-astro-cid-ju4pidww><a href="/docs/" data-astro-cid-ju4pidww>Docs</a></li><li data-astro-cid-ju4pidww><a href="/assistant/" data-astro-cid-ju4pidww>Assistant</a></li><li data-astro-cid-ju4pidww><a href="/pricing/" data-astro-cid-ju4pidww>Pricing</a></li><li data-astro-cid-ju4pidww><a href="/faq/" data-astro-cid-ju4pidww>FAQ</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Legal</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="/privacy/" data-astro-cid-ju4pidww>Privacy Policy</a></li><li data-astro-cid-ju4pidww><a href="/terms/" data-astro-cid-ju4pidww>License Terms</a></li></ul></div><div data-astro-cid-ju4pidww><h2 data-astro-cid-ju4pidww>Contact</h2><ul data-astro-cid-ju4pidww><li data-astro-cid-ju4pidww><a href="mailto:support@escribal.com" data-astro-cid-ju4pidww>support@escribal.com</a></li><li data-astro-cid-ju4pidww><a href="https://apps.microsoft.com/detail/9NWKVSGJ6HTF" target="_blank" rel="noopener" data-astro-cid-ju4pidww>Microsoft Store</a></li><li data-astro-cid-ju4pidww><a href="https://x.com/Escribal_app" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>X</a></li><li data-astro-cid-ju4pidww><a href="https://www.reddit.com/user/Escribal/" target="_blank" rel="me noopener" data-astro-cid-ju4pidww>Reddit</a></li></ul></div></div></footer></body></html>
